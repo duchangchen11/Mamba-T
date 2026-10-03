@@ -72,6 +72,10 @@ python scripts/summarize_training_regime_diagnostic.py
 
 The source-only entry points reject `heldout_test`. Legacy held-out loader routing tests use synthetic data in memory. Per-epoch JSON/CSV curves, final/best diagnostic gaps, density/distance/correction strata and correction norms are saved without figures. A diagnostic best epoch is computed after training and never used to select a checkpoint or rerun formal test. Old clean comparisons hold the data and architecture fixed while changing the entire backbone/SR training chain; they are not a scheduler-only ablation. Historical formal aggregate numbers are quoted from the stage request, without loading or recomputing formal test artifacts.
 
+### Density-conditioned social calibration diagnostic
+
+`scripts/run_density_aware_social_calibration.py --mode source_validation --smoke-only` runs the pinned two-epoch ETH/seed-42 smoke; omit `--smoke-only` to execute the 15 fixed-epoch source train/validation runs. The new EMT density model reuses the matching frozen EMT backbone and initializes all shared Social Cross-Attention and residual modules identically to the prior EMT social residual checkpoint. A zero-initialized `Linear(1,16)-GELU-Linear(16,1)` receives only `neighbor_mask.sum()/8` and scales the social context by `1+0.5*tanh(f(density))`. Its final reports compare scene-equal and pooled metrics, scene and neighbor-count gain stability, and the learned `s(n)` curve. Formal test modes and paths are rejected.
+
 # Source-validation social distribution audit
 
 `diag/social_distribution_shift` reuses the fixed diagnostic checkpoints and source validation split. It performs no trajectory training and rejects formal benchmark artifacts, including symlinks. Observation features use only the eight observed positions; speeds are metres per sampling step. Attention weights are read by a separate eval/no-grad call, while prediction uses the unchanged model forward.
