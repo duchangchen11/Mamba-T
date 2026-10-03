@@ -1,0 +1,37 @@
+{
+  "fold": "eth",
+  "heldout_scene": "eth",
+  "model": "emt",
+  "seed": 123,
+  "train_scene_list": [
+    "hotel",
+    "univ",
+    "zara1",
+    "zara2"
+  ],
+  "train_sample_count": 33797,
+  "test_sample_count": 364,
+  "training_epoch": 10,
+  "test_ADE": 1.0748146336047832,
+  "test_FDE": 2.1408869529247916,
+  "parameter_count": {
+    "total": 370968,
+    "trainable": 370968,
+    "frozen": 0
+  },
+  "checkpoint_sha256": "7d5651dcfa0d4b9bfe8533d8ccd3c5b82f179d658c2a9b1703d32f8812963a1c",
+  "protocol_sha256": "e9240c2f042282e370f007ff9310c39a21fcf747e3b93a0f96317960f9f28914",
+  "nan_inf": false,
+  "heldout_test_evaluated": true,
+  "test_metrics_accessed_before_freeze": false,
+  "prediction_artifact_path": "results/final_eth_ucy_benchmark/predictions/heldout_eth/emt/seed_123.npz",
+  "prediction_artifact_sha256": "a6cb83246260edb361cf734102180b87c6beaa52b76616a9fb574f2a065f01ed",
+  "runtime": {
+    "batch_1_latency_ms": 1.4470081600302365,
+    "batch_1_peak_memory_bytes": 11547648,
+    "batch_128_latency_ms": 1.561857320011768,
+    "batch_128_peak_memory_bytes": 22355456,
+    "method": "exclusive GPU, full uncached eval/no_grad, zeros, social N=8, 20 warmups +100 synchronized forwards; no transfers or attention diagnostics"
+  },
+  "evaluated_at_utc": "2026-10-03T08:48:14.112596+00:00"
+}

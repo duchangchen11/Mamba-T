@@ -1,0 +1,315 @@
+{
+  "completed_training_runs": 60,
+  "completed_test_runs": 60,
+  "one_access_per_fold_model_seed": true,
+  "test_started_after_all_training_complete": true,
+  "protocol_sha256": "e9240c2f042282e370f007ff9310c39a21fcf747e3b93a0f96317960f9f28914",
+  "protocol_and_checkpoint_hashes_verified": true,
+  "historical_files_verified": 932,
+  "prediction_metrics_recomputed": true,
+  "nan_inf": false,
+  "test_metrics_accessed_before_freeze": false,
+  "verified_at_utc": "2026-10-03T08:50:20.830674+00:00",
+  "artifacts": {
+    "eth/ett/42": {
+      "prediction_sha256": "a4b4dd6d95dda5780ec1a59528684909b35135eeb759e26bede61f5ca06a480d",
+      "sample_count": 364,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "eth/ett/123": {
+      "prediction_sha256": "45685c798e1415f37351e851e5aa24a44960c65acb5c81821fd74441056d25c1",
+      "sample_count": 364,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "eth/ett/2024": {
+      "prediction_sha256": "4d1965f0bdf2a67cfc7f17fced18e887cdbacb9124e74d233287ec52c091b60b",
+      "sample_count": 364,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "eth/emt/42": {
+      "prediction_sha256": "86895d0171c3bbb1ccf4b717a8ef52370fa2372defede694de75c080182e8839",
+      "sample_count": 364,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "eth/emt/123": {
+      "prediction_sha256": "a6cb83246260edb361cf734102180b87c6beaa52b76616a9fb574f2a065f01ed",
+      "sample_count": 364,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "eth/emt/2024": {
+      "prediction_sha256": "ce458d5b9bcf351f8034ea5898be9fabb0a2da6d13cce285afc697837cd4f531",
+      "sample_count": 364,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "eth/ett_sr/42": {
+      "prediction_sha256": "48f907d090a12db7b4eb82c8c03c54ddd5f6da6d30c04813e4cdf293ae736688",
+      "sample_count": 364,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "eth/ett_sr/123": {
+      "prediction_sha256": "3b953ece174565b09db86371d7cc956db011d296715aa5e9cca31f17c2c5ced4",
+      "sample_count": 364,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "eth/ett_sr/2024": {
+      "prediction_sha256": "da5a2c020983a6e783b89208fe0dd77195b8ada414538e0004f42a9492a1ddeb",
+      "sample_count": 364,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "eth/emt_sr/42": {
+      "prediction_sha256": "4fcfb556d869a0db9f76fc749c8226e43faf205970e9edb0c5db9932f2b3dbd5",
+      "sample_count": 364,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "eth/emt_sr/123": {
+      "prediction_sha256": "c45155df02a2d80fb896004e8a28161e9ae9f3e322d471f086a066cd001846fc",
+      "sample_count": 364,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "eth/emt_sr/2024": {
+      "prediction_sha256": "1f6facb32995de6a42be1d7aa67dbc12fcf4ba9de14f5af20e53bc9a18989575",
+      "sample_count": 364,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "hotel/ett/42": {
+      "prediction_sha256": "9191c3dcbd1c50ea6db8fc538952e8dba35421a4f538294f2d2c10dbc9f09dc2",
+      "sample_count": 1197,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "hotel/ett/123": {
+      "prediction_sha256": "291f8cb45b037e8986fd1f7a0e4b6a7052b3097e97c2451e0f9cf48246baec13",
+      "sample_count": 1197,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "hotel/ett/2024": {
+      "prediction_sha256": "1726beca9018d03598085171e3d6193d402c3b66454c64316665ec1f8ea562cf",
+      "sample_count": 1197,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "hotel/emt/42": {
+      "prediction_sha256": "433577a73c7779e9d468d0f68256b9e048a46dd41da064217eb39eba2c9c7ef1",
+      "sample_count": 1197,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "hotel/emt/123": {
+      "prediction_sha256": "9e8d90745f3296dbbf0f3c2fae1f7d9319f6ff8bee269aa91f8f40e50acc60e9",
+      "sample_count": 1197,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "hotel/emt/2024": {
+      "prediction_sha256": "8079f6e53326382fb00e38c9bdc49e0112d9c046d3ebcd451471a4d85ed51cd0",
+      "sample_count": 1197,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "hotel/ett_sr/42": {
+      "prediction_sha256": "0cbec55e0ab96b30d44b96fa91583e4667b1ecd2a52762feb80e7227bc256456",
+      "sample_count": 1197,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "hotel/ett_sr/123": {
+      "prediction_sha256": "b25b4cdd0d96381e3d4962cc13e2f82b4f158497c983ff47ece0f5864d188b02",
+      "sample_count": 1197,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "hotel/ett_sr/2024": {
+      "prediction_sha256": "8454c396e3c098b01c5114821bba1caff6fd9f73cffbb2a5d0198619f9c807b2",
+      "sample_count": 1197,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "hotel/emt_sr/42": {
+      "prediction_sha256": "b3c31955f2a15e2147fa188543c905d8a971792832b230dc0aa6f1e091cf1782",
+      "sample_count": 1197,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "hotel/emt_sr/123": {
+      "prediction_sha256": "41286560ec44c83c3ced7215d66949bbe0f135a9b38c0dd2c004fa5a706eb604",
+      "sample_count": 1197,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "hotel/emt_sr/2024": {
+      "prediction_sha256": "fd432c4d318c9f114662cdd937338f0f5caab5d1d7643bdfcb9e31506279302d",
+      "sample_count": 1197,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "univ/ett/42": {
+      "prediction_sha256": "c0cc7ab85e2e1e10dc1c7010704641b19d43515a76fb3187f46e90d17986bf8b",
+      "sample_count": 24334,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "univ/ett/123": {
+      "prediction_sha256": "50d80612918cadff9126ff950d9df68a8208116bfeb99452b96d86ea95a0ded5",
+      "sample_count": 24334,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "univ/ett/2024": {
+      "prediction_sha256": "b144c7f859d03170cb2c27c0240f7c6b6096e4af38764975858e698951283bc9",
+      "sample_count": 24334,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "univ/emt/42": {
+      "prediction_sha256": "ceda94feb44a0ca8776e31be3a0d98f9a9cd40c9af0b8b5222609db39da179dd",
+      "sample_count": 24334,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "univ/emt/123": {
+      "prediction_sha256": "215cde02e2d356ae55c9dadf25e38a1f76f0e5a0a2f279446889a958afe31bf3",
+      "sample_count": 24334,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "univ/emt/2024": {
+      "prediction_sha256": "3023c4252fc349bfa73fa7c48cb219b3c2b1d751396112afc7df7fdccd1e0177",
+      "sample_count": 24334,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "univ/ett_sr/42": {
+      "prediction_sha256": "6125fddb98ee79a81a1dbc1236d1d40631dc6fcb2f20268e68bc95cece0c3f73",
+      "sample_count": 24334,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "univ/ett_sr/123": {
+      "prediction_sha256": "f34da189cf79d9894f300e478662bf88a8c83575102179a053da6831fc735568",
+      "sample_count": 24334,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "univ/ett_sr/2024": {
+      "prediction_sha256": "ec7f613da1c7917402daf8867552653f7f06a707e8cff3577bce018cc6decbf5",
+      "sample_count": 24334,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "univ/emt_sr/42": {
+      "prediction_sha256": "c856826f1552ec3c30d8655438a94459397ec942b62b15c81034c09ec0b5c1c8",
+      "sample_count": 24334,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "univ/emt_sr/123": {
+      "prediction_sha256": "9e66a9326b70910cf3428a7c0d146998a023cabaa7e5829407c142c066a39483",
+      "sample_count": 24334,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "univ/emt_sr/2024": {
+      "prediction_sha256": "ebca20715ede2ccd5a8695a3965ce01d782f4011239fcaa9a9d90e9bf7966517",
+      "sample_count": 24334,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "zara1/ett/42": {
+      "prediction_sha256": "db5d89fb197b85627bce0d189d50405efff2c80181fffb302c041188de87a94b",
+      "sample_count": 2356,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "zara1/ett/123": {
+      "prediction_sha256": "490ba44a9ccdaf5a66b4f47cbf1660d1e5c4a7b834c2b9c395e036eb5bf4bdf3",
+      "sample_count": 2356,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "zara1/ett/2024": {
+      "prediction_sha256": "4d31825055e2e5306b30468ee81ccd8478bc2bbc1e85707bad721a1e0cd7b1ee",
+      "sample_count": 2356,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "zara1/emt/42": {
+      "prediction_sha256": "4ea4cd93751b2c374c31f98f7257e3caff3ad93fc16982de7497f3280379d95a",
+      "sample_count": 2356,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "zara1/emt/123": {
+      "prediction_sha256": "88e87c716da335375ec981d8bb17a5e7944bc3528cec1a56c8bd30e229773c7c",
+      "sample_count": 2356,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "zara1/emt/2024": {
+      "prediction_sha256": "868ca5e56f34ec33a6c1e5bc6e173781e9cf276a9a144f9b3856a4493e3d1b5d",
+      "sample_count": 2356,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "zara1/ett_sr/42": {
+      "prediction_sha256": "8973f31c4068f22c367cdc9b32ca2337d300d07b2dc185208280df55aca06d4a",
+      "sample_count": 2356,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "zara1/ett_sr/123": {
+      "prediction_sha256": "1342fd4db2e98f62e43e4ec4d2105191b8c57217512590dc61b28c981fee55fc",
+      "sample_count": 2356,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "zara1/ett_sr/2024": {
+      "prediction_sha256": "2fca9774427e1a6cbde628f502a826f94de5ea3a36f4b2efe7c9ebe90fa26dac",
+      "sample_count": 2356,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "zara1/emt_sr/42": {
+      "prediction_sha256": "1af7af218c69df1c20aa2d75e0c88d163610bddb66970148bdd9da55f4716cf9",
+      "sample_count": 2356,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "zara1/emt_sr/123": {
+      "prediction_sha256": "838e6a71f90969ecbbf3110f9e4ae95ea57a69ad1c453640d1f40aab245ab7a3",
+      "sample_count": 2356,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "zara1/emt_sr/2024": {
+      "prediction_sha256": "fe2ce9af4edbefb311bf1386f645a04423b2ceddf89d2a3533e6a58150812f10",
+      "sample_count": 2356,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "zara2/ett/42": {
+      "prediction_sha256": "e2444495028425b4cd54f7fb64622c49104857a312d887e77c44dc721603e459",
+      "sample_count": 5910,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "zara2/ett/123": {
+      "prediction_sha256": "10d72e01c50532dfe1eb4f0b964ae395b5f3dc979578f035fb182d9ffa5ee9a4",
+      "sample_count": 5910,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "zara2/ett/2024": {
+      "prediction_sha256": "fe2f8050094bf51e354da8e96d522d9e33e5d076a07f53779f2536cba1daf553",
+      "sample_count": 5910,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "zara2/emt/42": {
+      "prediction_sha256": "ecbf2d1b465dd82c9973adfa99910d8d89c9bc1dd0969d37959d45f05ce3a2d2",
+      "sample_count": 5910,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "zara2/emt/123": {
+      "prediction_sha256": "100a74079acebe7815a8afe96f5f375175de35d5a7b6e7b03e829f88c561c7d7",
+      "sample_count": 5910,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "zara2/emt/2024": {
+      "prediction_sha256": "9e1251dd446542eddb11963b2390ead97dc5fff4c8a3db040da7ddd5349294ca",
+      "sample_count": 5910,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "zara2/ett_sr/42": {
+      "prediction_sha256": "13a0b6af74cef408c2439ca946eac3111214affd1295c8945c81eeabb166f382",
+      "sample_count": 5910,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "zara2/ett_sr/123": {
+      "prediction_sha256": "793b727ff832e11ffd0bef4124b364cb9bce36073fab319676c9e83d16f6db3c",
+      "sample_count": 5910,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "zara2/ett_sr/2024": {
+      "prediction_sha256": "12b04334d3459ea114c2b584da647985527fe30d02b40a2a2c1063b2abdc0dc0",
+      "sample_count": 5910,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "zara2/emt_sr/42": {
+      "prediction_sha256": "b506a64da056977bdfe84ef2192e40f8fb0e0c9cb100ace0bed74ed319feec5f",
+      "sample_count": 5910,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "zara2/emt_sr/123": {
+      "prediction_sha256": "f997aa9ce854c6650e15c85086bc1315981699694725c899f19990b5a63d841c",
+      "sample_count": 5910,
+      "metrics_recomputed_from_saved_predictions": true
+    },
+    "zara2/emt_sr/2024": {
+      "prediction_sha256": "318ecb7662b29a488a5b44452490b3d4cb737ac84749bce8ef3565870503d8e9",
+      "sample_count": 5910,
+      "metrics_recomputed_from_saved_predictions": true
+    }
+  }
+}

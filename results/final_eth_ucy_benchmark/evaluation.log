@@ -1,0 +1,121 @@
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+HELDOUT TEST COMPLETE eth ett 42: ADE=1.033305 FDE=2.024986
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+HELDOUT TEST COMPLETE eth ett 123: ADE=1.058419 FDE=2.078875
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+HELDOUT TEST COMPLETE eth ett 2024: ADE=1.051347 FDE=2.060847
+HELDOUT TEST COMPLETE eth emt 42: ADE=1.070915 FDE=2.135179
+HELDOUT TEST COMPLETE eth emt 123: ADE=1.074815 FDE=2.140887
+HELDOUT TEST COMPLETE eth emt 2024: ADE=1.093168 FDE=2.171526
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+HELDOUT TEST COMPLETE eth ett_sr 42: ADE=1.051729 FDE=2.046859
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+HELDOUT TEST COMPLETE eth ett_sr 123: ADE=1.144510 FDE=2.231113
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+HELDOUT TEST COMPLETE eth ett_sr 2024: ADE=1.071405 FDE=2.060905
+HELDOUT TEST COMPLETE eth emt_sr 42: ADE=1.075580 FDE=2.100335
+HELDOUT TEST COMPLETE eth emt_sr 123: ADE=1.045575 FDE=2.046279
+HELDOUT TEST COMPLETE eth emt_sr 2024: ADE=1.072675 FDE=2.113637
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+HELDOUT TEST COMPLETE hotel ett 42: ADE=0.571277 FDE=1.123478
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+HELDOUT TEST COMPLETE hotel ett 123: ADE=0.534662 FDE=1.085093
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+HELDOUT TEST COMPLETE hotel ett 2024: ADE=0.541957 FDE=1.067340
+HELDOUT TEST COMPLETE hotel emt 42: ADE=0.543374 FDE=1.098043
+HELDOUT TEST COMPLETE hotel emt 123: ADE=0.501186 FDE=1.006875
+HELDOUT TEST COMPLETE hotel emt 2024: ADE=0.544617 FDE=1.128416
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+HELDOUT TEST COMPLETE hotel ett_sr 42: ADE=0.517912 FDE=1.067690
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+HELDOUT TEST COMPLETE hotel ett_sr 123: ADE=0.476765 FDE=0.972713
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+HELDOUT TEST COMPLETE hotel ett_sr 2024: ADE=0.503431 FDE=0.990918
+HELDOUT TEST COMPLETE hotel emt_sr 42: ADE=0.569876 FDE=1.187343
+HELDOUT TEST COMPLETE hotel emt_sr 123: ADE=0.656126 FDE=1.355529
+HELDOUT TEST COMPLETE hotel emt_sr 2024: ADE=0.698644 FDE=1.455639
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+HELDOUT TEST COMPLETE univ ett 42: ADE=0.606446 FDE=1.279858
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+HELDOUT TEST COMPLETE univ ett 123: ADE=0.608576 FDE=1.287512
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+HELDOUT TEST COMPLETE univ ett 2024: ADE=0.608916 FDE=1.276754
+HELDOUT TEST COMPLETE univ emt 42: ADE=0.591111 FDE=1.257558
+HELDOUT TEST COMPLETE univ emt 123: ADE=0.590205 FDE=1.259561
+HELDOUT TEST COMPLETE univ emt 2024: ADE=0.577436 FDE=1.238400
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+HELDOUT TEST COMPLETE univ ett_sr 42: ADE=0.598275 FDE=1.268824
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+HELDOUT TEST COMPLETE univ ett_sr 123: ADE=0.600472 FDE=1.272659
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+HELDOUT TEST COMPLETE univ ett_sr 2024: ADE=0.609621 FDE=1.294428
+HELDOUT TEST COMPLETE univ emt_sr 42: ADE=0.585131 FDE=1.255047
+HELDOUT TEST COMPLETE univ emt_sr 123: ADE=0.582642 FDE=1.252161
+HELDOUT TEST COMPLETE univ emt_sr 2024: ADE=0.584914 FDE=1.255103
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+HELDOUT TEST COMPLETE zara1 ett 42: ADE=0.463742 FDE=0.987330
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+HELDOUT TEST COMPLETE zara1 ett 123: ADE=0.555643 FDE=1.119157
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+HELDOUT TEST COMPLETE zara1 ett 2024: ADE=0.436074 FDE=0.934678
+HELDOUT TEST COMPLETE zara1 emt 42: ADE=0.483912 FDE=1.042394
+HELDOUT TEST COMPLETE zara1 emt 123: ADE=0.407163 FDE=0.878610
+HELDOUT TEST COMPLETE zara1 emt 2024: ADE=0.471725 FDE=1.012849
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+HELDOUT TEST COMPLETE zara1 ett_sr 42: ADE=0.419080 FDE=0.900016
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+HELDOUT TEST COMPLETE zara1 ett_sr 123: ADE=0.433739 FDE=0.917614
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+HELDOUT TEST COMPLETE zara1 ett_sr 2024: ADE=0.424688 FDE=0.911597
+HELDOUT TEST COMPLETE zara1 emt_sr 42: ADE=0.444013 FDE=0.957603
+HELDOUT TEST COMPLETE zara1 emt_sr 123: ADE=0.423833 FDE=0.922405
+HELDOUT TEST COMPLETE zara1 emt_sr 2024: ADE=0.432290 FDE=0.932548
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+HELDOUT TEST COMPLETE zara2 ett 42: ADE=0.344215 FDE=0.747536
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+HELDOUT TEST COMPLETE zara2 ett 123: ADE=0.357775 FDE=0.762970
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+HELDOUT TEST COMPLETE zara2 ett 2024: ADE=0.362136 FDE=0.772750
+HELDOUT TEST COMPLETE zara2 emt 42: ADE=0.350604 FDE=0.746251
+HELDOUT TEST COMPLETE zara2 emt 123: ADE=0.346943 FDE=0.745157
+HELDOUT TEST COMPLETE zara2 emt 2024: ADE=0.356563 FDE=0.755059
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+HELDOUT TEST COMPLETE zara2 ett_sr 42: ADE=0.381627 FDE=0.837393
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+HELDOUT TEST COMPLETE zara2 ett_sr 123: ADE=0.363382 FDE=0.780497
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+HELDOUT TEST COMPLETE zara2 ett_sr 2024: ADE=0.345793 FDE=0.735919
+HELDOUT TEST COMPLETE zara2 emt_sr 42: ADE=0.378482 FDE=0.830309
+HELDOUT TEST COMPLETE zara2 emt_sr 123: ADE=0.377622 FDE=0.819889
+HELDOUT TEST COMPLETE zara2 emt_sr 2024: ADE=0.349868 FDE=0.762356
+All 60 one-pass held-out evaluations complete
