@@ -1,0 +1,22 @@
+{
+  "obs_len": 8,
+  "pred_len": 12,
+  "input_dim": 4,
+  "d_model": 128,
+  "num_layers": 3,
+  "dropout": 0.1,
+  "transformer": {
+    "nhead": 4,
+    "ffn_dim": 512
+  },
+  "mamba": {
+    "d_state": 16,
+    "d_conv": 4,
+    "expand": 2
+  },
+  "seeds": [
+    42,
+    123,
+    2024
+  ]
+}
