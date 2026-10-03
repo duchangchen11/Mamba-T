@@ -1,6 +1,7 @@
 """Frozen source-validation forwards; attention observation never alters predictions."""
 import numpy as np
 import torch
+from torch.nn import functional as F
 from src.data.eth_ucy_training_regime_dataset import TrainingRegimeSourceDataset
 from src.models.social_residual import SocialResidualPredictor
 from src.analysis.social_shift_features import observation_features, attention_features, response_features, SUMMARY_FEATURES
@@ -11,7 +12,7 @@ from scripts.social_shift_protocol import ROOT, RESULTS, PREVIOUS, guard_path, r
 
 @torch.no_grad()
 def observe_attention(social, target, neighbor, relation, mask):
-    """Second eval-only MHA call returns weights; original need_weights=False path stays intact."""
+    """Probe the original SDPA linear map in V with a padded identity value matrix."""
     assert not social.training and not torch.is_grad_enabled()
     valid = mask.bool();has = valid.any(1)
     heads = torch.zeros((len(target),social.attention.num_heads,8),device=target.device)
@@ -21,9 +22,23 @@ def observe_attention(social, target, neighbor, relation, mask):
         n=neighbor[has].masked_fill(~m[...,None],0)
         r=relation[has].masked_fill(~m[...,None],0)
         kv=n+social.relation_embedding(r)
-        c,w=social.attention(target[has,None],kv,kv,key_padding_mask=~m,need_weights=True,average_attn_weights=False)
-        heads[has]=w[:,:,0]
-        context[has]=c[:,0]
+        a=social.attention;bs=len(kv);nh=a.num_heads;hd=a.embed_dim//nh
+        assert a.bias_k is None and a.bias_v is None and not a.add_zero_attn
+        query=target[has,None].transpose(0,1);key=kv.transpose(0,1)
+        # Same packed projections, reshape and padding mask as PyTorch MHA's SDPA path.
+        q,k,v=F._in_projection_packed(query,key,key,a.in_proj_weight,a.in_proj_bias)
+        q=q.view(1,bs*nh,hd).transpose(0,1).view(bs,nh,1,hd)
+        k=k.view(8,bs*nh,hd).transpose(0,1).view(bs,nh,8,hd)
+        v=v.view(8,bs*nh,hd).transpose(0,1).view(bs,nh,8,hd)
+        padding=torch.zeros_like(m,dtype=q.dtype).masked_fill(~m,float('-inf'))
+        padding=padding.view(bs,1,1,8).expand(-1,nh,-1,-1).reshape(bs*nh,1,8).view(bs,nh,1,8)
+        projected=F.scaled_dot_product_attention(q,k,v,attn_mask=padding,dropout_p=0.)
+        projected=projected.permute(2,0,1,3).contiguous().view(bs,a.embed_dim)
+        context[has]=F.linear(projected,a.out_proj.weight,a.out_proj.bias)
+        basis=F.pad(torch.eye(8,device=v.device,dtype=v.dtype),(0,hd-8)).view(1,1,8,hd).expand(bs,nh,-1,-1)
+        weights=F.scaled_dot_product_attention(q,k,basis,attn_mask=padding,dropout_p=0.)[:,:,0,:8]
+        assert float((weights.sum(-1)-1).abs().max())<1e-6
+        heads[has]=weights
     return heads,context
 
 
@@ -33,7 +48,7 @@ def load_npz(path):
 
 
 def verify_attention_context(observed,original):
-    torch.testing.assert_close(observed,original,rtol=1e-5,atol=1e-5)
+    torch.testing.assert_close(observed,original,rtol=1e-6,atol=1e-6)
     return float((observed-original).abs().max())
 
 
