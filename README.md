@@ -71,3 +71,14 @@ python scripts/summarize_training_regime_diagnostic.py
 ```
 
 The source-only entry points reject `heldout_test`. Legacy held-out loader routing tests use synthetic data in memory. Per-epoch JSON/CSV curves, final/best diagnostic gaps, density/distance/correction strata and correction norms are saved without figures. A diagnostic best epoch is computed after training and never used to select a checkpoint or rerun formal test. Old clean comparisons hold the data and architecture fixed while changing the entire backbone/SR training chain; they are not a scheduler-only ablation. Historical formal aggregate numbers are quoted from the stage request, without loading or recomputing formal test artifacts.
+
+# Source-validation social distribution audit
+
+`diag/social_distribution_shift` reuses the fixed diagnostic checkpoints and source validation split. It performs no trajectory training and rejects formal benchmark artifacts, including symlinks. Observation features use only the eight observed positions; speeds are metres per sampling step. Attention weights are read by a separate eval/no-grad call, while prediction uses the unchanged model forward.
+
+```bash
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 /home/lrj/anaconda3/envs/ped_intent/bin/python -m pytest -q
+/home/lrj/anaconda3/envs/ped_intent/bin/python scripts/run_social_distribution_shift.py
+```
+
+Outputs are under `results/social_distribution_shift/`. The main analysis averages available fold/seed responses for each unique observation window and weights scenes equally; pooled and every-run results are also preserved. A fixed five-feature logistic scene classifier uses five-fold pedestrian-grouped cross-validation. Descriptive SMD label thresholds and classifier settings are frozen before audit execution. Candidate directions in the report are suggestions only.
