@@ -275,7 +275,14 @@ def summarize(protocol, rows=None):
         'heldout_test_accessed': False, 'historical_test_already_accessed': True,
         'trajectory_training': False, 'baseline_retrained': False,
         'sample_count_per_run': {r['fold']+'_'+str(r['seed']): r['validation_samples'] for r in runs},
-        'source_scenes_and_sample_counts': {s: int(sum((new_all[(f, seed)]['scene_id']==s).sum() for f in SCENES for seed in SEEDS)) for s in SCENES},
+        'validation_sample_records_across_fold_seed_runs': {s: int(sum((new_all[(f, seed)]['scene_id']==s).sum() for f in SCENES for seed in SEEDS)) for s in SCENES},
+        'unique_source_validation_windows_by_scene': {
+            scene: len({(str(row_scene), str(ped), tuple(map(int, frames[:8])))
+                        for f in SCENES for seed in SEEDS
+                        for row_scene, ped, frames in zip(new_all[(f, seed)]['scene_id'], new_all[(f, seed)]['target_ped_id'], new_all[(f, seed)]['frame_ids'])
+                        if row_scene == scene})
+            for scene in SCENES
+        },
         'aggregation': 'per-run pooled means and within-run scene-equal means; equal fold/seed weight; scene-equal is primary',
         'runs': runs, 'paired_runs': paired, 'overall': overall,
         'delta_density_minus_baseline_scene_equal': {'ADE': delta_ade, 'FDE': delta_fde, 'relative_ADE': relative_ade, 'relative_FDE': relative_fde, 'ADE_wins_scene_equal': wins, 'FDE_wins_scene_equal': sum(r['FDE_win_scene_equal'] for r in paired), 'ADE_wins_pooled': sum(r['ADE_win_pooled'] for r in paired)},
@@ -349,7 +356,7 @@ def write_reports(c):
         '# 密度自适应社会交互残差诊断', '',
         '本报告只使用冻结的 source train/validation split。`heldout_test_accessed=false`；`historical_test_already_accessed=true`。新模型为 Mamba 基础模型 + Social Cross-Attention + density-conditioned calibration + 原 residual decoder。校准量仅由 observation-visible `neighbor_mask.sum()/8` 计算，`s=1+0.5*tanh(f_d(n/8))`，不复用旧 scalar gate。', '',
         '固定设置：五 fold × 三 seeds，共 15 组；baseline 直接复用上一阶段 EMT-fixed 和 EMT-SR checkpoint。Mamba 与 base decoder 冻结，shared Social Cross-Attention/Residual Decoder 使用与 EMT-SR 相同的初始化。AdamW 1e-3，weight decay 1e-4，batch 128，SmoothL1 beta=1，clip=5；每 fold 复用 EMT-SR 固定 epoch，last epoch 保存，无 scheduler、early stopping 或 best selection。', '',
-        '主要比较为每个 fold/seed 先对该次验证中的 scene 等权，再对 fold 和 seed 等权。Pooled 结果也报告。scene gain 为每个真实 scene 上 base ADE − social ADE，之后平均可见的 fold/seed 场景均值。邻居组与正式阈值在训练前写入 frozen config。', '',
+        '主要比较为每个 fold/seed 先对该次验证中的 scene 等权，再对 fold 和 seed 等权。Pooled 结果也报告。scene gain 为每个真实 scene 上 base ADE − social ADE，之后平均可见的 fold/seed 场景均值。邻居组表中的行数累加了所有 fold/seed，同一验证窗口会重复出现；它们不是独立样本数。邻居组与正式阈值在训练前写入 frozen config。', '',
         '## 主要指标', '', '| Model | Scene-equal ADE | Scene-equal FDE | Scene-equal ADE gain | Scene-equal FDE gain |', '|---|---:|---:|---:|---:|',
     ]
     for key, label in (('baseline','Mamba社会交互残差模型'),('density_aware','Mamba密度自适应社会交互残差模型')):
@@ -371,7 +378,7 @@ def write_reports(c):
     lines += ['', '| Scene | Baseline social gain | Density-aware social gain | Change |', '|---|---:|---:|---:|']
     for s in SCENES:
         b=c['per_scene_social_gain']['baseline']['per_scene_gain_ADE'][s]['mean'];n=c['per_scene_social_gain']['density_aware']['per_scene_gain_ADE'][s]['mean'];lines.append(f'| {s.upper()} | {b:.6f} | {n:.6f} | {n-b:+.6f} |')
-    lines += ['', '## 按有效邻居数量分组', '', '相同组中分别给出 base、冻结 baseline 社会模型和 density-aware 模型的 ADE/FDE。主统计按 scene 等权，详细每 fold/seed 组计数见 `comparison.json`。', '', '| Neighbor count | Samples | Base ADE/FDE | Baseline social ADE/FDE | Density-aware ADE/FDE | Baseline gain | Density gain |', '|---|---:|---:|---:|---:|---:|---:|']
+    lines += ['', '## 按有效邻居数量分组', '', '相同组中分别给出 base、冻结 baseline 社会模型和 density-aware 模型的 ADE/FDE。主统计按 scene 等权，详细每 fold/seed 组计数见 `comparison.json`。表中计数是验证记录行数，同一窗口在多个 fold/seed 中会重复出现。', '', '| Neighbor count | Validation rows across runs (repeated) | Base ADE/FDE | Baseline social ADE/FDE | Density-aware ADE/FDE | Baseline gain | Density gain |', '|---|---:|---:|---:|---:|---:|---:|']
     groups=c['neighbor_count_groups']['scene_equal_tables']
     gains=c['neighbor_count_groups']['scene_equal_gain']
     for g in COUNT_GROUPS:
