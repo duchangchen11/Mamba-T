@@ -1,0 +1,197 @@
+[
+  {
+    "fold": "eth",
+    "seed": 42,
+    "metrics_path": "results/social_residual/heldout_eth/emt_zr/seed_42/metrics_validation.json",
+    "metrics_sha256": "31d5be4a11a74b1af947d06df8f1f9e06c5deaeb9e7e419b52d1932285e4ccfd",
+    "checkpoint_path": "checkpoints/social_residual/heldout_eth/emt_zr/seed_42.pt",
+    "checkpoint_sha256": "45eae912195f1a99f8e81011372f63c265c58ed479ce792a6ac68c61dd7cc73f",
+    "retrained": false,
+    "validation": {
+      "ADE": 0.445040058783611,
+      "FDE": 0.9577072654352714
+    }
+  },
+  {
+    "fold": "eth",
+    "seed": 123,
+    "metrics_path": "results/social_residual/heldout_eth/emt_zr/seed_123/metrics_validation.json",
+    "metrics_sha256": "6ed0c93cd45c6ca28047ce2097f98c1d93c8dd9cd87f9612c75d1e40499719ad",
+    "checkpoint_path": "checkpoints/social_residual/heldout_eth/emt_zr/seed_123.pt",
+    "checkpoint_sha256": "ab5fe91e60fd0b61d7099db5337783d54295ba48936ae50afa00d4cec78f37b9",
+    "retrained": false,
+    "validation": {
+      "ADE": 0.44529140163980896,
+      "FDE": 0.9587445054240844
+    }
+  },
+  {
+    "fold": "eth",
+    "seed": 2024,
+    "metrics_path": "results/social_residual/heldout_eth/emt_zr/seed_2024/metrics_validation.json",
+    "metrics_sha256": "e190c5507bfc13a81f179e70cb6ffee3808680ec2b1b27764cb98f92708b21e7",
+    "checkpoint_path": "checkpoints/social_residual/heldout_eth/emt_zr/seed_2024.pt",
+    "checkpoint_sha256": "11bbc391a65afd44bbb915aeb99463c27351addc68e9a721b21d31a3cfbd0130",
+    "retrained": false,
+    "validation": {
+      "ADE": 0.44619983243082045,
+      "FDE": 0.9601995481569855
+    }
+  },
+  {
+    "fold": "hotel",
+    "seed": 42,
+    "metrics_path": "results/social_residual/heldout_hotel/emt_zr/seed_42/metrics_validation.json",
+    "metrics_sha256": "d44fdda76555c30b2e08230ccfe797602fa3a4cc9ca2a1f557601289859bf7c3",
+    "checkpoint_path": "checkpoints/social_residual/heldout_hotel/emt_zr/seed_42.pt",
+    "checkpoint_sha256": "714d108a64fa4076afe957e44e47aa790c72adb00e98cf0139c5bd684ee935f3",
+    "retrained": false,
+    "validation": {
+      "ADE": 0.4564805905800073,
+      "FDE": 0.9835861718942891
+    }
+  },
+  {
+    "fold": "hotel",
+    "seed": 123,
+    "metrics_path": "results/social_residual/heldout_hotel/emt_zr/seed_123/metrics_validation.json",
+    "metrics_sha256": "a069ebaacc5f124d65f419e31948414ffc15b69d9514045912a2afb1a90a14be",
+    "checkpoint_path": "checkpoints/social_residual/heldout_hotel/emt_zr/seed_123.pt",
+    "checkpoint_sha256": "c753b371f0fafa3ef1486765df9a3f2614db730f3df07ce0742a657b5b3d95d5",
+    "retrained": false,
+    "validation": {
+      "ADE": 0.4589785603380581,
+      "FDE": 0.9846949505366581
+    }
+  },
+  {
+    "fold": "hotel",
+    "seed": 2024,
+    "metrics_path": "results/social_residual/heldout_hotel/emt_zr/seed_2024/metrics_validation.json",
+    "metrics_sha256": "fc665ec58ca751c86cd2d3192626b02c3f8ad19a19499f5fefa0094187204171",
+    "checkpoint_path": "checkpoints/social_residual/heldout_hotel/emt_zr/seed_2024.pt",
+    "checkpoint_sha256": "46925e8bc7c7a588e8cc7f252a9df55334c61d7dc55430d6dbf432f92fb97128",
+    "retrained": false,
+    "validation": {
+      "ADE": 0.4593093611810682,
+      "FDE": 0.9850532923730043
+    }
+  },
+  {
+    "fold": "univ",
+    "seed": 42,
+    "metrics_path": "results/social_residual/heldout_univ/emt_zr/seed_42/metrics_validation.json",
+    "metrics_sha256": "2d0ba4ffec419d9ded831b8ca42d9c337a85b743a978f39340f29923dd4cd3e3",
+    "checkpoint_path": "checkpoints/social_residual/heldout_univ/emt_zr/seed_42.pt",
+    "checkpoint_sha256": "24dc1181295aab3aa6d6b8fa54b028544cbfe40a26e7a0a4faf12ac8b9553551",
+    "retrained": false,
+    "validation": {
+      "ADE": 0.32063361476128766,
+      "FDE": 0.6689532616216204
+    }
+  },
+  {
+    "fold": "univ",
+    "seed": 123,
+    "metrics_path": "results/social_residual/heldout_univ/emt_zr/seed_123/metrics_validation.json",
+    "metrics_sha256": "fee982b5250fdb35d19f38c9199eda0b1de7eda5a81de131d6b3177fb25d9297",
+    "checkpoint_path": "checkpoints/social_residual/heldout_univ/emt_zr/seed_123.pt",
+    "checkpoint_sha256": "7336d5499c7153486a1fb05d06cc1e358b92af2def29b76e9edd6c1621f2f45d",
+    "retrained": false,
+    "validation": {
+      "ADE": 0.32734153179426906,
+      "FDE": 0.6803840534608924
+    }
+  },
+  {
+    "fold": "univ",
+    "seed": 2024,
+    "metrics_path": "results/social_residual/heldout_univ/emt_zr/seed_2024/metrics_validation.json",
+    "metrics_sha256": "68df1bd1fc021720e5bae6bd94e4ac894237e48d7541235dc86e77e839eabc7a",
+    "checkpoint_path": "checkpoints/social_residual/heldout_univ/emt_zr/seed_2024.pt",
+    "checkpoint_sha256": "293ded58d8e8ba1aab0371f3163928073c6868c2e982df9f836ea06532a56e18",
+    "retrained": false,
+    "validation": {
+      "ADE": 0.32642894994115523,
+      "FDE": 0.6806435768280714
+    }
+  },
+  {
+    "fold": "zara1",
+    "seed": 42,
+    "metrics_path": "results/social_residual/heldout_zara1/emt_zr/seed_42/metrics_validation.json",
+    "metrics_sha256": "d7b1ae2cf996d06229176d26ce862c13926fe9d4fd9303a842725f218a2899b4",
+    "checkpoint_path": "checkpoints/social_residual/heldout_zara1/emt_zr/seed_42.pt",
+    "checkpoint_sha256": "bd46f0c691526ee5bb1d44c28e864f4599041e647022c611c85222d55a956e62",
+    "retrained": false,
+    "validation": {
+      "ADE": 0.45985477412448766,
+      "FDE": 0.9909592851154034
+    }
+  },
+  {
+    "fold": "zara1",
+    "seed": 123,
+    "metrics_path": "results/social_residual/heldout_zara1/emt_zr/seed_123/metrics_validation.json",
+    "metrics_sha256": "cefbf085ebca7ad5fb15c0475d8d42a6f7447a788cc7e3aa8a89fe3993765e5a",
+    "checkpoint_path": "checkpoints/social_residual/heldout_zara1/emt_zr/seed_123.pt",
+    "checkpoint_sha256": "a9a01a63ad2298ea2328b93eb8bea7dfe655918faf9b6a5eea3f7af49846bb7a",
+    "retrained": false,
+    "validation": {
+      "ADE": 0.46142413922012965,
+      "FDE": 0.9930340607766494
+    }
+  },
+  {
+    "fold": "zara1",
+    "seed": 2024,
+    "metrics_path": "results/social_residual/heldout_zara1/emt_zr/seed_2024/metrics_validation.json",
+    "metrics_sha256": "17c7d392bfee94f9af06bbe19962cf250586ab9bfc0ba940b9fef5db6446b300",
+    "checkpoint_path": "checkpoints/social_residual/heldout_zara1/emt_zr/seed_2024.pt",
+    "checkpoint_sha256": "784f381305e9c8563b9ccf6b0218843fb04e1d1bc05b0ce1b6ff08b80f2f157d",
+    "retrained": false,
+    "validation": {
+      "ADE": 0.4620532411549844,
+      "FDE": 0.9935113373466082
+    }
+  },
+  {
+    "fold": "zara2",
+    "seed": 42,
+    "metrics_path": "results/social_residual/heldout_zara2/emt_zr/seed_42/metrics_validation.json",
+    "metrics_sha256": "fbd104d56013b6e38ef96219043a763a54fb28aafe90755faa35ae827f5d8e44",
+    "checkpoint_path": "checkpoints/social_residual/heldout_zara2/emt_zr/seed_42.pt",
+    "checkpoint_sha256": "6455f35acc94b8cff1cc765dee3a8db9ebd7c26b4d4b7b2d179d9ae1c926b8d7",
+    "retrained": false,
+    "validation": {
+      "ADE": 0.5035178689724056,
+      "FDE": 1.0738635569575266
+    }
+  },
+  {
+    "fold": "zara2",
+    "seed": 123,
+    "metrics_path": "results/social_residual/heldout_zara2/emt_zr/seed_123/metrics_validation.json",
+    "metrics_sha256": "c5f3117bc070491105a574923a045835c24da5dc4992cb80e5bd38dbad6a2813",
+    "checkpoint_path": "checkpoints/social_residual/heldout_zara2/emt_zr/seed_123.pt",
+    "checkpoint_sha256": "1d2b6fd4811685f5f6b8490841453c234600b33fbed1e2e50d9bb3e2e8bd3c33",
+    "retrained": false,
+    "validation": {
+      "ADE": 0.5029849040011565,
+      "FDE": 1.0707621748811411
+    }
+  },
+  {
+    "fold": "zara2",
+    "seed": 2024,
+    "metrics_path": "results/social_residual/heldout_zara2/emt_zr/seed_2024/metrics_validation.json",
+    "metrics_sha256": "1b7b0b66c6b7fc9f593ea7380d7a3427c5cc2cad4c79e1e12aebeb15853d9259",
+    "checkpoint_path": "checkpoints/social_residual/heldout_zara2/emt_zr/seed_2024.pt",
+    "checkpoint_sha256": "d92ba407ef9413324530ab8b1f46591bacc69f450314b519f4cef16d96c18b87",
+    "retrained": false,
+    "validation": {
+      "ADE": 0.5049525385380201,
+      "FDE": 1.0762954469975305
+    }
+  }
+]

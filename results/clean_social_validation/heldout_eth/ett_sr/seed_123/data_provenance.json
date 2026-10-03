@@ -1,0 +1,21 @@
+{
+  "stage1_manifest_sha256": "449764a60bfbe32b97f56370aea4236681ba15d2e528f4cfd358ef8e915b80af",
+  "heldout_scene": "eth",
+  "heldout_test_accessed": false,
+  "data_provenance": "results/clean_social_validation/data_audit/data_provenance.json",
+  "base_checkpoint": "/home/lrj/Mamba-T/checkpoints/eth_ucy_mamba_baseline/heldout_eth/ett/seed_123.pt",
+  "base_checkpoint_sha256": "f94d3d55ab821f6f838e3a2add13e1135433632c6289dbaf601037e4beee5c0b",
+  "base_checkpoint_epoch": 38,
+  "base_state_sha256": "06c4bb254484288a8dba22b97d2fdb8244b6750ce149fad3dd959a402659c419",
+  "backbone_frozen": true,
+  "backbone_eval": true,
+  "context_cache_seconds": 1.212680023003486,
+  "train_pedestrian_count": 1015,
+  "validation_pedestrian_count": 160,
+  "baseline_validation_difference": {
+    "ADE": 3.1472644490548873e-09,
+    "FDE": -3.033960638276767e-09
+  },
+  "neighbor_policy": "train-target-set-only for train; all observation-visible for val",
+  "train_cross_split_neighbor_violations": 0
+}

@@ -1,0 +1,49 @@
+{
+  "reproduced_validation": {
+    "ADE": 0.45809300368019124,
+    "FDE": 0.9800438256701807,
+    "sample_count": 3966,
+    "neighbor_groups": {
+      "0": {
+        "sample_count": 2,
+        "ADE": 0.243161141872406,
+        "FDE": 0.5806845724582672
+      },
+      "1-2": {
+        "sample_count": 57,
+        "ADE": 0.3945515689750512,
+        "FDE": 0.8281180949456859
+      },
+      "3-4": {
+        "sample_count": 210,
+        "ADE": 0.41516685673878306,
+        "FDE": 0.8355978123222788
+      },
+      "5+": {
+        "sample_count": 3697,
+        "ADE": 0.4616272791358321,
+        "FDE": 0.9908071873041486
+      }
+    }
+  },
+  "stage1_metrics": {
+    "ADE": 0.4580930030772738,
+    "FDE": 0.9800438218446194
+  },
+  "heldout_test_accessed": false,
+  "base_checkpoint": "/home/lrj/Mamba-T/checkpoints/eth_ucy_mamba_baseline/heldout_eth/emt/seed_2024.pt",
+  "base_checkpoint_sha256": "c8d7b922c5c5cb437f60a8a75520e9302b3f1a2b3932d41876606c41b47a3dcf",
+  "base_checkpoint_epoch": 10,
+  "base_state_sha256": "dc33a19fb61c418700d6961ed69657a224c5f814ce706883c589d0870e3de613",
+  "backbone_frozen": true,
+  "backbone_eval": true,
+  "context_cache_seconds": 12.654460203000781,
+  "train_pedestrian_count": 1015,
+  "validation_pedestrian_count": 160,
+  "baseline_validation_difference": {
+    "ADE": 6.029174381971814e-10,
+    "FDE": 3.825561312176262e-09
+  },
+  "neighbor_policy": "train-target-set-only for train; all observation-visible for val",
+  "train_cross_split_neighbor_violations": 0
+}

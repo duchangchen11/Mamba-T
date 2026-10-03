@@ -1,0 +1,188 @@
+{
+  "folds": {
+    "eth": {
+      "train": {
+        "target_sample_count": 29831,
+        "valid_neighbor_count": 219659,
+        "membership_counts": {
+          "train": 219659,
+          "val": 0,
+          "other": 0
+        },
+        "membership_ratios": {
+          "train": 1.0,
+          "val": 0.0,
+          "other": 0.0
+        },
+        "cross_split_neighbor_violations": 0,
+        "all_targets_match_frozen_split": true,
+        "validation_features_identical_to_old": false
+      },
+      "val": {
+        "target_sample_count": 3966,
+        "valid_neighbor_count": 29765,
+        "membership_counts": {
+          "train": 26412,
+          "val": 3013,
+          "other": 340
+        },
+        "membership_ratios": {
+          "train": 0.8873509155047875,
+          "val": 0.10122627246766336,
+          "other": 0.011422812027549134
+        },
+        "cross_split_neighbor_violations": null,
+        "all_targets_match_frozen_split": true,
+        "validation_features_identical_to_old": true
+      }
+    },
+    "hotel": {
+      "train": {
+        "target_sample_count": 29086,
+        "valid_neighbor_count": 215979,
+        "membership_counts": {
+          "train": 215979,
+          "val": 0,
+          "other": 0
+        },
+        "membership_ratios": {
+          "train": 1.0,
+          "val": 0.0,
+          "other": 0.0
+        },
+        "cross_split_neighbor_violations": 0,
+        "all_targets_match_frozen_split": true,
+        "validation_features_identical_to_old": false
+      },
+      "val": {
+        "target_sample_count": 3878,
+        "valid_neighbor_count": 29399,
+        "membership_counts": {
+          "train": 26048,
+          "val": 2903,
+          "other": 448
+        },
+        "membership_ratios": {
+          "train": 0.8860165311745297,
+          "val": 0.09874485526718596,
+          "other": 0.015238613558284295
+        },
+        "cross_split_neighbor_violations": null,
+        "all_targets_match_frozen_split": true,
+        "validation_features_identical_to_old": true
+      }
+    },
+    "univ": {
+      "train": {
+        "target_sample_count": 8631,
+        "valid_neighbor_count": 48122,
+        "membership_counts": {
+          "train": 48122,
+          "val": 0,
+          "other": 0
+        },
+        "membership_ratios": {
+          "train": 1.0,
+          "val": 0.0,
+          "other": 0.0
+        },
+        "cross_split_neighbor_violations": 0,
+        "all_targets_match_frozen_split": true,
+        "validation_features_identical_to_old": false
+      },
+      "val": {
+        "target_sample_count": 1196,
+        "valid_neighbor_count": 7380,
+        "membership_counts": {
+          "train": 6441,
+          "val": 581,
+          "other": 358
+        },
+        "membership_ratios": {
+          "train": 0.8727642276422765,
+          "val": 0.07872628726287263,
+          "other": 0.04850948509485095
+        },
+        "cross_split_neighbor_violations": null,
+        "all_targets_match_frozen_split": true,
+        "validation_features_identical_to_old": true
+      }
+    },
+    "zara1": {
+      "train": {
+        "target_sample_count": 28077,
+        "valid_neighbor_count": 210930,
+        "membership_counts": {
+          "train": 210930,
+          "val": 0,
+          "other": 0
+        },
+        "membership_ratios": {
+          "train": 1.0,
+          "val": 0.0,
+          "other": 0.0
+        },
+        "cross_split_neighbor_violations": 0,
+        "all_targets_match_frozen_split": true,
+        "validation_features_identical_to_old": false
+      },
+      "val": {
+        "target_sample_count": 3728,
+        "valid_neighbor_count": 28539,
+        "membership_counts": {
+          "train": 25077,
+          "val": 2926,
+          "other": 536
+        },
+        "membership_ratios": {
+          "train": 0.8786923157784085,
+          "val": 0.10252636742702968,
+          "other": 0.01878131679456183
+        },
+        "cross_split_neighbor_violations": null,
+        "all_targets_match_frozen_split": true,
+        "validation_features_identical_to_old": true
+      }
+    },
+    "zara2": {
+      "train": {
+        "target_sample_count": 24891,
+        "valid_neighbor_count": 185678,
+        "membership_counts": {
+          "train": 185678,
+          "val": 0,
+          "other": 0
+        },
+        "membership_ratios": {
+          "train": 1.0,
+          "val": 0.0,
+          "other": 0.0
+        },
+        "cross_split_neighbor_violations": 0,
+        "all_targets_match_frozen_split": true,
+        "validation_features_identical_to_old": false
+      },
+      "val": {
+        "target_sample_count": 3360,
+        "valid_neighbor_count": 25189,
+        "membership_counts": {
+          "train": 21950,
+          "val": 2729,
+          "other": 510
+        },
+        "membership_ratios": {
+          "train": 0.8714121243399897,
+          "val": 0.10834094247488983,
+          "other": 0.02024693318512049
+        },
+        "cross_split_neighbor_violations": null,
+        "all_targets_match_frozen_split": true,
+        "validation_features_identical_to_old": true
+      }
+    }
+  },
+  "train_cross_split_neighbor_violations": 0,
+  "train_all_valid_neighbors_belong_to_train": true,
+  "validation_policy": "all currently observation-visible pedestrians, no future filtering",
+  "heldout_test_accessed": false
+}

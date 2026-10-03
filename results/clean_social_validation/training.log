@@ -1,0 +1,178 @@
+eth emt_sr 42 epoch 1: loss=0.104217 ADE=0.451660 FDE=0.958307
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+eth ett_sr 42 epoch 1: loss=0.106347 ADE=0.449696 FDE=0.956784
+hotel emt_sr 42 epoch 1: loss=0.110017 ADE=0.463252 FDE=0.987228
+eth emt_sr 2024 epoch 1: loss=0.108665 ADE=0.457956 FDE=0.969980
+eth emt_sr 42 epoch 1: loss=0.104217 ADE=0.451660 FDE=0.958307
+eth emt_sr 123 epoch 1: loss=0.109888 ADE=0.448237 FDE=0.958461
+hotel emt_sr 42 epoch 10: loss=0.095683 ADE=0.458720 FDE=0.978507
+eth emt_sr 123 epoch 10: loss=0.096980 ADE=0.446212 FDE=0.948626
+eth emt_sr 2024 epoch 10: loss=0.094235 ADE=0.452561 FDE=0.961048
+eth emt_sr 42 epoch 10: loss=0.091246 ADE=0.440578 FDE=0.940429
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+eth ett_sr 42 epoch 1: loss=0.106347 ADE=0.449696 FDE=0.956784
+hotel emt_sr 42 epoch 20: loss=0.087123 ADE=0.459659 FDE=0.981866
+eth emt_sr 123 epoch 20: loss=0.086834 ADE=0.437300 FDE=0.931807
+eth emt_sr 2024 epoch 20: loss=0.083300 ADE=0.446076 FDE=0.950346
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+eth ett_sr 123 epoch 1: loss=0.107645 ADE=0.453631 FDE=0.962982
+hotel ett_sr 42 epoch 1: loss=0.114128 ADE=0.462297 FDE=0.985311
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+PAIR COMPLETE ('eth', 42)
+eth ett_sr 2024 epoch 1: loss=0.108354 ADE=0.450266 FDE=0.960265
+hotel emt_sr 123 epoch 1: loss=0.107559 ADE=0.463963 FDE=0.992703
+eth ett_sr 123 epoch 10: loss=0.106335 ADE=0.448608 FDE=0.955920
+hotel ett_sr 42 epoch 10: loss=0.111999 ADE=0.459384 FDE=0.976470
+eth ett_sr 2024 epoch 10: loss=0.106611 ADE=0.448869 FDE=0.954355
+hotel emt_sr 123 epoch 10: loss=0.095818 ADE=0.457374 FDE=0.971684
+PAIR COMPLETE ('eth', 123)
+hotel emt_sr 2024 epoch 1: loss=0.104792 ADE=0.466516 FDE=0.995508
+hotel ett_sr 42 epoch 20: loss=0.108259 ADE=0.453560 FDE=0.962556
+eth ett_sr 2024 epoch 20: loss=0.104551 ADE=0.446563 FDE=0.948083
+hotel emt_sr 123 epoch 20: loss=0.088035 ADE=0.457114 FDE=0.968272
+PAIR COMPLETE ('hotel', 42)
+hotel emt_sr 2024 epoch 10: loss=0.091047 ADE=0.472408 FDE=0.997450
+univ emt_sr 42 epoch 1: loss=0.069416 ADE=0.328148 FDE=0.673871
+univ emt_sr 42 epoch 10: loss=0.052006 ADE=0.329775 FDE=0.670779
+PAIR COMPLETE ('eth', 2024)
+univ ett_sr 42 epoch 1: loss=0.068983 ADE=0.334675 FDE=0.690621
+univ emt_sr 123 epoch 1: loss=0.068886 ADE=0.330449 FDE=0.676231
+univ ett_sr 42 epoch 10: loss=0.064335 ADE=0.339449 FDE=0.693627
+hotel emt_sr 123 epoch 30: loss=0.077504 ADE=0.459236 FDE=0.972487
+univ emt_sr 123 epoch 10: loss=0.056335 ADE=0.321813 FDE=0.657846
+hotel ett_sr 123 epoch 1: loss=0.113181 ADE=0.462425 FDE=0.984013
+univ ett_sr 42 epoch 20: loss=0.059042 ADE=0.332624 FDE=0.676000
+univ emt_sr 123 epoch 20: loss=0.047921 ADE=0.324393 FDE=0.663798
+hotel emt_sr 2024 epoch 20: loss=0.079514 ADE=0.461788 FDE=0.980310
+univ ett_sr 123 epoch 1: loss=0.066193 ADE=0.340035 FDE=0.695451
+hotel ett_sr 2024 epoch 1: loss=0.115683 ADE=0.463591 FDE=0.988270
+PAIR COMPLETE ('univ', 42)
+univ emt_sr 2024 epoch 1: loss=0.054777 ADE=0.330835 FDE=0.675404
+univ ett_sr 123 epoch 10: loss=0.060775 ADE=0.331476 FDE=0.670961
+univ emt_sr 2024 epoch 10: loss=0.040654 ADE=0.340221 FDE=0.698532
+PAIR COMPLETE ('univ', 123)
+univ ett_sr 2024 epoch 1: loss=0.069698 ADE=0.329452 FDE=0.672008
+zara1 emt_sr 42 epoch 1: loss=0.113033 ADE=0.463352 FDE=0.994033
+hotel ett_sr 123 epoch 10: loss=0.111431 ADE=0.460260 FDE=0.975355
+univ ett_sr 2024 epoch 10: loss=0.063345 ADE=0.322391 FDE=0.657019
+hotel ett_sr 2024 epoch 10: loss=0.109934 ADE=0.460251 FDE=0.975360
+univ ett_sr 2024 epoch 20: loss=0.058353 ADE=0.328603 FDE=0.663611
+PAIR COMPLETE ('univ', 2024)
+zara1 emt_sr 123 epoch 1: loss=0.109562 ADE=0.461609 FDE=0.987033
+zara1 emt_sr 42 epoch 10: loss=0.099967 ADE=0.451885 FDE=0.962140
+PAIR COMPLETE ('hotel', 123)
+PAIR COMPLETE ('hotel', 2024)
+zara1 emt_sr 2024 epoch 1: loss=0.106821 ADE=0.471352 FDE=1.007012
+zara2 emt_sr 42 epoch 1: loss=0.110861 ADE=0.504159 FDE=1.066042
+zara1 emt_sr 123 epoch 10: loss=0.097368 ADE=0.458635 FDE=0.977920
+zara1 emt_sr 42 epoch 20: loss=0.087588 ADE=0.449297 FDE=0.956604
+zara2 emt_sr 42 epoch 10: loss=0.096622 ADE=0.499474 FDE=1.052172
+zara1 emt_sr 2024 epoch 10: loss=0.094373 ADE=0.457070 FDE=0.968040
+zara1 emt_sr 123 epoch 20: loss=0.085090 ADE=0.458238 FDE=0.974206
+zara1 ett_sr 42 epoch 1: loss=0.113254 ADE=0.465636 FDE=0.992618
+zara1 ett_sr 123 epoch 1: loss=0.113837 ADE=0.466495 FDE=0.994381
+zara2 emt_sr 42 epoch 20: loss=0.084535 ADE=0.496779 FDE=1.050309
+zara1 emt_sr 2024 epoch 20: loss=0.083146 ADE=0.457066 FDE=0.973356
+zara2 ett_sr 42 epoch 1: loss=0.118577 ADE=0.511017 FDE=1.083598
+zara1 ett_sr 42 epoch 10: loss=0.111139 ADE=0.461114 FDE=0.981963
+zara1 ett_sr 123 epoch 10: loss=0.110809 ADE=0.464242 FDE=0.988530
+zara1 ett_sr 2024 epoch 1: loss=0.112113 ADE=0.464107 FDE=0.990634
+zara2 ett_sr 42 epoch 10: loss=0.116635 ADE=0.511638 FDE=1.082972
+zara1 ett_sr 42 epoch 20: loss=0.108717 ADE=0.459251 FDE=0.977192
+zara1 ett_sr 123 epoch 20: loss=0.108575 ADE=0.460951 FDE=0.978886
+zara1 ett_sr 2024 epoch 10: loss=0.111243 ADE=0.466176 FDE=0.994355
+PAIR COMPLETE ('zara1', 2024)
+zara2 ett_sr 42 epoch 20: loss=0.114389 ADE=0.504803 FDE=1.065580
+zara2 emt_sr 123 epoch 1: loss=0.111749 ADE=0.503618 FDE=1.065732
+zara1 ett_sr 42 epoch 30: loss=0.106806 ADE=0.458620 FDE=0.973378
+zara1 ett_sr 123 epoch 30: loss=0.105693 ADE=0.459079 FDE=0.976987
+zara2 ett_sr 42 epoch 30: loss=0.111071 ADE=0.503216 FDE=1.064375
+zara2 emt_sr 123 epoch 10: loss=0.094484 ADE=0.499250 FDE=1.048472
+zara1 ett_sr 42 epoch 40: loss=0.104963 ADE=0.459555 FDE=0.977219
+zara1 ett_sr 123 epoch 40: loss=0.103627 ADE=0.458798 FDE=0.975271
+PAIR COMPLETE ('zara2', 42)
+PAIR COMPLETE ('zara1', 123)
+zara2 emt_sr 2024 epoch 1: loss=0.115707 ADE=0.505592 FDE=1.069550
+zara2 emt_sr 123 epoch 20: loss=0.085526 ADE=0.508102 FDE=1.065141
+PAIR COMPLETE ('zara1', 42)
+zara2 ett_sr 123 epoch 1: loss=0.121197 ADE=0.513171 FDE=1.084399
+zara2 emt_sr 2024 epoch 10: loss=0.102485 ADE=0.502093 FDE=1.065688
+zara2 ett_sr 123 epoch 10: loss=0.118432 ADE=0.503427 FDE=1.061944
+zara2 ett_sr 2024 epoch 1: loss=0.114953 ADE=0.509945 FDE=1.080292
+zara2 ett_sr 123 epoch 20: loss=0.115519 ADE=0.499589 FDE=1.057185
+zara2 ett_sr 2024 epoch 10: loss=0.114464 ADE=0.509845 FDE=1.080982
+PAIR COMPLETE ('zara2', 2024)
+zara2 ett_sr 123 epoch 30: loss=0.112867 ADE=0.500768 FDE=1.060302
+PAIR COMPLETE ('zara2', 123)
+{
+  "average": {
+    "emt_zr": {
+      "ADE": 0.438699424497418,
+      "FDE": 0.9372261658537158
+    },
+    "old_emt_sr": {
+      "ADE": 0.42704090693509816,
+      "FDE": 0.9001241179792959
+    },
+    "emt_sr": {
+      "ADE": 0.43178079708659,
+      "FDE": 0.9115958856061666
+    },
+    "ett_sr": {
+      "ADE": 0.43741383045264276,
+      "FDE": 0.9224138567115413
+    }
+  },
+  "primary": {
+    "relative_change_percent": {
+      "ADE": -1.5770769288685704,
+      "FDE": -2.7346953362321735
+    },
+    "paired_wins": {
+      "ADE": 13,
+      "FDE": 15
+    },
+    "paired_wins_both": 13,
+    "decision": "GO"
+  },
+  "backbone": {
+    "relative_change_percent": {
+      "ADE": -1.2878041282379238,
+      "FDE": -1.172789309989497
+    },
+    "paired_wins": {
+      "ADE": 13,
+      "FDE": 11
+    }
+  },
+  "clean_vs_old": {
+    "absolute_difference": {
+      "ADE": 0.0047398901514918435,
+      "FDE": 0.011471767626870633
+    },
+    "relative_change_percent": {
+      "ADE": 1.1099381990147927,
+      "FDE": 1.27446508739526
+    }
+  },
+  "gain_retention": {
+    "ADE": {
+      "old_improvement_percent": 2.657518316937857,
+      "clean_improvement_percent": 1.5770769288685704,
+      "improvement_reduction_percentage_points": 1.0804413880692865,
+      "retained_improvement_percent": 59.34397211176207
+    },
+    "FDE": {
+      "old_improvement_percent": 3.9587080713462286,
+      "clean_improvement_percent": 2.7346953362321735,
+      "improvement_reduction_percentage_points": 1.224012735114055,
+      "retained_improvement_percent": 69.08050017697293
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "train_cross_split_neighbor_violations": 0,
+  "both_models": true,
+  "initial_output_equals_base": true,
+  "backbone_frozen": true,
+  "loss_decreased": true,
+  "heldout_test_accessed": false
+}

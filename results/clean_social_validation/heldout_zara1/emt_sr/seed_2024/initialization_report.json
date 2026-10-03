@@ -1,0 +1,22 @@
+{
+  "base_checkpoint": "/home/lrj/Mamba-T/checkpoints/eth_ucy_mamba_baseline/heldout_zara1/emt/seed_2024.pt",
+  "base_checkpoint_sha256": "13b72cc146798165b3812d6579f8d1e5f67fb1af1f4175a2df763dfe0ac7ea6d",
+  "base_checkpoint_epoch": 15,
+  "base_state_sha256": "ac471ac1d2816849540f87b118fc19542942307af9d8dd5d643301fdebe19a24",
+  "backbone_frozen": true,
+  "backbone_eval": true,
+  "context_cache_seconds": 3.7654111699994246,
+  "train_pedestrian_count": 930,
+  "validation_pedestrian_count": 147,
+  "baseline_validation_difference": {
+    "ADE": 2.7473766039953773e-09,
+    "FDE": -1.2509026037221815e-09
+  },
+  "neighbor_policy": "train-target-set-only for train; all observation-visible for val",
+  "train_cross_split_neighbor_violations": 0,
+  "variant": "emt_sr",
+  "seed": 2024,
+  "residual_initialization_sha256": "a72c802dbcfa9ed816ee1b10d0bda7e963fd8137da6cefc938317be6c1a25919",
+  "trainable_initialization_sha256": "c6d3db83958bde2ffeb853314c360aa18cf76bd8f8d0607c3c00f953134ff9da",
+  "initial_output_base_max_abs_diff": 0.0
+}

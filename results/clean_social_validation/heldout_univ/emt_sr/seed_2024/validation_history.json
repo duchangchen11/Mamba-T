@@ -1,0 +1,86 @@
+[
+  {
+    "epoch": 1,
+    "train_loss": 0.05477679895316721,
+    "validation_ADE": 0.33083498874215106,
+    "validation_FDE": 0.6754040947191948,
+    "lr": 0.001
+  },
+  {
+    "epoch": 2,
+    "train_loss": 0.05260960304793029,
+    "validation_ADE": 0.3301212068531899,
+    "validation_FDE": 0.6773211681003679,
+    "lr": 0.001
+  },
+  {
+    "epoch": 3,
+    "train_loss": 0.05104412834747353,
+    "validation_ADE": 0.331482440760409,
+    "validation_FDE": 0.6818682213107791,
+    "lr": 0.001
+  },
+  {
+    "epoch": 4,
+    "train_loss": 0.04914454326992646,
+    "validation_ADE": 0.3282306461523359,
+    "validation_FDE": 0.6725721083325256,
+    "lr": 0.001
+  },
+  {
+    "epoch": 5,
+    "train_loss": 0.04784317442858334,
+    "validation_ADE": 0.33154230789954225,
+    "validation_FDE": 0.6825191393466573,
+    "lr": 0.001
+  },
+  {
+    "epoch": 6,
+    "train_loss": 0.04649622124083389,
+    "validation_ADE": 0.3378427686904834,
+    "validation_FDE": 0.6939309253701924,
+    "lr": 0.001
+  },
+  {
+    "epoch": 7,
+    "train_loss": 0.04580647274618726,
+    "validation_ADE": 0.3341695252703939,
+    "validation_FDE": 0.683948817920449,
+    "lr": 0.001
+  },
+  {
+    "epoch": 8,
+    "train_loss": 0.044072902101348746,
+    "validation_ADE": 0.3401370569826088,
+    "validation_FDE": 0.695811939365028,
+    "lr": 0.001
+  },
+  {
+    "epoch": 9,
+    "train_loss": 0.04362933358751378,
+    "validation_ADE": 0.3350926608643043,
+    "validation_FDE": 0.6901946757035485,
+    "lr": 0.0005
+  },
+  {
+    "epoch": 10,
+    "train_loss": 0.04065406668334319,
+    "validation_ADE": 0.3402210033294686,
+    "validation_FDE": 0.6985324350392826,
+    "lr": 0.0005
+  },
+  {
+    "epoch": 11,
+    "train_loss": 0.03925734891617385,
+    "validation_ADE": 0.3401959099180772,
+    "validation_FDE": 0.699389272367887,
+    "lr": 0.0005
+  },
+  {
+    "epoch": 12,
+    "train_loss": 0.03851347214383386,
+    "validation_ADE": 0.3331807653667299,
+    "validation_FDE": 0.6819380696295071,
+    "lr": 0.0005
+  }
+]

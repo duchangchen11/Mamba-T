@@ -1,0 +1,21 @@
+{
+  "stage1_manifest_sha256": "21d46922b8a3081aec80db5deab9711109b163aa2786b0648e6b06dbb6843464",
+  "heldout_scene": "hotel",
+  "heldout_test_accessed": false,
+  "data_provenance": "results/clean_social_validation/data_audit/data_provenance.json",
+  "base_checkpoint": "/home/lrj/Mamba-T/checkpoints/eth_ucy_mamba_baseline/heldout_hotel/ett/seed_42.pt",
+  "base_checkpoint_sha256": "6176daf4e019602caea397f0c4cc8fcf2a293307de6ea13ba084ad75e0716bea",
+  "base_checkpoint_epoch": 11,
+  "base_state_sha256": "9c35c211a5da9f9a822a231b32484634486084c89f57d7e950dc793dcc3a1241",
+  "backbone_frozen": true,
+  "backbone_eval": true,
+  "context_cache_seconds": 1.1754661539998779,
+  "train_pedestrian_count": 947,
+  "validation_pedestrian_count": 150,
+  "baseline_validation_difference": {
+    "ADE": -8.638388893089655e-10,
+    "FDE": 3.8031006122096755e-09
+  },
+  "neighbor_policy": "train-target-set-only for train; all observation-visible for val",
+  "train_cross_split_neighbor_violations": 0
+}

@@ -1,0 +1,97 @@
+{
+  "heldout_scene": "eth",
+  "model": "emt_sr",
+  "seed": 42,
+  "train_sample_count": 29831,
+  "validation_sample_count": 3966,
+  "best_epoch": 5,
+  "epochs_run": 5,
+  "validation_ADE": 0.4461229906851389,
+  "validation_FDE": 0.9514248575212567,
+  "neighbor_groups": {
+    "0": {
+      "sample_count": 2,
+      "ADE": 0.28709539771080017,
+      "FDE": 0.6347657442092896
+    },
+    "1-2": {
+      "sample_count": 57,
+      "ADE": 0.4351976760908177,
+      "FDE": 0.884238403748002
+    },
+    "3-4": {
+      "sample_count": 210,
+      "ADE": 0.39033319574026837,
+      "FDE": 0.7870430449467329
+    },
+    "5+": {
+      "sample_count": 3697,
+      "ADE": 0.4495464840733585,
+      "FDE": 0.9619693873379593
+    }
+  },
+  "maximum_gradient_norm_before_clipping": 0.3289780616760254,
+  "training_seconds": 11.996083084999555,
+  "gpu_peak_memory_bytes": 201493504,
+  "parameter_count": {
+    "total": 477360,
+    "trainable": 106392,
+    "frozen": 370968
+  },
+  "backbone_unchanged": true,
+  "initial_output_base_max_abs_diff": 0.0,
+  "nan_inf": false,
+  "heldout_test_accessed": false,
+  "smoke": true,
+  "latency": null,
+  "protocol": {
+    "obs_len": 8,
+    "pred_len": 12,
+    "input_dim": 4,
+    "max_neighbors": 8,
+    "radius": null,
+    "d_model": 128,
+    "social_heads": 4,
+    "dropout": 0.1,
+    "relation_hidden": 32,
+    "residual_hidden": 128,
+    "max_epochs": 50,
+    "batch_size": 128,
+    "optimizer": "AdamW",
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "gradient_clip": 5.0,
+    "smooth_l1_beta": 1.0,
+    "scheduler_factor": 0.5,
+    "scheduler_patience": 4,
+    "early_stopping_patience": 8,
+    "seeds": [
+      42,
+      123,
+      2024
+    ],
+    "backbone_frozen": true,
+    "variants": [
+      "emt_sr",
+      "ett_sr"
+    ],
+    "train_neighbor_policy": "train-target-track-only",
+    "validation_neighbor_policy": "observation-visible"
+  },
+  "training_method": "frozen eval context cache, GPU-resident; seed-fixed shuffled sample batches; gradients only through new modules",
+  "base_checkpoint": "/home/lrj/Mamba-T/checkpoints/eth_ucy_mamba_baseline/heldout_eth/emt/seed_42.pt",
+  "base_checkpoint_sha256": "7f016571baf97a954ff944face58e020ddc7199475414d7929781384b20856bc",
+  "base_checkpoint_epoch": 19,
+  "base_state_sha256": "1331d1da8278f0f9f99d8a59aae7a1e6a60b1b5084284ae0c4d7d7faea4a292f",
+  "backbone_frozen": true,
+  "backbone_eval": true,
+  "context_cache_seconds": 3.3987634959994466,
+  "train_pedestrian_count": 1015,
+  "validation_pedestrian_count": 160,
+  "baseline_validation_difference": {
+    "ADE": 4.21038348630276e-09,
+    "FDE": 1.3598577597306871e-08
+  },
+  "neighbor_policy": "train-target-set-only for train; all observation-visible for val",
+  "train_cross_split_neighbor_violations": 0
+}
