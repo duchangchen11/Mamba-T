@@ -47,12 +47,16 @@ class TargetOnlyTrajectoryTransformer(nn.Module):
         self.temporal_encoder = nn.TransformerEncoder(layer, num_layers=num_layers)
         self.decoder = make_trajectory_decoder(d_model, pred_len, dropout)
 
-    def forward(self, target: torch.Tensor) -> dict[str, torch.Tensor]:
+    def encode(self, target: torch.Tensor) -> tuple[torch.Tensor, torch.Tensor]:
         if target.ndim != 3 or target.shape[-1] != self.input_dim or target.shape[1] < 1:
             raise ValueError(f"Expected nonempty target [B,T,{self.input_dim}], got {tuple(target.shape)}")
         if target.shape[1] > self.max_obs_len:
             raise ValueError(f"Observed length exceeds {self.max_obs_len}")
         sequence = self.input_projection(target) + self.position_embedding[:, :target.shape[1]]
-        context = self.temporal_encoder(sequence)[:, -1]
+        sequence = self.temporal_encoder(sequence)
+        return sequence, sequence[:, -1]
+
+    def forward(self, target: torch.Tensor) -> dict[str, torch.Tensor]:
+        _, context = self.encode(target)
         future_pred = self.decoder(context).reshape(target.shape[0], self.pred_len, 2)
         return {"future_pred": future_pred, "target_context": context}

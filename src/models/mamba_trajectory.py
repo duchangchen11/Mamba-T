@@ -30,7 +30,10 @@ class MambaTrajectoryPredictor(nn.Module):
         )
         self.decoder = make_trajectory_decoder(d_model, pred_len, dropout)
 
+    def encode(self, target: torch.Tensor) -> tuple[torch.Tensor, torch.Tensor]:
+        return self.encoder(target)
+
     def forward(self, target: torch.Tensor) -> dict[str, torch.Tensor]:
-        _, context = self.encoder(target)
+        _, context = self.encode(target)
         future_pred = self.decoder(context).reshape(target.shape[0], self.pred_len, 2)
         return {"future_pred": future_pred, "target_context": context}

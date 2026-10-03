@@ -28,3 +28,16 @@ Only source-scene validation metrics are reported. This stage cannot establish h
 Raw trajectories and checkpoints are ignored. Results, provenance copies, audits, and fixed split manifests are tracked. UNIV combines students001 and students003 with recording-qualified pedestrian IDs. Window stride is one, with no interpolation; incomplete or discontinuous 20-step windows are excluded. Frame differences are 10 in all recordings, representing distributed 2.5 Hz samples. Input displacements are meters per sampling step, not m/s.
 
 The matrix uses six independent training processes on one GPU, followed by exclusive inference benchmarking. Training wall times include GPU contention and should not be treated as standalone model speed comparisons. Peak GPU memory reports per-process PyTorch allocated bytes, excluding other processes and driver allocations.
+
+Stage 2 runs on `feat/social_residual`: frozen ETT/EMT checkpoints with EMT-ZR (capacity control), EMT-SR (social correction), EMT-GSR (scalar gate), and ETT-SR. First-stage results and split manifests are frozen.
+
+```bash
+python scripts/build_eth_ucy_social_sequences.py
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 pytest -q
+python scripts/run_social_residual.py
+python scripts/summarize_social_residual.py
+```
+
+Each sample uses at most eight nearest neighbors at the last observed frame, present throughout the eight observed frames in the same recording. No radius or future-based selection is used. Neighbor motion features use each neighbor's own last observed position; relation features are target-relative [dx, dy, distance]. Neighbor candidates may include source tracks assigned to the other target split, using their current observations only. Held-out recordings cannot be opened by the train/validation loader.
+
+Temporal encoder and base decoder weights stay frozen and in eval mode. Frozen contexts are computed once per fold, backbone and seed, reused for training new modules, and checked against the original validation metrics. Full inference latency is measured without caches after all training exits. Social and gate GO/STOP thresholds require the percentage improvement and paired wins in the same metric. Neither decision starts held-out evaluation or further tuning.
