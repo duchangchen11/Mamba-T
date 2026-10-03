@@ -30,7 +30,7 @@ def build_scene(raw, scene):
         stats.append({'file':filename,'frame_stride':step,'rows':len(a),'pedestrians':len(np.unique(a[:,1]))})
         for ped in np.unique(a[:,1]):
             t=a[a[:,1]==ped];t=t[np.argsort(t[:,0])]
-            # Recording-qualified IDs also qualify canonical frames to avoid video collisions.
+            # Recording-qualified pedestrian IDs avoid collisions across videos.
             pid=f"{Path(filename).stem}:{int(ped)}"
             canonical.extend((scene,pid,int(r[0]),float(r[2]),float(r[3])) for r in t)
             for start in range(len(t)-19):

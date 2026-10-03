@@ -19,7 +19,7 @@ def main():
         p=processed/scene;p.mkdir(parents=True,exist_ok=True)
         np.savez_compressed(p/'sequences.npz',**z)
         with (p/'canonical.csv').open('w') as f:
-            writer=csv.writer(f);writer.writerow(['scene','ped_id','frame_id','x','y']);writer.writerows(canonical)
+            writer=csv.writer(f);writer.writerow(['scene','ped_id','frame_id','x','y']);writer.writerows(sorted(canonical,key=lambda r:(r[0],r[1],r[2])))
         tracks[scene]=sorted(set(z['ped_id'].tolist()))
         scenes[scene]={'raw_pedestrians':sum(s['pedestrians'] for s in stats),'eligible_pedestrians':len(tracks[scene]),'windows':len(z['ped_id']),'files':stats}
     m=processed/'manifests';m.mkdir(exist_ok=True)

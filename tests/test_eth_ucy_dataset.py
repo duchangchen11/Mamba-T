@@ -20,3 +20,12 @@ def test_no_future_features():
     x1,_,_=features(obs,np.zeros((12,2),dtype=np.float32))
     x2,_,_=features(obs,np.full((12,2),1e6,dtype=np.float32))
     np.testing.assert_array_equal(x1,x2)
+
+@pytest.mark.parametrize('scene',SCENES)
+def test_canonical_unique_and_sorted(scene):
+    import csv
+    with (ROOT/'data/processed/eth_ucy'/scene/'canonical.csv').open() as f:
+        rows=list(csv.DictReader(f))
+    keys=[(r['scene'],r['ped_id'],int(r['frame_id'])) for r in rows]
+    assert len(keys)==len(set(keys))
+    assert keys==sorted(keys)
