@@ -1,0 +1,52 @@
+{
+  "fold": "hotel",
+  "paired_seed_metrics": [
+    {
+      "fold": "hotel",
+      "seed": 42,
+      "baseline_ADE_scene_equal": 0.6084442179270184,
+      "baseline_FDE_scene_equal": 1.248616372446129,
+      "density_ADE_scene_equal": 0.5852056395409517,
+      "density_FDE_scene_equal": 1.201519059504171,
+      "delta_ADE_scene_equal": -0.02323857838606669,
+      "delta_FDE_scene_equal": -0.04709731294195807,
+      "ADE_win_scene_equal": true,
+      "FDE_win_scene_equal": true,
+      "baseline_ADE_pooled": 0.4588071978409719,
+      "density_ADE_pooled": 0.4563835244379405,
+      "ADE_win_pooled": true
+    },
+    {
+      "fold": "hotel",
+      "seed": 123,
+      "baseline_ADE_scene_equal": 0.5781180587851478,
+      "baseline_FDE_scene_equal": 1.2148083104370941,
+      "density_ADE_scene_equal": 0.5870134412729834,
+      "density_FDE_scene_equal": 1.2274849962894907,
+      "delta_ADE_scene_equal": 0.008895382487835612,
+      "delta_FDE_scene_equal": 0.012676685852396563,
+      "ADE_win_scene_equal": false,
+      "FDE_win_scene_equal": false,
+      "baseline_ADE_pooled": 0.45816629124275765,
+      "density_ADE_pooled": 0.4557159570628057,
+      "ADE_win_pooled": true
+    },
+    {
+      "fold": "hotel",
+      "seed": 2024,
+      "baseline_ADE_scene_equal": 0.5736224806461548,
+      "baseline_FDE_scene_equal": 1.1784533075347556,
+      "density_ADE_scene_equal": 0.5689354341303426,
+      "density_FDE_scene_equal": 1.1538409345028455,
+      "delta_ADE_scene_equal": -0.004687046515812199,
+      "delta_FDE_scene_equal": -0.024612373031910106,
+      "ADE_win_scene_equal": true,
+      "FDE_win_scene_equal": true,
+      "baseline_ADE_pooled": 0.46337573291862927,
+      "density_ADE_pooled": 0.45684788347826866,
+      "ADE_win_pooled": true
+    }
+  ],
+  "heldout_test_accessed": false,
+  "historical_test_already_accessed": true
+}

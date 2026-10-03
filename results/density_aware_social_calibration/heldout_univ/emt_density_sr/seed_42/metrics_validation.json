@@ -1,0 +1,135 @@
+{
+  "fold": "univ",
+  "seed": 42,
+  "model": "emt_density_sr",
+  "model_chinese_name": "Mamba\u5bc6\u5ea6\u81ea\u9002\u5e94\u793e\u4f1a\u4ea4\u4e92\u6b8b\u5dee\u6a21\u578b",
+  "epochs_run": 4,
+  "final_epoch": 4,
+  "final_epoch_metrics": {
+    "epoch": 4,
+    "train_loss": 0.06281926736879592,
+    "gradient_norm": 0.08491250872612,
+    "mean_gradient_norm": 0.05022859376143007,
+    "lr": 0.001,
+    "validation_ADE": 0.3317585897072135,
+    "validation_FDE": 0.684358573919079,
+    "residual_norm": 0.1286609449874993,
+    "correction_ratio": 0.5771819458008941,
+    "density_scale_mean": 0.9898261427879333,
+    "density_scale_std": 0.028443707153201103,
+    "density_scale_min": 0.9163205623626709,
+    "density_scale_max": 1.0146757364273071,
+    "density_scale_by_neighbor_count": [
+      0.9163205623626709,
+      0.9261177778244019,
+      0.9366133213043213,
+      0.9478309154510498,
+      0.9597823619842529,
+      0.9724661111831665,
+      0.9858663082122803,
+      0.9999516010284424,
+      1.0146757364273071
+    ]
+  },
+  "validation_ADE": 0.3317585897072135,
+  "validation_FDE": 0.684358573919079,
+  "base_validation_ADE": 0.3341490936794279,
+  "base_validation_FDE": 0.6778797277758742,
+  "residual_norm": 0.1286609449874993,
+  "correction_ratio": 0.5771819458008941,
+  "density_scale": {
+    "mean": 0.9898261427879333,
+    "std": 0.028443707153201103,
+    "min": 0.9163205623626709,
+    "max": 1.0146757364273071,
+    "median": 0.9999516010284424,
+    "p10": 0.9478309154510498,
+    "p90": 1.0146757364273071,
+    "p95": 1.0146757364273071
+  },
+  "observed_scale_by_neighbor_count": {
+    "0": {
+      "sample_count": 10,
+      "mean_scale": 0.9163206219673157
+    },
+    "1": {
+      "sample_count": 30,
+      "mean_scale": 0.9261175990104675
+    },
+    "2": {
+      "sample_count": 35,
+      "mean_scale": 0.9366133809089661
+    },
+    "3": {
+      "sample_count": 110,
+      "mean_scale": 0.9478310346603394
+    },
+    "4": {
+      "sample_count": 115,
+      "mean_scale": 0.959782600402832
+    },
+    "5": {
+      "sample_count": 126,
+      "mean_scale": 0.9724661707878113
+    },
+    "6": {
+      "sample_count": 84,
+      "mean_scale": 0.9858662486076355
+    },
+    "7": {
+      "sample_count": 132,
+      "mean_scale": 0.9999515414237976
+    },
+    "8": {
+      "sample_count": 554,
+      "mean_scale": 1.0146757364273071
+    }
+  },
+  "scale_lut_by_neighbor_count": {
+    "0": 0.9163205623626709,
+    "1": 0.9261177778244019,
+    "2": 0.9366133213043213,
+    "3": 0.9478309154510498,
+    "4": 0.9597823619842529,
+    "5": 0.9724661111831665,
+    "6": 0.9858663082122803,
+    "7": 0.9999516010284424,
+    "8": 1.0146757364273071
+  },
+  "initial_output_base_max_abs_diff": 0.0,
+  "shared_initialization_sha256": "469d4b16e97c388b2541e3b3f39fa2742d96bfe0782f032e21e17dc881ffb56d",
+  "expected_emt_sr_shared_initialization_sha256": "469d4b16e97c388b2541e3b3f39fa2742d96bfe0782f032e21e17dc881ffb56d",
+  "base_checkpoint_path": "checkpoints/training_regime_diagnostic/heldout_univ/emt/seed_42.pt",
+  "base_checkpoint_sha256": "f09dd76259c4d575fef61c9f038844e61547fc55fa9a619b464818b404aeb86a",
+  "checkpoint_path": "checkpoints/density_aware_social_calibration/heldout_univ/emt_density_sr/seed_42.pt",
+  "checkpoint_sha256": "a7049e4c57b4f81dbd75198610ebbff395538f1933101424bf5fc0974eab4892",
+  "validation_samples_sha256": "2de28b79c0fc7fc7274efca254a2a71139ffb5061bcd6982f90888b7342cd382",
+  "maximum_gradient_norm": 0.09082470834255219,
+  "training_seconds": 3.2315857939975103,
+  "gpu_peak_memory_bytes": 81206784,
+  "backbone_state_sha256_before": "03a7d8d78e4246d9414f32ea80395b04b5bdf25d18c37d036dea9ab732b79fdc",
+  "backbone_state_sha256_after": "03a7d8d78e4246d9414f32ea80395b04b5bdf25d18c37d036dea9ab732b79fdc",
+  "backbone_frozen": true,
+  "backbone_eval": true,
+  "scheduler": null,
+  "early_stopping": false,
+  "checkpoint_rule": "last fixed epoch",
+  "optimizer": "AdamW",
+  "lr": 0.001,
+  "weight_decay": 0.0001,
+  "batch_size": 128,
+  "loss": "SmoothL1Loss(beta=1)",
+  "gradient_clip": 5.0,
+  "parameter_count": {
+    "trainable": 106441,
+    "total": 477409
+  },
+  "nan_inf": false,
+  "heldout_test_accessed": false,
+  "historical_test_already_accessed": true,
+  "trajectory_training": false,
+  "smoke": false,
+  "protocol_sha256": "32624f7bb9fa0e8fdabbd7035259312873424f78baf6bfbede15a28b05e94c18",
+  "validation_sample_count": 1196,
+  "train_sample_count": 8631
+}

@@ -1,0 +1,21 @@
+{
+  "issue": "Two summary/export helper defects were found only after all 15 training runs finished; no model run or statistic was recomputed.",
+  "repair": "Report code fixes restored JSON output and added separate reproducible fold, scene and count-group artifacts; all tables were regenerated from the saved validation rows.",
+  "pre_run_summary_script_sha256": "b11d8f6763f843f34a7114ffa11c5434ac11f7270b3dbb663785e07b5b977883",
+  "post_run_summary_script_sha256": "92a06d3eefd4e5488c1e7486c4caeedc0d11d85fc67f1fcc9333b2e957828207",
+  "report_only_change_after_training": true,
+  "models_retrained": false,
+  "heldout_test_accessed": false,
+  "historical_test_already_accessed": true,
+  "final_report_script_sha256": "9686bdce0a35e6de4957ce9c4a22235e1988220d2fd3a1af90f8d6a7102f5cbd",
+  "post_run_report_only_changes": [
+    "add missing JSON writer after all 15 runs",
+    "produce 32 numbered handoff items",
+    "write per_fold, per_scene and per_neighbor_count files",
+    "fix local variable name in separate per-scene/per-count artifact export",
+    "clarify repeated fold/seed validation record counts and add deduplicated window counts",
+    "deduplicate windows using scene/pedestrian/observation frames"
+  ],
+  "training_runs_repeated": false,
+  "statistics_and_decision_thresholds_changed": false
+}

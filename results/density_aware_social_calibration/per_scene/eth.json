@@ -1,0 +1,37 @@
+{
+  "scene": "eth",
+  "metrics_equal_fold_seed": {
+    "baseline": {
+      "base_ADE": 1.1366204497835322,
+      "base_FDE": 2.270294511900922,
+      "sample_ADE": 1.1378193171934181,
+      "sample_FDE": 2.2540690478528096,
+      "gain_ADE": -0.0011988674098862284,
+      "gain_FDE": 0.016225464048112037
+    },
+    "density_aware": {
+      "base_ADE": 1.1366204497835322,
+      "base_FDE": 2.270294511900922,
+      "sample_ADE": 1.1195271514931378,
+      "sample_FDE": 2.2154647879976546,
+      "gain_ADE": 0.01709329829039417,
+      "gain_FDE": 0.05482972390326709
+    }
+  },
+  "baseline": {
+    "mean": -0.0011988674098862284,
+    "population_std_across_fold_seed": 0.08506471419500691,
+    "min": -0.15390031258100834,
+    "max": 0.15165340151951168,
+    "fold_seed_count": 12
+  },
+  "density_aware": {
+    "mean": 0.01709329829039417,
+    "population_std_across_fold_seed": 0.05251859684619408,
+    "min": -0.09425369725130994,
+    "max": 0.10999393707500738,
+    "fold_seed_count": 12
+  },
+  "heldout_test_accessed": false,
+  "historical_test_already_accessed": true
+}

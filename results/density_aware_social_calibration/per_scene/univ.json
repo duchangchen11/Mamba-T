@@ -1,0 +1,37 @@
+{
+  "scene": "univ",
+  "metrics_equal_fold_seed": {
+    "baseline": {
+      "base_ADE": 0.5171463814278044,
+      "base_FDE": 1.0992396999851561,
+      "sample_ADE": 0.4950911355835748,
+      "sample_FDE": 1.0569847023661314,
+      "gain_ADE": 0.02205524584422958,
+      "gain_FDE": 0.04225499761902477
+    },
+    "density_aware": {
+      "base_ADE": 0.5171463814278044,
+      "base_FDE": 1.0992396999851561,
+      "sample_ADE": 0.49585752889489854,
+      "sample_FDE": 1.059054120522491,
+      "gain_ADE": 0.021288852532905838,
+      "gain_FDE": 0.0401855794626651
+    }
+  },
+  "baseline": {
+    "mean": 0.02205524584422958,
+    "population_std_across_fold_seed": 0.004276441756023693,
+    "min": 0.015423166575048386,
+    "max": 0.030009237904454422,
+    "fold_seed_count": 12
+  },
+  "density_aware": {
+    "mean": 0.021288852532905838,
+    "population_std_across_fold_seed": 0.004971822033123877,
+    "min": 0.014822514036675671,
+    "max": 0.028192604367317076,
+    "fold_seed_count": 12
+  },
+  "heldout_test_accessed": false,
+  "historical_test_already_accessed": true
+}

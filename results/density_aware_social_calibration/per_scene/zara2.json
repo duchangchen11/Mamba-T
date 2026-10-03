@@ -1,0 +1,37 @@
+{
+  "scene": "zara2",
+  "metrics_equal_fold_seed": {
+    "baseline": {
+      "base_ADE": 0.263983753478951,
+      "base_FDE": 0.5638901318577907,
+      "sample_ADE": 0.2446542238519013,
+      "sample_FDE": 0.533088738837055,
+      "gain_ADE": 0.019329529627049636,
+      "gain_FDE": 0.030801393020735757
+    },
+    "density_aware": {
+      "base_ADE": 0.263983753478951,
+      "base_FDE": 0.5638901318577907,
+      "sample_ADE": 0.24607528731719308,
+      "sample_FDE": 0.5361879998321838,
+      "gain_ADE": 0.017908466161757865,
+      "gain_FDE": 0.027702132025607024
+    }
+  },
+  "baseline": {
+    "mean": 0.019329529627049636,
+    "population_std_across_fold_seed": 0.016264635497258866,
+    "min": -0.004199506159334621,
+    "max": 0.05347910813252524,
+    "fold_seed_count": 12
+  },
+  "density_aware": {
+    "mean": 0.017908466161757865,
+    "population_std_across_fold_seed": 0.021543625700032158,
+    "min": -0.017967976879914943,
+    "max": 0.0562854524255387,
+    "fold_seed_count": 12
+  },
+  "heldout_test_accessed": false,
+  "historical_test_already_accessed": true
+}

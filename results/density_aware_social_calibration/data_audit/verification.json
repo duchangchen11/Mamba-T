@@ -1,0 +1,17 @@
+{
+  "pytest_passed": 139,
+  "pytest_failed": 0,
+  "pytest_log": "data_audit/pytest.txt",
+  "py_compile_passed": true,
+  "smoke_passed": true,
+  "smoke_fold": "eth",
+  "smoke_seed": 42,
+  "smoke_epochs": 2,
+  "source_runs_completed": 15,
+  "source_checkpoints_last_epoch": true,
+  "formal_test_artifacts_read_for_analysis": false,
+  "heldout_test_accessed": false,
+  "historical_test_already_accessed": true,
+  "trajectory_training_outside_declared_source_runs": false,
+  "report_only_code_repair_after_training": true
+}

@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "fold": "eth",
+  "seed": 42,
+  "epochs": 2,
+  "protocol_sha256": "32624f7bb9fa0e8fdabbd7035259312873424f78baf6bfbede15a28b05e94c18",
+  "heldout_test_accessed": false,
+  "historical_test_already_accessed": true
+}

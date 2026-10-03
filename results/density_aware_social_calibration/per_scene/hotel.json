@@ -1,0 +1,37 @@
+{
+  "scene": "hotel",
+  "metrics_equal_fold_seed": {
+    "baseline": {
+      "base_ADE": 0.3866293292225859,
+      "base_FDE": 0.737997286923097,
+      "sample_ADE": 0.3668176665045977,
+      "sample_FDE": 0.701985214064615,
+      "gain_ADE": 0.019811662717988194,
+      "gain_FDE": 0.036012072858481965
+    },
+    "density_aware": {
+      "base_ADE": 0.3866293292225859,
+      "base_FDE": 0.737997286923097,
+      "sample_ADE": 0.3616166191084828,
+      "sample_FDE": 0.6864073915629291,
+      "gain_ADE": 0.02501271011410303,
+      "gain_FDE": 0.05158989536016806
+    }
+  },
+  "baseline": {
+    "mean": 0.019811662717988194,
+    "population_std_across_fold_seed": 0.026826925403312704,
+    "min": -0.038480101998872696,
+    "max": 0.05630953200295713,
+    "fold_seed_count": 12
+  },
+  "density_aware": {
+    "mean": 0.02501271011410303,
+    "population_std_across_fold_seed": 0.030397383471327005,
+    "min": -0.01921652228067844,
+    "max": 0.0880706549740558,
+    "fold_seed_count": 12
+  },
+  "heldout_test_accessed": false,
+  "historical_test_already_accessed": true
+}
