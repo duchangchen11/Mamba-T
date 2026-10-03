@@ -1,0 +1,107 @@
+{
+  "scenes": {
+    "eth": {
+      "raw_pedestrians": 360,
+      "eligible_pedestrians": 44,
+      "windows": 364,
+      "files": [
+        {
+          "file": "biwi_eth.txt",
+          "frame_stride": 10,
+          "rows": 5492,
+          "pedestrians": 360
+        }
+      ]
+    },
+    "hotel": {
+      "raw_pedestrians": 389,
+      "eligible_pedestrians": 122,
+      "windows": 1197,
+      "files": [
+        {
+          "file": "biwi_hotel.txt",
+          "frame_stride": 10,
+          "rows": 6543,
+          "pedestrians": 389
+        }
+      ]
+    },
+    "univ": {
+      "raw_pedestrians": 849,
+      "eligible_pedestrians": 722,
+      "windows": 24334,
+      "files": [
+        {
+          "file": "students001.txt",
+          "frame_stride": 10,
+          "rows": 21813,
+          "pedestrians": 415
+        },
+        {
+          "file": "students003.txt",
+          "frame_stride": 10,
+          "rows": 17953,
+          "pedestrians": 434
+        }
+      ]
+    },
+    "zara1": {
+      "raw_pedestrians": 148,
+      "eligible_pedestrians": 142,
+      "windows": 2356,
+      "files": [
+        {
+          "file": "crowds_zara01.txt",
+          "frame_stride": 10,
+          "rows": 5153,
+          "pedestrians": 148
+        }
+      ]
+    },
+    "zara2": {
+      "raw_pedestrians": 204,
+      "eligible_pedestrians": 189,
+      "windows": 5910,
+      "files": [
+        {
+          "file": "crowds_zara02.txt",
+          "frame_stride": 10,
+          "rows": 9722,
+          "pedestrians": 204
+        }
+      ]
+    }
+  },
+  "folds": {
+    "eth": {
+      "train_pedestrians": 1015,
+      "validation_pedestrians": 160,
+      "train_windows": 29831,
+      "validation_windows": 3966
+    },
+    "hotel": {
+      "train_pedestrians": 947,
+      "validation_pedestrians": 150,
+      "train_windows": 29086,
+      "validation_windows": 3878
+    },
+    "univ": {
+      "train_pedestrians": 428,
+      "validation_pedestrians": 69,
+      "train_windows": 8631,
+      "validation_windows": 1196
+    },
+    "zara1": {
+      "train_pedestrians": 930,
+      "validation_pedestrians": 147,
+      "train_windows": 28077,
+      "validation_windows": 3728
+    },
+    "zara2": {
+      "train_pedestrians": 880,
+      "validation_pedestrians": 150,
+      "train_windows": 24891,
+      "validation_windows": 3360
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "heldout_scene": "hotel",
+  "model": "EMT",
+  "seed": 42,
+  "train_sample_count": 29086,
+  "validation_sample_count": 3878,
+  "train_pedestrian_count": 947,
+  "validation_pedestrian_count": 150,
+  "best_epoch": 11,
+  "epochs_run": 23,
+  "validation_ADE": 0.4669397805633466,
+  "validation_FDE": 0.9924382171168531,
+  "parameter_count": 370968,
+  "maximum_gradient_norm_before_clipping": 0.9449726343154907,
+  "training_seconds": 112.56073899700004,
+  "gpu_peak_memory_bytes": 70625792,
+  "nan_inf": false,
+  "heldout_test_accessed": false,
+  "decoder_initialization_sha256": "7ca870b2727233f5b55115a92a8ceaec7b6ecb7688ceaefba48ed605ec0140d0",
+  "smoke": false,
+  "latency": {
+    "batch_1_latency_ms": 1.4299134400016555,
+    "batch_128_latency_ms": 1.5457148999985293,
+    "method": "20 warmups, 100 forwards, synchronized CUDA wall time, eval/inference; batch latency"
+  },
+  "protocol": {
+    "max_epochs": 100,
+    "batch_size": 128,
+    "optimizer": "AdamW",
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "gradient_clip_norm": 5.0,
+    "loss": "SmoothL1Loss(beta=1)",
+    "scheduler": "ReduceLROnPlateau(min, factor=.5, patience=5)",
+    "early_stopping_patience": 12,
+    "checkpoint_selection": "minimum source validation ADE"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "decoder_matched": true,
+  "loss_decreased": true,
+  "mamba_backward": true,
+  "heldout_test_accessed": false
+}

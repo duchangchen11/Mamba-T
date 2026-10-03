@@ -1,0 +1,38 @@
+{
+  "heldout_scene": "zara1",
+  "model": "ETT",
+  "seed": 42,
+  "train_sample_count": 28077,
+  "validation_sample_count": 3728,
+  "train_pedestrian_count": 930,
+  "validation_pedestrian_count": 147,
+  "best_epoch": 30,
+  "epochs_run": 42,
+  "validation_ADE": 0.466944315466758,
+  "validation_FDE": 0.9942441143958866,
+  "parameter_count": 616344,
+  "maximum_gradient_norm_before_clipping": 0.8040094375610352,
+  "training_seconds": 230.109316476,
+  "gpu_peak_memory_bytes": 61078528,
+  "nan_inf": false,
+  "heldout_test_accessed": false,
+  "decoder_initialization_sha256": "7ca870b2727233f5b55115a92a8ceaec7b6ecb7688ceaefba48ed605ec0140d0",
+  "smoke": false,
+  "latency": {
+    "batch_1_latency_ms": 0.7737176000000545,
+    "batch_128_latency_ms": 0.8159510499990574,
+    "method": "20 warmups, 100 forwards, synchronized CUDA wall time, eval/inference; batch latency"
+  },
+  "protocol": {
+    "max_epochs": 100,
+    "batch_size": 128,
+    "optimizer": "AdamW",
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "gradient_clip_norm": 5.0,
+    "loss": "SmoothL1Loss(beta=1)",
+    "scheduler": "ReduceLROnPlateau(min, factor=.5, patience=5)",
+    "early_stopping_patience": 12,
+    "checkpoint_selection": "minimum source validation ADE"
+  }
+}

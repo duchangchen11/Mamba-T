@@ -1,0 +1,224 @@
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+eth ett 42 epoch 1: loss=0.1682 ADE=0.5937 FDE=1.1841
+eth emt 42 epoch 1: loss=0.1615 ADE=0.5297 FDE=1.0879
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+eth ett 42 epoch 1: loss=0.1682 ADE=0.5937 FDE=1.1841
+Traceback (most recent call last):
+  File "/home/lrj/Mamba-T/scripts/run_eth_ucy_baselines.py", line 20, in <module>
+    if __name__=='__main__':main()
+  File "/home/lrj/Mamba-T/scripts/run_eth_ucy_baselines.py", line 17, in main
+    train(n,fold,seed)
+  File "/home/lrj/Mamba-T/scripts/eth_ucy_utils.py", line 93, in train
+    optimizer.zero_grad(set_to_none=True);pred=model(x)['future_pred'];loss=criterion(pred,y)
+  File "/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/lrj/Mamba-T/src/models/trajectory_transformer.py", line 56, in forward
+    context = self.temporal_encoder(sequence)[:, -1]
+  File "/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py", line 511, in forward
+    output = mod(
+  File "/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py", line 897, in forward
+    x = x + self._sa_block(
+  File "/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py", line 927, in _sa_block
+    return self.dropout1(x)
+  File "/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1918, in __getattr__
+    def __getattr__(self, name: str) -> Any:
+KeyboardInterrupt
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+eth ett 123 epoch 1: loss=0.1642 ADE=0.5199 FDE=1.0538
+eth ett 2024 epoch 1: loss=0.1712 ADE=0.5599 FDE=1.1203
+eth ett 42 epoch 1: loss=0.1682 ADE=0.5937 FDE=1.1841
+eth emt 42 epoch 1: loss=0.1615 ADE=0.5297 FDE=1.0879
+eth emt 123 epoch 1: loss=0.1576 ADE=0.4944 FDE=1.0311
+eth emt 2024 epoch 1: loss=0.1616 ADE=0.4855 FDE=1.0146
+eth ett 42 epoch 10: loss=0.1205 ADE=0.4803 FDE=1.0008
+eth ett 2024 epoch 10: loss=0.1205 ADE=0.4682 FDE=0.9916
+eth ett 123 epoch 10: loss=0.1201 ADE=0.4841 FDE=1.0039
+eth emt 42 epoch 10: loss=0.1167 ADE=0.4636 FDE=0.9762
+eth emt 2024 epoch 10: loss=0.1167 ADE=0.4581 FDE=0.9800
+eth emt 123 epoch 10: loss=0.1161 ADE=0.4563 FDE=0.9678
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+hotel ett 42 epoch 1: loss=0.1720 ADE=0.4890 FDE=1.0213
+eth ett 2024 epoch 20: loss=0.1147 ADE=0.4495 FDE=0.9595
+eth ett 42 epoch 20: loss=0.1165 ADE=0.4614 FDE=0.9827
+eth ett 123 epoch 20: loss=0.1155 ADE=0.4609 FDE=0.9695
+eth emt 42 epoch 20: loss=0.1107 ADE=0.4679 FDE=0.9901
+eth emt 2024 epoch 20: loss=0.1076 ADE=0.4615 FDE=0.9760
+hotel emt 42 epoch 1: loss=0.1639 ADE=0.4761 FDE=1.0094
+hotel ett 42 epoch 10: loss=0.1217 ADE=0.4708 FDE=0.9997
+eth ett 42 epoch 30: loss=0.1156 ADE=0.4592 FDE=0.9770
+eth ett 2024 epoch 30: loss=0.1131 ADE=0.4598 FDE=0.9739
+eth emt 42 epoch 30: loss=0.1030 ADE=0.4644 FDE=0.9883
+eth ett 123 epoch 30: loss=0.1137 ADE=0.4560 FDE=0.9724
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+hotel emt 42 epoch 10: loss=0.1191 ADE=0.4721 FDE=1.0013
+hotel ett 123 epoch 1: loss=0.1693 ADE=0.5067 FDE=1.0488
+hotel ett 42 epoch 20: loss=0.1184 ADE=0.4706 FDE=0.9987
+eth ett 42 epoch 40: loss=0.1120 ADE=0.4555 FDE=0.9711
+eth ett 2024 epoch 40: loss=0.1122 ADE=0.4519 FDE=0.9632
+eth ett 123 epoch 40: loss=0.1120 ADE=0.4580 FDE=0.9723
+hotel ett 123 epoch 10: loss=0.1241 ADE=0.5170 FDE=1.0750
+hotel emt 42 epoch 20: loss=0.1106 ADE=0.4740 FDE=1.0073
+hotel emt 123 epoch 1: loss=0.1609 ADE=0.5046 FDE=1.0504
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+hotel ett 2024 epoch 1: loss=0.1735 ADE=0.5515 FDE=1.1006
+hotel emt 2024 epoch 1: loss=0.1622 ADE=0.5107 FDE=1.0639
+eth ett 42 epoch 50: loss=0.1119 ADE=0.4511 FDE=0.9603
+eth ett 123 epoch 50: loss=0.1112 ADE=0.4554 FDE=0.9677
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+univ ett 42 epoch 1: loss=0.2267 ADE=0.4146 FDE=0.8419
+hotel ett 123 epoch 20: loss=0.1191 ADE=0.4744 FDE=1.0024
+hotel emt 123 epoch 10: loss=0.1184 ADE=0.4708 FDE=1.0013
+hotel ett 2024 epoch 10: loss=0.1241 ADE=0.4738 FDE=1.0019
+univ ett 42 epoch 10: loss=0.0863 ADE=0.3757 FDE=0.7439
+hotel emt 2024 epoch 10: loss=0.1188 ADE=0.4756 FDE=1.0075
+univ ett 42 epoch 20: loss=0.0789 ADE=0.3368 FDE=0.6866
+univ ett 42 epoch 30: loss=0.0742 ADE=0.3436 FDE=0.7060
+eth ett 42 epoch 60: loss=0.1115 ADE=0.4588 FDE=0.9753
+univ emt 42 epoch 1: loss=0.2508 ADE=0.4378 FDE=0.9009
+hotel ett 123 epoch 30: loss=0.1170 ADE=0.4672 FDE=0.9942
+hotel emt 123 epoch 20: loss=0.1109 ADE=0.4749 FDE=1.0045
+univ ett 123 epoch 1: loss=0.2129 ADE=0.4096 FDE=0.8409
+univ emt 123 epoch 1: loss=0.2347 ADE=0.3852 FDE=0.7933
+univ emt 42 epoch 10: loss=0.0824 ADE=0.3564 FDE=0.7081
+hotel emt 2024 epoch 20: loss=0.1110 ADE=0.4675 FDE=0.9979
+univ ett 123 epoch 10: loss=0.0883 ADE=0.3756 FDE=0.7641
+univ emt 123 epoch 10: loss=0.0823 ADE=0.3508 FDE=0.7160
+univ emt 42 epoch 20: loss=0.0714 ADE=0.3387 FDE=0.6906
+univ ett 2024 epoch 1: loss=0.2268 ADE=0.4198 FDE=0.8177
+univ ett 123 epoch 20: loss=0.0797 ADE=0.3408 FDE=0.6963
+univ emt 2024 epoch 1: loss=0.2377 ADE=0.3971 FDE=0.7880
+univ emt 123 epoch 20: loss=0.0713 ADE=0.3419 FDE=0.6997
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+eth ett 42 epoch 70: loss=0.1103 ADE=0.4509 FDE=0.9611
+univ ett 2024 epoch 10: loss=0.0877 ADE=0.3618 FDE=0.7506
+zara1 ett 42 epoch 1: loss=0.1702 ADE=0.4882 FDE=1.0197
+univ emt 2024 epoch 10: loss=0.0817 ADE=0.3492 FDE=0.7174
+univ ett 123 epoch 30: loss=0.0766 ADE=0.3470 FDE=0.7057
+univ ett 2024 epoch 20: loss=0.0787 ADE=0.3363 FDE=0.6907
+univ emt 2024 epoch 20: loss=0.0741 ADE=0.3518 FDE=0.7109
+univ ett 123 epoch 40: loss=0.0738 ADE=0.3473 FDE=0.7044
+hotel emt 2024 epoch 30: loss=0.1029 ADE=0.4765 FDE=1.0110
+COMPLETE eth ETT 42
+COMPLETE eth EMT 42
+COMPLETE eth ETT 123
+COMPLETE eth EMT 123
+COMPLETE eth ETT 2024
+COMPLETE eth EMT 2024
+COMPLETE hotel ETT 42
+COMPLETE hotel EMT 42
+COMPLETE hotel ETT 123
+COMPLETE hotel EMT 123
+COMPLETE hotel ETT 2024
+univ ett 2024 epoch 30: loss=0.0749 ADE=0.3457 FDE=0.7082
+COMPLETE hotel EMT 2024
+COMPLETE univ ETT 42
+COMPLETE univ EMT 42
+COMPLETE univ ETT 123
+COMPLETE univ EMT 123
+zara1 emt 42 epoch 1: loss=0.1642 ADE=0.4889 FDE=1.0319
+univ emt 2024 epoch 30: loss=0.0658 ADE=0.3416 FDE=0.6963
+COMPLETE univ ETT 2024
+zara1 ett 123 epoch 1: loss=0.1693 ADE=0.4909 FDE=1.0315
+zara1 emt 123 epoch 1: loss=0.1633 ADE=0.5067 FDE=1.0607
+zara1 ett 2024 epoch 1: loss=0.1713 ADE=0.5123 FDE=1.0535
+zara1 ett 42 epoch 10: loss=0.1244 ADE=0.4995 FDE=1.0475
+univ emt 2024 epoch 40: loss=0.0610 ADE=0.3439 FDE=0.7008
+COMPLETE univ EMT 2024
+zara1 emt 2024 epoch 1: loss=0.1633 ADE=0.4951 FDE=1.0391
+zara1 emt 42 epoch 10: loss=0.1190 ADE=0.4786 FDE=1.0117
+zara1 ett 123 epoch 10: loss=0.1226 ADE=0.5002 FDE=1.0464
+zara1 emt 123 epoch 10: loss=0.1169 ADE=0.4733 FDE=1.0074
+zara1 ett 2024 epoch 10: loss=0.1241 ADE=0.4963 FDE=1.0400
+zara1 ett 42 epoch 20: loss=0.1225 ADE=0.4906 FDE=1.0273
+zara1 emt 2024 epoch 10: loss=0.1194 ADE=0.4764 FDE=1.0144
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+zara2 ett 42 epoch 1: loss=0.1828 ADE=0.5570 FDE=1.1637
+zara1 ett 123 epoch 20: loss=0.1200 ADE=0.4938 FDE=1.0426
+zara1 emt 123 epoch 20: loss=0.1092 ADE=0.4754 FDE=1.0143
+zara1 ett 2024 epoch 20: loss=0.1200 ADE=0.4925 FDE=1.0282
+zara1 ett 42 epoch 30: loss=0.1188 ADE=0.4669 FDE=0.9942
+zara2 emt 42 epoch 1: loss=0.1750 ADE=0.5362 FDE=1.1275
+zara1 emt 2024 epoch 20: loss=0.1109 ADE=0.4823 FDE=1.0184
+zara2 ett 42 epoch 10: loss=0.1295 ADE=0.5566 FDE=1.1493
+zara1 ett 123 epoch 30: loss=0.1169 ADE=0.4717 FDE=1.0067
+zara1 ett 2024 epoch 30: loss=0.1175 ADE=0.4760 FDE=1.0077
+zara2 emt 42 epoch 10: loss=0.1242 ADE=0.5329 FDE=1.1130
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+zara1 ett 42 epoch 40: loss=0.1164 ADE=0.4752 FDE=1.0106
+zara2 ett 123 epoch 1: loss=0.1800 ADE=0.5513 FDE=1.1393
+zara2 emt 123 epoch 1: loss=0.1717 ADE=0.5418 FDE=1.1382
+COMPLETE zara1 ETT 42
+COMPLETE zara1 EMT 42
+COMPLETE zara1 ETT 123
+COMPLETE zara1 EMT 123
+zara2 ett 2024 epoch 1: loss=0.1829 ADE=0.5752 FDE=1.1616
+zara2 ett 42 epoch 20: loss=0.1284 ADE=0.5202 FDE=1.0932
+zara1 ett 2024 epoch 40: loss=0.1167 ADE=0.4723 FDE=1.0050
+zara2 emt 42 epoch 20: loss=0.1148 ADE=0.5211 FDE=1.0917
+zara2 ett 123 epoch 10: loss=0.1294 ADE=0.5563 FDE=1.1551
+zara2 emt 123 epoch 10: loss=0.1235 ADE=0.5298 FDE=1.1102
+zara2 ett 2024 epoch 10: loss=0.1304 ADE=0.5196 FDE=1.0929
+zara2 ett 42 epoch 30: loss=0.1244 ADE=0.5239 FDE=1.0999
+COMPLETE zara1 ETT 2024
+COMPLETE zara1 EMT 2024
+zara2 emt 2024 epoch 1: loss=0.1741 ADE=0.5345 FDE=1.1215
+zara2 emt 123 epoch 20: loss=0.1150 ADE=0.5253 FDE=1.1053
+zara2 ett 123 epoch 20: loss=0.1250 ADE=0.5355 FDE=1.1216
+zara2 ett 2024 epoch 20: loss=0.1275 ADE=0.5404 FDE=1.1274
+COMPLETE zara2 ETT 42
+COMPLETE zara2 EMT 42
+COMPLETE zara2 ETT 123
+COMPLETE zara2 EMT 123
+zara2 emt 2024 epoch 10: loss=0.1223 ADE=0.5067 FDE=1.0783
+zara2 ett 2024 epoch 30: loss=0.1240 ADE=0.5221 FDE=1.0977
+zara2 emt 2024 epoch 20: loss=0.1146 ADE=0.5142 FDE=1.0891
+zara2 ett 2024 epoch 40: loss=0.1214 ADE=0.5126 FDE=1.0864
+zara2 ett 2024 epoch 50: loss=0.1192 ADE=0.5137 FDE=1.0874
+zara2 ett 2024 epoch 60: loss=0.1190 ADE=0.5141 FDE=1.0893
+COMPLETE zara2 ETT 2024
+COMPLETE zara2 EMT 2024
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+{
+  "equal_weight_five_fold_average": {
+    "ett_ADE": 0.4458979237895739,
+    "ett_FDE": 0.9428878352005315,
+    "emt_ADE": 0.4463066267546324,
+    "emt_FDE": 0.9447404408752152
+  },
+  "relative_change_percent": {
+    "ADE": 0.09165841401213015,
+    "FDE": 0.19648208466807038
+  },
+  "emt_wins": {
+    "ADE": 7,
+    "FDE": 6
+  },
+  "decision": "STOP"
+}

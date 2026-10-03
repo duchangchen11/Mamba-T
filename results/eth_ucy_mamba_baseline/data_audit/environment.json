@@ -1,0 +1,10 @@
+{
+  "python_executable": "/home/lrj/anaconda3/envs/ped_intent/bin/python",
+  "python": "3.10.21 (main, Aug 27 2026, 14:42:07) [GCC 14.3.0]",
+  "torch": "2.5.1+cu124",
+  "cuda": "12.4",
+  "cuda_available": true,
+  "gpu": "NVIDIA GeForce RTX 3080",
+  "mamba_ssm": "2.2.6.post3",
+  "environment": "ped_intent"
+}

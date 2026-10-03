@@ -29,7 +29,7 @@ def main():
     decision='GO' if qualifying and c else 'STOP'
     comparison={'scope':'internal source-validation only; no held-out performance claim','folds':folds,'paired_comparisons':pairs,'equal_weight_five_fold_average':avg,'relative_change_percent':relative,'emt_wins':wins,'emt_wins_both':sum(p['delta_ADE']<0 and p['delta_FDE']<0 for p in pairs),'go_rule':'A and B must hold for the same metric (ADE or FDE); C for both metrics in every fold','qualifying_metrics':qualifying,'condition_C':c,'decision':decision,'heldout_test_accessed':False,'maximum_preclip_gradient':max(r['maximum_gradient_norm_before_clipping'] for r in runs),'nan_inf':False,'runs':runs}
     dump(RESULTS/'comparison.json',comparison)
-    lines=['# ETH/UCY matched baseline validation','',f'Internal decision: **{decision}**. Source-scene validation only; held-out test accessed: **false**.','', 'Five-fold equal-weight means:']
+    lines=['# ETH/UCY matched baseline validation','',f'Internal decision: **{decision}**. Source-scene validation only; held-out test accessed: **false**.','', 'Five-fold equal-weight means:','']
     lines += [f'- {n.upper()}: ADE {avg[f"{n}_ADE"]:.6f} m; FDE {avg[f"{n}_FDE"]:.6f} m.' for n in ('ett','emt')]
     lines += [f'- EMT relative changes: ADE {relative["ADE"]:+.3f}%; FDE {relative["FDE"]:+.3f}%.',f'- EMT paired wins: ADE {wins["ADE"]}/15; FDE {wins["FDE"]}/15; both {comparison["emt_wins_both"]}/15.','', '| Fold | ETT ADE | EMT ADE | ΔADE | ETT FDE | EMT FDE | ΔFDE |','|---|---|---|---|---|---|---|']
     for f in SCENES:

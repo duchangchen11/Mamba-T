@@ -1,0 +1,9 @@
+{
+  "runs": 30,
+  "pairs": 15,
+  "all_best_checkpoint_metrics_match_history": true,
+  "all_decoder_pairs_match": true,
+  "all_latency_finite_positive": true,
+  "all_training_metrics_finite": true,
+  "heldout_test_accessed": false
+}

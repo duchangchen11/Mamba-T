@@ -1,0 +1,21 @@
+{
+  "pytest_returncode": 0,
+  "pytest_passed": 23,
+  "py_compile_returncode": 0,
+  "compiled_files": [
+    "src/data/eth_ucy_dataset.py",
+    "src/models/mamba_sequence_encoder.py",
+    "src/models/mamba_trajectory.py",
+    "src/models/trajectory_transformer.py",
+    "scripts/build_eth_ucy_sequences.py",
+    "scripts/eth_ucy_utils.py",
+    "scripts/train_eth_ucy_transformer.py",
+    "scripts/train_eth_ucy_mamba.py",
+    "scripts/run_eth_ucy_baselines.py",
+    "scripts/summarize_eth_ucy_baselines.py",
+    "scripts/acquire_eth_ucy.py"
+  ],
+  "leakage_tests_passed": true,
+  "heldout_test_accessed": false,
+  "note": "All-scene audits read raw/processed data for integrity only; training and validation loaders never open their held-out scene, and no held-out metrics are evaluated."
+}
