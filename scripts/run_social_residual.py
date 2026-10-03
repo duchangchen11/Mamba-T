@@ -30,9 +30,14 @@ def worker(job):
 def main():
     torch.set_num_threads(1);smoke()
     jobs=[(fold,seed) for fold in SCENES for seed in (42,123,2024)]
-    with ProcessPoolExecutor(max_workers=6,mp_context=multiprocessing.get_context('spawn')) as pool:
+    with ProcessPoolExecutor(max_workers=4,mp_context=multiprocessing.get_context('spawn')) as pool:
         futures=[pool.submit(worker,job) for job in jobs]
-        for future in as_completed(futures):print('PAIR COMPLETE',future.result(),flush=True)
+        failures=[]
+        for future in as_completed(futures):
+            try:print('PAIR COMPLETE',future.result(),flush=True)
+            except Exception as error:
+                failures.append(repr(error));print('PAIR FAILED',repr(error),flush=True)
+        if failures:raise RuntimeError(f'Incomplete pairs; rerun resumes completed runs: {failures}')
     for fold,seed in jobs:
         for name in VARIANTS:
             p=RESULTS/f'heldout_{fold}'/name/f'seed_{seed}/metrics_validation.json';report=json.loads(p.read_text())

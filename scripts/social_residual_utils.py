@@ -36,13 +36,14 @@ def cache_contexts(backbone,dataset):
         x=source['target_history'][i:i+128].cuda();_,context=backbone.encode(x)
         h.append(context);pred.append(backbone.decoder(context).reshape(-1,12,2))
     out['target_context']=torch.cat(h);out['base_prediction']=torch.cat(pred)
+    del h,pred  # Drop views retaining complete temporal sequences before encoding neighbors.
     mask=source['neighbor_mask'].cuda();out['neighbor_mask']=mask
     n=torch.zeros((len(dataset),8,128),device='cuda')
     neighbor_x=source['neighbor_history'][source['neighbor_mask']]
-    encoded=[]
+    flat=n.reshape(-1,128);valid_indices=mask.reshape(-1).nonzero(as_tuple=True)[0]
     for i in range(0,len(neighbor_x),512):
-        _,context=backbone.encode(neighbor_x[i:i+512].cuda());encoded.append(context)
-    if encoded:n[mask]=torch.cat(encoded)
+        _,context=backbone.encode(neighbor_x[i:i+512].cuda())
+        flat[valid_indices[i:i+512]]=context
     out['neighbor_context']=n
     for k in ('neighbor_relation','future_target','last_obs_pos','future_abs'):out[k]=source[k].cuda()
     return out
