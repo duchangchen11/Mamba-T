@@ -17,9 +17,9 @@ def dump(path,obj):
 
 def sha_file(path):return hashlib.sha256(path.read_bytes()).hexdigest()
 
-def load_backbone(kind,fold,seed):
+def load_backbone(kind,fold,seed,inventory_path=None):
     path=ROOT/'checkpoints/eth_ucy_mamba_baseline'/f'heldout_{fold}'/kind/f'seed_{seed}.pt'
-    inventory=json.loads((RESULTS/'data_audit/stage1_freeze_inventory.json').read_text())
+    inventory=json.loads(Path(inventory_path or RESULTS/'data_audit/stage1_freeze_inventory.json').read_text())
     expected=inventory[str(path.relative_to(ROOT))];actual=sha_file(path)
     if expected!=actual:raise ValueError('Frozen stage-one checkpoint modified')
     b,_=make_model(kind,seed);ckpt=torch.load(path,map_location='cpu',weights_only=True);b.load_state_dict(ckpt['model'])
@@ -88,10 +88,12 @@ def restore_new_state(model,state):
     missing,extra=model.load_state_dict(state,strict=False)
     assert not extra and all(k.startswith('backbone.') for k in missing)
 
-def train_variant(variant,fold,seed,backbone,metadata,train_data,val_data,epochs=50,smoke=False):
+def train_variant(variant,fold,seed,backbone,metadata,train_data,val_data,epochs=50,smoke=False,*,results_root=None,checkpoints_root=None,protocol=None):
     model=SocialResidualPredictor(backbone,variant,seed).cuda();seed_all(seed)
-    folder=RESULTS/('smoke' if smoke else f'heldout_{fold}')/variant/f'seed_{seed}'
-    checkpoint=ROOT/'checkpoints/social_residual'/('smoke' if smoke else f'heldout_{fold}')/variant/f'seed_{seed}.pt';checkpoint.parent.mkdir(parents=True,exist_ok=True)
+    destination=Path(results_root or RESULTS)
+    protocol=protocol or CONFIG
+    folder=destination/('smoke' if smoke else f'heldout_{fold}')/variant/f'seed_{seed}'
+    checkpoint=Path(checkpoints_root or ROOT/'checkpoints/social_residual')/('smoke' if smoke else f'heldout_{fold}')/variant/f'seed_{seed}.pt';checkpoint.parent.mkdir(parents=True,exist_ok=True)
     init={**metadata,'variant':variant,'seed':seed,'residual_initialization_sha256':state_hash(model.residual.state_dict()),'trainable_initialization_sha256':state_hash(new_state(model))}
     model.eval()
     with torch.no_grad():
@@ -100,7 +102,7 @@ def train_variant(variant,fold,seed,backbone,metadata,train_data,val_data,epochs
     assert difference<1e-7;init['initial_output_base_max_abs_diff']=difference
     dump(folder/'initialization_report.json',init);dump(folder/'parameter_count.json',parameter_report(model))
     manifest=BASE_RESULTS/'data_audit'/f'manifest_{fold}.json'
-    dump(folder/'data_provenance.json',{'stage1_manifest_sha256':sha_file(manifest),'heldout_scene':fold,'heldout_test_accessed':False,'data_provenance':'results/social_residual/data_audit/data_provenance.json',**metadata})
+    dump(folder/'data_provenance.json',{'stage1_manifest_sha256':sha_file(manifest),'heldout_scene':fold,'heldout_test_accessed':False,'data_provenance':str(destination.relative_to(ROOT)/'data_audit/data_provenance.json'),**metadata})
     params=[p for p in model.parameters() if p.requires_grad]
     optimizer=torch.optim.AdamW(params,lr=.001,weight_decay=.0001)
     scheduler=torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer,mode='min',factor=.5,patience=4)
@@ -131,7 +133,7 @@ def train_variant(variant,fold,seed,backbone,metadata,train_data,val_data,epochs
     restore_new_state(model,torch.load(checkpoint,weights_only=True)['new_modules'])
     metrics=evaluate_cached(model,val_data)
     assert abs(metrics['ADE']-best)<1e-7
-    report={'heldout_scene':fold,'model':variant,'seed':seed,'train_sample_count':n,'validation_sample_count':len(val_data['target_context']),'best_epoch':best_epoch,'epochs_run':len(history),'validation_ADE':metrics['ADE'],'validation_FDE':metrics['FDE'],'neighbor_groups':metrics['neighbor_groups'],'maximum_gradient_norm_before_clipping':max_gradient,'training_seconds':seconds,'gpu_peak_memory_bytes':peak,'parameter_count':parameter_report(model),'backbone_unchanged':True,'initial_output_base_max_abs_diff':difference,'nan_inf':False,'heldout_test_accessed':False,'smoke':smoke,'latency':None,'protocol':CONFIG,'training_method':'frozen eval context cache, GPU-resident; seed-fixed shuffled sample batches; gradients only through new modules',**metadata}
+    report={'heldout_scene':fold,'model':variant,'seed':seed,'train_sample_count':n,'validation_sample_count':len(val_data['target_context']),'best_epoch':best_epoch,'epochs_run':len(history),'validation_ADE':metrics['ADE'],'validation_FDE':metrics['FDE'],'neighbor_groups':metrics['neighbor_groups'],'maximum_gradient_norm_before_clipping':max_gradient,'training_seconds':seconds,'gpu_peak_memory_bytes':peak,'parameter_count':parameter_report(model),'backbone_unchanged':True,'initial_output_base_max_abs_diff':difference,'nan_inf':False,'heldout_test_accessed':False,'smoke':smoke,'latency':None,'protocol':protocol,'training_method':'frozen eval context cache, GPU-resident; seed-fixed shuffled sample batches; gradients only through new modules',**metadata}
     if 'gate_statistics' in metrics:
         report['gate_statistics']=metrics['gate_statistics'];dump(folder/'gate_statistics.json',metrics['gate_statistics'])
     dump(folder/'metrics_validation.json',report)
