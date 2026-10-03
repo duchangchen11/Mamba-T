@@ -86,6 +86,13 @@ def test_attention_observer_preserves_module_and_matches_context():
     assert state_hash(module.state_dict())==before and all(p.grad is None for p in module.parameters())
 
 
+def test_attention_context_roundoff_is_scaled_but_wrong_context_rejected():
+    from scripts.social_shift_inference import verify_attention_context
+    original=torch.tensor([0.,100.]);observed=torch.tensor([1e-6,100.00005])
+    assert verify_attention_context(observed,original)>1e-5
+    with pytest.raises(AssertionError):verify_attention_context(original+1.,original)
+
+
 def test_residual_final_ratio_and_gain_sign():
     residual=np.zeros((2,12,2));base=np.zeros_like(residual)
     residual[0]=[3,4];residual[1,-1]=[0,12];base[0]=[6,8]

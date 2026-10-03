@@ -32,6 +32,11 @@ def load_npz(path):
         return {k:z[k] for k in z.files}
 
 
+def verify_attention_context(observed,original):
+    torch.testing.assert_close(observed,original,rtol=1e-5,atol=1e-5)
+    return float((observed-original).abs().max())
+
+
 @torch.no_grad()
 def extract_run(fold,model_name,seed,mode='val'):
     require_validation(mode)
@@ -70,8 +75,7 @@ def extract_run(fold,model_name,seed,mode='val'):
         s=slice(i,i+128)
         original=forward_cached(model,cache,s)
         head,context=observe_attention(model.social,cache['target_context'][s],cache['neighbor_context'][s],cache['neighbor_relation'][s],cache['neighbor_mask'][s])
-        context_difference=max(context_difference,float((context-original['social_context']).abs().max()))
-        assert context_difference<1e-5
+        context_difference=max(context_difference,verify_attention_context(context,original['social_context']))
         residuals.append(original['residual'].cpu().numpy());weights.append(head.cpu().numpy())
         predictions.append(original['future_pred'].cpu().numpy());base_predictions.append(original['base_prediction'].cpu().numpy())
     residual,heads,pred,base = map(np.concatenate,(residuals,weights,predictions,base_predictions))

@@ -5,6 +5,7 @@
   "epsilon": 1e-8,
   "forward_batch_size": 128,
   "attention_definition": "mean of four per-head post-softmax weights; renormalize valid neighbors; no dropout in eval",
+  "attention_context_reproduction_tolerance": {"rtol": 1e-5, "atol": 1e-5, "reason": "float32 SDPA versus need_weights=True context roundoff; original prediction forward remains unchanged"},
   "closing_definition": "mean_closing_speed aliases mean_positive_closing_speed, mean over strictly approaching valid neighbors, or 0; max_closing_speed=max(0,max signed closing); signed mean/max also saved",
   "zero_neighbor_definition": "distance/relative-speed are missing NaN with count=0; closing/attention statistics are 0",
   "distance_bins": "no neighbor; <2m; [2m,4m); [4m,8m]; >8m, based on nearest distance",
