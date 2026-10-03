@@ -295,6 +295,41 @@ def summarize(protocol, rows=None):
         'run_metrics': run_curves, 'paired_metrics': paired,
         'heldout_test_accessed': False, 'historical_test_already_accessed': True,
     })
+    for scene in SCENES:
+        scene_metrics = {}
+        for model_name in ('baseline', 'density_aware'):
+            cells = [r[model_name]['by_scene'][scene] for r in runs if scene in r[model_name]['by_scene']]
+            scene_metrics[model_name] = {
+                key: mean([v[key] for v in cells])
+                for key in ('base_ADE', 'base_FDE', 'sample_ADE', 'sample_FDE', 'gain_ADE', 'gain_FDE')
+            }
+        dump(RESULTS/'per_scene'/f'{scene}.json', {
+            'scene': scene,
+            'metrics_equal_fold_seed': scene_metrics,
+            'baseline': c['per_scene_social_gain']['baseline']['per_scene_gain_ADE'][scene],
+            'density_aware': c['per_scene_social_gain']['density_aware']['per_scene_gain_ADE'][scene],
+            'heldout_test_accessed': False, 'historical_test_already_accessed': True,
+        })
+    for group in COUNT_GROUPS:
+        dump(RESULTS/'per_neighbor_count'/f'{group}.json', {
+            'neighbor_count_group': group,
+            'scene_equal': {
+                'base': c['neighbor_count_groups']['scene_equal_tables']['base'][group],
+                'baseline_social': c['neighbor_count_groups']['scene_equal_tables']['baseline_social'][group],
+                'density_aware': c['neighbor_count_groups']['scene_equal_tables']['density_aware'][group],
+            },
+            'social_gain_ADE': {
+                'baseline': c['neighbor_count_groups']['scene_equal_gain']['baseline_social'][group],
+                'density_aware': c['neighbor_count_groups']['scene_equal_gain']['density_aware'][group],
+            },
+            'per_fold_seed': [{'fold': r['fold'], 'seed': r['seed'], **r['groups'][group]} for r in c['neighbor_count_groups']['per_run']],
+            'heldout_test_accessed': False, 'historical_test_already_accessed': True,
+        })
+    for fold in SCENES:
+        dump(RESULTS/'per_fold'/f'{fold}.json', {
+            'fold': fold, 'paired_seed_metrics': [r for r in c['paired_runs'] if r['fold'] == fold],
+            'heldout_test_accessed': False, 'historical_test_already_accessed': True,
+        })
     write_reports(comparison)
     outputs = {str(p.relative_to(Path.cwd())): sha_file(p) for p in RESULTS.rglob('*') if p.is_file() and p.name != 'result_integrity.json'}
     histories = verify_history()
@@ -356,7 +391,7 @@ def write_reports(c):
         'SOURCE VALIDATION DIAGNOSTIC ONLY', '',
         '1. Branch: feat/density_aware_social_calibration.',
         '2. Latest result commit SHA: recorded in the final handoff; a commit cannot contain its own SHA.',
-        '3. Push status: final result tree and branch head are verified against GitHub before handoff.',
+        '3. Push status: final result tree and branch head will be verified against GitHub before handoff.',
         '4. heldout_test_accessed=false.',
         '5. historical_test_already_accessed=true.',
         f'6. Full pytest: {verification.get("pytest_passed", "see data_audit/verification.json")} passed, {verification.get("pytest_failed", "not recorded")} failed.',
