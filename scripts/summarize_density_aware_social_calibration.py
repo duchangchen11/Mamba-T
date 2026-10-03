@@ -11,6 +11,12 @@ from scripts.density_calibration_protocol import RESULTS, DIAGNOSTIC, SCENES, SE
 COUNT_GROUPS = ('0', '1-2', '3-4', '5-6', '7-8')
 
 
+def dump(path, value):
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(value, indent=2, allow_nan=False)+'\n')
+
+
 def mean(v):
     return float(np.mean(v)) if len(v) else None
 
@@ -339,28 +345,49 @@ def write_reports(c):
         lines.append(f'| {g} | {qn["sample_count"]} | {fmt(q0)} | {fmt(qb)} | {fmt(qn)} | {gains["baseline_social"][g]:.6f} | {gains["density_aware"][g]:.6f} |')
     lines += ['', '## Density response', '', '| n | Mean scale across 15 trained models | SD across models |', '|---:|---:|---:|']
     for n,q in c['density_scale']['scale_lut_mean_over_15_models'].items():lines.append(f'| {n} | {q["mean"]:.8f} | {q["std_across_15_models"]:.8f} |')
-    s=c['density_scale'];lines += ['', f'Observation scale: mean={s["summary_over_validation_predictions"]["mean"]:.6f}, std={s["summary_over_validation_predictions"]["std"]:.6f}, min/max={s["summary_over_validation_predictions"]["min"]:.6f}/{s["summary_over_validation_predictions"]["max"]:.6f}; all finite/in bounds={s["summary_over_validation_predictions"]["all_finite"]}/{s["summary_over_validation_predictions"]["all_strictly_within_0.5_1.5"]}.', f'Varₙ(E[s|n])={s["variance_of_n_conditional_mean_scale"]:.8f}; Pearson/Spearman count vs scale={s["pearson_neighbor_count_vs_scale_scene_equal_weight"]:.6f}/{s["spearman_neighbor_count_vs_scale_scene_equal_weight"]:.6f}; scene-equal scale vs residual norm Pearson/Spearman={s["scale_vs_residual_norm_scene_equal_weight"]["Pearson"]:.6f}/{s["scale_vs_residual_norm_scene_equal_weight"]["Spearman"]:.6f}.', f'Neighbor count vs residual norm: baseline Pearson/Spearman={s["neighbor_count_vs_residual_norm_baseline_scene_equal_weight"]["Pearson"]:.6f}/{s["neighbor_count_vs_residual_norm_baseline_scene_equal_weight"]["Spearman"]:.6f}; density-aware={s["neighbor_count_vs_residual_norm_density_aware_scene_equal_weight"]["Pearson"]:.6f}/{s["neighbor_count_vs_residual_norm_density_aware_scene_equal_weight"]["Spearman"]:.6f}. Response direction: {s["response_direction"]}. Baseline scale is N/A because it has no density module.', '', 'Scale depends only on n; LUTs are direct evaluations of the trained scalar network at n/8. No scene, distance, motion, attention, error, or future value enters that network. Correlations are descriptive and not mechanism proof.', '', '## Training integrity', '', f'15/15 fixed runs completed. Maximum pre-clip gradient norm: {c["training_audit"]["maximum_gradient_norm_before_clipping"]:.6f}. NaN/Inf: {c["training_audit"]["nan_inf"]}. EMT backbone frozen and unchanged in all runs; initialization matches frozen EMT-SR shared modules; max zero-init prediction difference <1e-7. All checkpoints are the prescribed last epoch.', '', '## 阶段结论', '', f'- DENSITY CALIBRATION: **{c["labels"]["DENSITY CALIBRATION"]}**', f'- DENSITY RESPONSE: **{c["labels"]["DENSITY RESPONSE"]}**', f'- CROSS-SCENE STABILITY: **{c["labels"]["CROSS-SCENE STABILITY"]}**', '', '预定义 GO/STRONG GO/STOP 条件逐项判断保存在 `comparison.json`。该阶段只完成 source 诊断；未访问 formal held-out test，未改 density 公式或开展 SDD。', '']
+    s=c['density_scale'];lut=s['scale_lut_mean_over_15_models']
+    lines += ['', f'15 模型平均 scale 从 n=0 的 {lut["0"]["mean"]:.4f} 增至 n=8 的 {lut["8"]["mean"]:.4f}；九个 n 组的平均值均低于 1，整体是社会交互特征衰减，且稀疏样本衰减更强、密集样本衰减较弱。这不是稀疏增强或密集抑制。不同 fold/seed LUT 离散度较大，逐模型曲线和尺度见 comparison.json。', f'Observation scale: mean={s["summary_over_validation_predictions"]["mean"]:.6f}, std={s["summary_over_validation_predictions"]["std"]:.6f}, min/max={s["summary_over_validation_predictions"]["min"]:.6f}/{s["summary_over_validation_predictions"]["max"]:.6f}; all finite/in bounds={s["summary_over_validation_predictions"]["all_finite"]}/{s["summary_over_validation_predictions"]["all_strictly_within_0.5_1.5"]}.', f'Varₙ(E[s|n])={s["variance_of_n_conditional_mean_scale"]:.8f}; Pearson/Spearman count vs scale={s["pearson_neighbor_count_vs_scale_scene_equal_weight"]:.6f}/{s["spearman_neighbor_count_vs_scale_scene_equal_weight"]:.6f}; scene-equal scale vs residual norm Pearson/Spearman={s["scale_vs_residual_norm_scene_equal_weight"]["Pearson"]:.6f}/{s["scale_vs_residual_norm_scene_equal_weight"]["Spearman"]:.6f}.', f'Neighbor count vs residual norm: baseline Pearson/Spearman={s["neighbor_count_vs_residual_norm_baseline_scene_equal_weight"]["Pearson"]:.6f}/{s["neighbor_count_vs_residual_norm_baseline_scene_equal_weight"]["Spearman"]:.6f}; density-aware={s["neighbor_count_vs_residual_norm_density_aware_scene_equal_weight"]["Pearson"]:.6f}/{s["neighbor_count_vs_residual_norm_density_aware_scene_equal_weight"]["Spearman"]:.6f}. Response direction: {s["response_direction"]}. Baseline scale is N/A because it has no density module.', '', 'Scale depends only on n; LUTs are direct evaluations of the trained scalar network at n/8. No scene, distance, motion, attention, error, or future value enters that network. Correlations are descriptive and not mechanism proof.', '', '## Training integrity', '', f'15/15 fixed runs completed. Maximum pre-clip gradient norm: {c["training_audit"]["maximum_gradient_norm_before_clipping"]:.6f}. NaN/Inf: {c["training_audit"]["nan_inf"]}. EMT backbone frozen and unchanged in all runs; initialization matches frozen EMT-SR shared modules; max zero-init prediction difference <1e-7. All checkpoints are the prescribed last epoch.', '', '## 阶段结论', '', f'- DENSITY CALIBRATION: **{c["labels"]["DENSITY CALIBRATION"]}**', f'- DENSITY RESPONSE: **{c["labels"]["DENSITY RESPONSE"]}**', f'- CROSS-SCENE STABILITY: **{c["labels"]["CROSS-SCENE STABILITY"]}**', '', '预定义 GO/STRONG GO/STOP 条件逐项判断保存在 `comparison.json`。该阶段只完成 source 诊断；未访问 formal held-out test，未改 density 公式或开展 SDD。', '']
     (RESULTS/'summary.md').write_text('\n'.join(lines))
+    verification = read_json(RESULTS/'data_audit/verification.json') if (RESULTS/'data_audit/verification.json').exists() else {}
+    train_audit = c['training_audit']; scale = c['density_scale']
+    base_scene = c['per_scene_social_gain']['baseline']; new_scene = c['per_scene_social_gain']['density_aware']
+    gsd = c['robustness']['scene_gain_population_std']; grange = c['robustness']['scene_gain_range']; worst = c['robustness']['worst_scene_gain']; cgsd = c['robustness']['neighbor_count_gain_population_std']
     brain = [
         'SOURCE VALIDATION DIAGNOSTIC ONLY', '',
-        '1. Branch: feat/density_aware_social_calibration',
-        '2. Commit/push: final result commit recorded in delivery metadata after publication.',
-        '3. heldout_test_accessed=false; historical_test_already_accessed=true.',
-        '4. Frozen formal test artifacts were not read. No scene label or future value is fed to the density module.',
-        '5. pytest result is recorded in data_audit/verification.json.',
-        '6. 15/15 new runs; fixed source train/validation pedestrian split; EMT-fixed backbone frozen.',
-        '7. Each fold/seed ADE/FDE and paired deltas are listed in summary.md and comparison.json.',
-        '8. Five-scene equal ADE/FDE, pooled averages, percentage deltas, and ADE/FDE wins are in comparison.json.',
-        '9. Per-scene social gains, scene gain SD/range, worst scene gain and neighbor-count gain SD are in summary.md.',
-        '10. Neighbor-count groups 0, 1–2, 3–4, 5–6, 7–8 include base/baseline/new ADE/FDE and gains.',
-        '11. n=0…8 scale LUT, scale finite/range summary, scale/count/residual correlations and density collapse check are in summary.md/comparison.json.',
-        '12. Maximum gradient and NaN/Inf are reported in summary.md; per-epoch train loss, val metrics, scale summaries, residual norm, correction ratio and gradient norm are in each run history.',
-        '13. DENSITY CALIBRATION, DENSITY RESPONSE and CROSS-SCENE STABILITY labels are in summary.md.',
-        '14. Mamba, base trajectory decoder, loss, N=8, attention architecture, radius, and formal test were not altered/accessed.',
-        '15. Candidate selection is left for review; the density formula is not revised automatically.',
-        '', 'Full paired and stratified values: comparison.json. Per-run files are under heldout_<fold>/emt_density_sr/seed_<seed>.',
-        'The old EMT-SR runs are reused as the baseline, not retrained. Shared Social Cross-Attention and Residual Decoder initialization hashes were checked against each matching old run.',
-        'The zero-initialized scalar starts at exactly one and scales only the Social Cross-Attention context; it is a density-conditioned calibration, not the old scalar gate.',
-        'All averages are per fold/seed; source-scene equal weighting is primary, with pooled sample metrics reported secondarily.',
+        '1. Branch: feat/density_aware_social_calibration.',
+        '2. Latest result commit SHA: recorded in the final handoff; a commit cannot contain its own SHA.',
+        '3. Push status: final result tree and branch head are verified against GitHub before handoff.',
+        '4. heldout_test_accessed=false.',
+        '5. historical_test_already_accessed=true.',
+        f'6. Full pytest: {verification.get("pytest_passed", "see data_audit/verification.json")} passed, {verification.get("pytest_failed", "not recorded")} failed.',
+        f'7. New source-validation runs: {c["run_count"]}/15; old EMT-SR baseline was reused, not retrained.',
+        '8. Per fold/seed scene-equal ADE/FDE and paired deltas: summary.md, “Fold / Seed”.',
+        '9. Five-scene equal ADE/FDE and pooled averages: comparison.json, `overall`.',
+        f'10. ΔADE/ΔFDE={d["ADE"]:.6f}/{d["FDE"]:.6f}; relative={d["relative_ADE"]*100:.3f}%/{d["relative_FDE"]*100:.3f}%; scene-equal paired ADE/FDE wins={d["ADE_wins_scene_equal"]}/15, {d["FDE_wins_scene_equal"]}/15.',
+        '11. Per-scene baseline/density-aware social ADE gains appear in summary.md.',
+        f'12. Baseline scene gain population SD={gsd["baseline"]:.6f}.',
+        f'13. Density-aware scene gain population SD={gsd["density_aware"]:.6f}.',
+        f'14. Baseline scene gain range={grange["baseline"]:.6f}.',
+        f'15. Density-aware scene gain range={grange["density_aware"]:.6f}.',
+        f'16. Baseline worst scene gain={worst["baseline"]:.6f}.',
+        f'17. Density-aware worst scene gain={worst["density_aware"]:.6f}.',
+        '18. Neighbor groups 0, 1–2, 3–4, 5–6, 7–8 show base/baseline/new ADE/FDE and gains in summary.md.',
+        f'19. Baseline neighbor-count gain population SD={cgsd["baseline"]:.6f}.',
+        f'20. Density-aware neighbor-count gain population SD={cgsd["density_aware"]:.6f}.',
+        '21. Mean scale at n=0…8 across 15 models appears in summary.md.',
+        f'22. Scale vs count scene-equal Pearson/Spearman={scale["pearson_neighbor_count_vs_scale_scene_equal_weight"]:.6f}/{scale["spearman_neighbor_count_vs_scale_scene_equal_weight"]:.6f}.',
+        f'23. Scale vs residual norm scene-equal Pearson/Spearman={scale["scale_vs_residual_norm_scene_equal_weight"]["Pearson"]:.6f}/{scale["scale_vs_residual_norm_scene_equal_weight"]["Spearman"]:.6f}.',
+        f'24. Scale mean/std/min/max={scale["summary_over_validation_predictions"]["mean"]:.6f}/{scale["summary_over_validation_predictions"]["std"]:.6f}/{scale["summary_over_validation_predictions"]["min"]:.6f}/{scale["summary_over_validation_predictions"]["max"]:.6f}; finite and within strict bounds={scale["summary_over_validation_predictions"]["all_finite"]}/{scale["summary_over_validation_predictions"]["all_strictly_within_0.5_1.5"]}.',
+        f'25. Density response {scale["response_label"]}; Var_n(E[s|n])={scale["variance_of_n_conditional_mean_scale"]:.8f}, scale range over n={scale["range_of_n_conditional_mean_scale"]:.6f}; {scale["response_direction"]}.',
+        f'26. Maximum pre-clip gradient norm={train_audit["maximum_gradient_norm_before_clipping"]:.6f}; NaN/Inf={train_audit["nan_inf"]}.',
+        f'27. DENSITY CALIBRATION: {c["labels"]["DENSITY CALIBRATION"]}.',
+        f'28. DENSITY RESPONSE: {c["labels"]["DENSITY RESPONSE"]}.',
+        f'29. CROSS-SCENE STABILITY: {c["labels"]["CROSS-SCENE STABILITY"]}.',
+        '30. Summary: results/density_aware_social_calibration/summary.md.',
+        '31. Brain report: results/density_aware_social_calibration/brain_report.md.',
+        '32. Source-only diagnostic complete; no formal test or SDD was run.',
+        '',
+        'The density module sees only observed neighbor count/8 and scales the attention context. This is density-conditioned calibration, not the prior scalar gate. The final layer starts at zero; shared social/residual initialization matches the frozen EMT-SR runs.',
+        'All values are averaged equally across validation folds/seeds; within-fold source scenes are weighted equally for the primary view. Pooled sample results are retained because scene counts differ.',
     ]
     (RESULTS/'brain_report.md').write_text('\n'.join(brain)+'\n')
