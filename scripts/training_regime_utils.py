@@ -70,7 +70,10 @@ def save_last_checkpoint(path, model, epoch, metadata, social=False):
     state = {'new_modules': new_state(model)} if social else {'model': model.state_dict()}
     tensors = next(iter(state.values()))
     assert all(torch.isfinite(v).all() for v in tensors.values())
-    state.update({'epoch': epoch, 'final_model_state_sha256': state_hash(model.state_dict()), **metadata})
+    checkpoint_metadata = {k: v for k, v in metadata.items() if k != 'model'}
+    if 'model' in metadata:
+        checkpoint_metadata['model_name'] = metadata['model']
+    state.update({'epoch': epoch, 'final_model_state_sha256': state_hash(model.state_dict()), **checkpoint_metadata})
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_suffix('.tmp.pt')
     torch.save(state, tmp)

@@ -65,9 +65,10 @@ def test_passive_validation_cannot_change_weights_lr_or_stop(device, tmp_path):
     assert all(q['lr'] == .001 for q in ah+bh)
     assert diagnostic_best(ah)['diagnostic_best_validation_epoch'] == 6
     path = tmp_path/'last.pt'
-    save_last_checkpoint(path, a, 7, {'seed': 71})
+    save_last_checkpoint(path, a, 7, {'seed': 71, 'model': 'toy-fixed'})
     checkpoint = torch.load(path, map_location='cpu', weights_only=True)
     assert checkpoint['epoch'] == 7
+    assert checkpoint['model_name'] == 'toy-fixed'
     assert state_hash(checkpoint['model']) == astates[-1] != astates[-2]
 
 
