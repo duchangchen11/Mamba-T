@@ -1,0 +1,82 @@
+{
+  "folds": {
+    "eth": {
+      "train_scene_list": [
+        "hotel",
+        "univ",
+        "zara1",
+        "zara2"
+      ],
+      "train_sample_count": 29831,
+      "validation_sample_count": 3966,
+      "train_pedestrian_count": 1015,
+      "validation_pedestrian_count": 160,
+      "train_validation_pedestrian_overlap": 0,
+      "train_cross_split_neighbor_violations": 0,
+      "manifest_sha256": "449764a60bfbe32b97f56370aea4236681ba15d2e528f4cfd358ef8e915b80af"
+    },
+    "hotel": {
+      "train_scene_list": [
+        "eth",
+        "univ",
+        "zara1",
+        "zara2"
+      ],
+      "train_sample_count": 29086,
+      "validation_sample_count": 3878,
+      "train_pedestrian_count": 947,
+      "validation_pedestrian_count": 150,
+      "train_validation_pedestrian_overlap": 0,
+      "train_cross_split_neighbor_violations": 0,
+      "manifest_sha256": "21d46922b8a3081aec80db5deab9711109b163aa2786b0648e6b06dbb6843464"
+    },
+    "univ": {
+      "train_scene_list": [
+        "eth",
+        "hotel",
+        "zara1",
+        "zara2"
+      ],
+      "train_sample_count": 8631,
+      "validation_sample_count": 1196,
+      "train_pedestrian_count": 428,
+      "validation_pedestrian_count": 69,
+      "train_validation_pedestrian_overlap": 0,
+      "train_cross_split_neighbor_violations": 0,
+      "manifest_sha256": "44c554d58fc70f64fdf999bf86118fff9473b927d9989195d17fcd035a663035"
+    },
+    "zara1": {
+      "train_scene_list": [
+        "eth",
+        "hotel",
+        "univ",
+        "zara2"
+      ],
+      "train_sample_count": 28077,
+      "validation_sample_count": 3728,
+      "train_pedestrian_count": 930,
+      "validation_pedestrian_count": 147,
+      "train_validation_pedestrian_overlap": 0,
+      "train_cross_split_neighbor_violations": 0,
+      "manifest_sha256": "ee3facf49a03f298c7b909722d054b20739af628a498f32f51fd7c0d49a8c301"
+    },
+    "zara2": {
+      "train_scene_list": [
+        "eth",
+        "hotel",
+        "univ",
+        "zara1"
+      ],
+      "train_sample_count": 24891,
+      "validation_sample_count": 3360,
+      "train_pedestrian_count": 880,
+      "validation_pedestrian_count": 150,
+      "train_validation_pedestrian_overlap": 0,
+      "train_cross_split_neighbor_violations": 0,
+      "manifest_sha256": "ed904f93f43ac29a5e08238cf0f708b68a8c5a699ff3bf7338eda94c231920ef"
+    }
+  },
+  "manifest_reused_without_resplit": true,
+  "heldout_test_accessed": false,
+  "historical_test_already_accessed": true
+}

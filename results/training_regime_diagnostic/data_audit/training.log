@@ -1,0 +1,238 @@
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+hotel ett-fixed 42 epoch 1/11: loss=0.171997 source_val_ADE=0.488962 source_val_FDE=1.021335
+eth ett-fixed 2024 epoch 1/38: loss=0.171241 source_val_ADE=0.559882 source_val_FDE=1.120270
+eth ett-fixed 42 epoch 1/38: loss=0.168238 source_val_ADE=0.593733 source_val_FDE=1.184119
+eth ett-fixed 123 epoch 1/38: loss=0.164201 source_val_ADE=0.519885 source_val_FDE=1.053804
+hotel ett-fixed 42 epoch 10/11: loss=0.124770 source_val_ADE=0.487215 source_val_FDE=1.029021
+eth ett-fixed 2024 epoch 10/38: loss=0.120496 source_val_ADE=0.468175 source_val_FDE=0.991588
+eth ett-fixed 42 epoch 10/38: loss=0.120475 source_val_ADE=0.480277 source_val_FDE=1.000832
+eth ett-fixed 123 epoch 10/38: loss=0.120125 source_val_ADE=0.484074 source_val_FDE=1.003850
+hotel ett-fixed 42 epoch 11/11: loss=0.122769 source_val_ADE=0.471393 source_val_FDE=0.997701
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+hotel ett_sr-fixed 42 epoch 1/11: loss=0.114970 source_val_ADE=0.462323 source_val_FDE=0.985386
+hotel ett_sr-fixed 42 epoch 10/11: loss=0.112006 source_val_ADE=0.461291 source_val_FDE=0.982488
+hotel ett_sr-fixed 42 epoch 11/11: loss=0.111662 source_val_ADE=0.459181 source_val_FDE=0.974790
+hotel emt-fixed 42 epoch 1/14: loss=0.163917 source_val_ADE=0.476086 source_val_FDE=1.009416
+eth ett-fixed 2024 epoch 20/38: loss=0.117914 source_val_ADE=0.470848 source_val_FDE=0.985802
+eth ett-fixed 42 epoch 20/38: loss=0.119028 source_val_ADE=0.463525 source_val_FDE=0.985395
+eth ett-fixed 123 epoch 20/38: loss=0.118665 source_val_ADE=0.468663 source_val_FDE=0.981283
+hotel emt-fixed 42 epoch 10/14: loss=0.119100 source_val_ADE=0.472070 source_val_FDE=1.001340
+eth ett-fixed 2024 epoch 30/38: loss=0.117694 source_val_ADE=0.460964 source_val_FDE=0.971774
+eth ett-fixed 42 epoch 30/38: loss=0.118652 source_val_ADE=0.471863 source_val_FDE=0.993955
+eth ett-fixed 123 epoch 30/38: loss=0.118111 source_val_ADE=0.499659 source_val_FDE=1.043574
+hotel emt-fixed 42 epoch 14/14: loss=0.116424 source_val_ADE=0.484408 source_val_FDE=1.019916
+hotel emt_sr-fixed 42 epoch 1/15: loss=0.107958 source_val_ADE=0.467123 source_val_FDE=0.993272
+eth ett-fixed 2024 epoch 38/38: loss=0.116648 source_val_ADE=0.483260 source_val_FDE=1.009935
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+eth ett-fixed 42 epoch 38/38: loss=0.117169 source_val_ADE=0.467432 source_val_FDE=0.991126
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+eth ett-fixed 123 epoch 38/38: loss=0.117284 source_val_ADE=0.471635 source_val_FDE=1.001095
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+eth ett_sr-fixed 2024 epoch 1/10: loss=0.111982 source_val_ADE=0.457813 source_val_FDE=0.972236
+eth ett_sr-fixed 42 epoch 1/10: loss=0.110820 source_val_ADE=0.456372 source_val_FDE=0.969374
+eth ett_sr-fixed 123 epoch 1/10: loss=0.111544 source_val_ADE=0.455655 source_val_FDE=0.969899
+hotel emt_sr-fixed 42 epoch 10/15: loss=0.092933 source_val_ADE=0.460881 source_val_FDE=0.982327
+hotel emt_sr-fixed 42 epoch 15/15: loss=0.087317 source_val_ADE=0.458807 source_val_FDE=0.976690
+DIAGNOSTIC PAIR COMPLETE ('hotel', 42)
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+hotel ett-fixed 123 epoch 1/11: loss=0.169348 source_val_ADE=0.506722 source_val_FDE=1.048768
+eth ett_sr-fixed 2024 epoch 10/10: loss=0.107436 source_val_ADE=0.450383 source_val_FDE=0.955697
+eth ett_sr-fixed 42 epoch 10/10: loss=0.109175 source_val_ADE=0.452357 source_val_FDE=0.961251
+eth ett_sr-fixed 123 epoch 10/10: loss=0.108744 source_val_ADE=0.450668 source_val_FDE=0.959954
+eth emt-fixed 2024 epoch 1/10: loss=0.161568 source_val_ADE=0.485544 source_val_FDE=1.014629
+eth emt-fixed 42 epoch 1/10: loss=0.161518 source_val_ADE=0.529723 source_val_FDE=1.087858
+eth emt-fixed 123 epoch 1/10: loss=0.157560 source_val_ADE=0.494392 source_val_FDE=1.031053
+hotel ett-fixed 123 epoch 10/11: loss=0.124138 source_val_ADE=0.517017 source_val_FDE=1.075011
+hotel ett-fixed 123 epoch 11/11: loss=0.124102 source_val_ADE=0.501146 source_val_FDE=1.044543
+eth emt-fixed 2024 epoch 10/10: loss=0.116725 source_val_ADE=0.458092 source_val_FDE=0.980043
+eth emt-fixed 42 epoch 10/10: loss=0.116683 source_val_ADE=0.463570 source_val_FDE=0.976233
+eth emt-fixed 123 epoch 10/10: loss=0.116050 source_val_ADE=0.456279 source_val_FDE=0.967786
+hotel ett_sr-fixed 123 epoch 1/11: loss=0.115287 source_val_ADE=0.476811 source_val_FDE=1.017848
+eth emt_sr-fixed 2024 epoch 1/14: loss=0.108665 source_val_ADE=0.457856 source_val_FDE=0.969856
+eth emt_sr-fixed 42 epoch 1/14: loss=0.108407 source_val_ADE=0.449430 source_val_FDE=0.959572
+eth emt_sr-fixed 123 epoch 1/14: loss=0.109087 source_val_ADE=0.449006 source_val_FDE=0.961154
+hotel ett_sr-fixed 123 epoch 10/11: loss=0.112834 source_val_ADE=0.463091 source_val_FDE=0.982605
+hotel ett_sr-fixed 123 epoch 11/11: loss=0.112206 source_val_ADE=0.470686 source_val_FDE=1.003001
+eth emt_sr-fixed 2024 epoch 10/14: loss=0.094476 source_val_ADE=0.441439 source_val_FDE=0.938985
+eth emt_sr-fixed 42 epoch 10/14: loss=0.095812 source_val_ADE=0.441576 source_val_FDE=0.942408
+eth emt_sr-fixed 123 epoch 10/14: loss=0.094550 source_val_ADE=0.434406 source_val_FDE=0.929210
+hotel emt-fixed 123 epoch 1/14: loss=0.160887 source_val_ADE=0.504606 source_val_FDE=1.050436
+eth emt_sr-fixed 2024 epoch 14/14: loss=0.091483 source_val_ADE=0.443746 source_val_FDE=0.944926
+DIAGNOSTIC PAIR COMPLETE ('eth', 2024)
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+eth emt_sr-fixed 42 epoch 14/14: loss=0.092718 source_val_ADE=0.443790 source_val_FDE=0.943982
+DIAGNOSTIC PAIR COMPLETE ('eth', 42)
+eth emt_sr-fixed 123 epoch 14/14: loss=0.090215 source_val_ADE=0.440773 source_val_FDE=0.938456
+DIAGNOSTIC PAIR COMPLETE ('eth', 123)
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+univ ett-fixed 42 epoch 1/21: loss=0.226727 source_val_ADE=0.414600 source_val_FDE=0.841882
+univ ett-fixed 123 epoch 1/21: loss=0.212877 source_val_ADE=0.409630 source_val_FDE=0.840853
+hotel ett-fixed 2024 epoch 1/11: loss=0.173499 source_val_ADE=0.551498 source_val_FDE=1.100562
+univ ett-fixed 42 epoch 10/21: loss=0.086338 source_val_ADE=0.375718 source_val_FDE=0.743933
+univ ett-fixed 123 epoch 10/21: loss=0.088310 source_val_ADE=0.375558 source_val_FDE=0.764060
+univ ett-fixed 123 epoch 20/21: loss=0.081859 source_val_ADE=0.354210 source_val_FDE=0.710717
+univ ett-fixed 42 epoch 20/21: loss=0.082954 source_val_ADE=0.349499 source_val_FDE=0.707093
+hotel emt-fixed 123 epoch 10/14: loss=0.118386 source_val_ADE=0.470831 source_val_FDE=1.001306
+univ ett-fixed 42 epoch 21/21: loss=0.081370 source_val_ADE=0.369723 source_val_FDE=0.735049
+univ ett-fixed 123 epoch 21/21: loss=0.083546 source_val_ADE=0.351626 source_val_FDE=0.719093
+univ ett_sr-fixed 42 epoch 1/13: loss=0.071655 source_val_ADE=0.335682 source_val_FDE=0.686056
+univ ett_sr-fixed 123 epoch 1/13: loss=0.071477 source_val_ADE=0.361899 source_val_FDE=0.725665
+univ ett_sr-fixed 42 epoch 10/13: loss=0.064577 source_val_ADE=0.331856 source_val_FDE=0.679091
+univ ett_sr-fixed 123 epoch 10/13: loss=0.064624 source_val_ADE=0.341242 source_val_FDE=0.688699
+univ ett_sr-fixed 42 epoch 13/13: loss=0.062872 source_val_ADE=0.338679 source_val_FDE=0.687473
+univ ett_sr-fixed 123 epoch 13/13: loss=0.064795 source_val_ADE=0.335510 source_val_FDE=0.681803
+univ emt-fixed 42 epoch 1/12: loss=0.250824 source_val_ADE=0.437771 source_val_FDE=0.900926
+univ emt-fixed 123 epoch 1/12: loss=0.234687 source_val_ADE=0.385194 source_val_FDE=0.793315
+hotel ett-fixed 2024 epoch 10/11: loss=0.124065 source_val_ADE=0.473821 source_val_FDE=1.001879
+hotel emt-fixed 123 epoch 14/14: loss=0.115940 source_val_ADE=0.478848 source_val_FDE=1.008324
+hotel ett-fixed 2024 epoch 11/11: loss=0.122533 source_val_ADE=0.516056 source_val_FDE=1.070312
+hotel emt_sr-fixed 123 epoch 1/15: loss=0.109374 source_val_ADE=0.465511 source_val_FDE=0.994905
+hotel ett_sr-fixed 2024 epoch 1/11: loss=0.115198 source_val_ADE=0.463331 source_val_FDE=0.982040
+univ emt-fixed 42 epoch 10/12: loss=0.082413 source_val_ADE=0.356391 source_val_FDE=0.708133
+univ emt-fixed 123 epoch 10/12: loss=0.082267 source_val_ADE=0.350825 source_val_FDE=0.716003
+univ emt-fixed 42 epoch 12/12: loss=0.080372 source_val_ADE=0.334149 source_val_FDE=0.677880
+univ emt-fixed 123 epoch 12/12: loss=0.079741 source_val_ADE=0.345565 source_val_FDE=0.708126
+univ emt_sr-fixed 42 epoch 1/4: loss=0.069416 source_val_ADE=0.328148 source_val_FDE=0.673871
+univ emt_sr-fixed 123 epoch 1/4: loss=0.068952 source_val_ADE=0.329636 source_val_FDE=0.680470
+univ emt_sr-fixed 42 epoch 4/4: loss=0.062830 source_val_ADE=0.331718 source_val_FDE=0.683172
+univ emt_sr-fixed 123 epoch 4/4: loss=0.062619 source_val_ADE=0.324948 source_val_FDE=0.667134
+DIAGNOSTIC PAIR COMPLETE ('univ', 42)
+DIAGNOSTIC PAIR COMPLETE ('univ', 123)
+univ ett-fixed 2024 epoch 1/21: loss=0.226840 source_val_ADE=0.419837 source_val_FDE=0.817678
+zara1 ett-fixed 42 epoch 1/30: loss=0.170167 source_val_ADE=0.488164 source_val_FDE=1.019723
+univ ett-fixed 2024 epoch 10/21: loss=0.087699 source_val_ADE=0.361793 source_val_FDE=0.750610
+hotel emt_sr-fixed 123 epoch 10/15: loss=0.095888 source_val_ADE=0.459678 source_val_FDE=0.974051
+hotel ett_sr-fixed 2024 epoch 10/11: loss=0.111093 source_val_ADE=0.464348 source_val_FDE=0.980754
+hotel ett_sr-fixed 2024 epoch 11/11: loss=0.111427 source_val_ADE=0.462084 source_val_FDE=0.982192
+hotel emt-fixed 2024 epoch 1/14: loss=0.162223 source_val_ADE=0.510667 source_val_FDE=1.063853
+univ ett-fixed 2024 epoch 20/21: loss=0.081424 source_val_ADE=0.370816 source_val_FDE=0.753375
+univ ett-fixed 2024 epoch 21/21: loss=0.082564 source_val_ADE=0.352638 source_val_FDE=0.708594
+univ ett_sr-fixed 2024 epoch 1/13: loss=0.071177 source_val_ADE=0.362309 source_val_FDE=0.724061
+hotel emt_sr-fixed 123 epoch 15/15: loss=0.090770 source_val_ADE=0.458166 source_val_FDE=0.975915
+DIAGNOSTIC PAIR COMPLETE ('hotel', 123)
+zara1 ett-fixed 123 epoch 1/30: loss=0.169251 source_val_ADE=0.490934 source_val_FDE=1.031479
+univ ett_sr-fixed 2024 epoch 10/13: loss=0.063498 source_val_ADE=0.339874 source_val_FDE=0.689233
+univ ett_sr-fixed 2024 epoch 13/13: loss=0.063504 source_val_ADE=0.334275 source_val_FDE=0.676576
+zara1 ett-fixed 42 epoch 10/30: loss=0.124433 source_val_ADE=0.499512 source_val_FDE=1.047462
+univ emt-fixed 2024 epoch 1/12: loss=0.237734 source_val_ADE=0.397072 source_val_FDE=0.787993
+univ emt-fixed 2024 epoch 10/12: loss=0.081675 source_val_ADE=0.349198 source_val_FDE=0.717377
+univ emt-fixed 2024 epoch 12/12: loss=0.079713 source_val_ADE=0.354247 source_val_FDE=0.712083
+univ emt_sr-fixed 2024 epoch 1/4: loss=0.071841 source_val_ADE=0.325947 source_val_FDE=0.667687
+hotel emt-fixed 2024 epoch 10/14: loss=0.118768 source_val_ADE=0.475573 source_val_FDE=1.007412
+univ emt_sr-fixed 2024 epoch 4/4: loss=0.063313 source_val_ADE=0.341568 source_val_FDE=0.690897
+DIAGNOSTIC PAIR COMPLETE ('univ', 2024)
+zara1 ett-fixed 2024 epoch 1/30: loss=0.171269 source_val_ADE=0.512327 source_val_FDE=1.053457
+zara1 ett-fixed 123 epoch 10/30: loss=0.125243 source_val_ADE=0.479496 source_val_FDE=1.016861
+hotel emt-fixed 2024 epoch 14/14: loss=0.116820 source_val_ADE=0.474135 source_val_FDE=1.012163
+hotel emt_sr-fixed 2024 epoch 1/15: loss=0.109599 source_val_ADE=0.468375 source_val_FDE=0.996910
+zara1 ett-fixed 42 epoch 20/30: loss=0.122528 source_val_ADE=0.490601 source_val_FDE=1.027266
+zara1 ett-fixed 2024 epoch 10/30: loss=0.124120 source_val_ADE=0.496348 source_val_FDE=1.040041
+hotel emt_sr-fixed 2024 epoch 10/15: loss=0.095285 source_val_ADE=0.474842 source_val_FDE=1.006754
+zara1 ett-fixed 123 epoch 20/30: loss=0.121732 source_val_ADE=0.515033 source_val_FDE=1.077555
+hotel emt_sr-fixed 2024 epoch 15/15: loss=0.090750 source_val_ADE=0.463376 source_val_FDE=0.984248
+DIAGNOSTIC PAIR COMPLETE ('hotel', 2024)
+zara1 ett-fixed 42 epoch 30/30: loss=0.121941 source_val_ADE=0.473832 source_val_FDE=1.003404
+zara2 ett-fixed 42 epoch 1/27: loss=0.182838 source_val_ADE=0.556976 source_val_FDE=1.163677
+zara1 ett_sr-fixed 42 epoch 1/34: loss=0.114493 source_val_ADE=0.464387 source_val_FDE=0.989717
+zara1 ett-fixed 2024 epoch 20/30: loss=0.121939 source_val_ADE=0.499288 source_val_FDE=1.036986
+zara1 ett_sr-fixed 42 epoch 10/34: loss=0.112461 source_val_ADE=0.465934 source_val_FDE=0.990521
+zara1 ett-fixed 123 epoch 30/30: loss=0.120830 source_val_ADE=0.469471 source_val_FDE=0.997625
+zara2 ett-fixed 42 epoch 10/27: loss=0.129509 source_val_ADE=0.556608 source_val_FDE=1.149267
+zara1 ett_sr-fixed 123 epoch 1/34: loss=0.114601 source_val_ADE=0.464510 source_val_FDE=0.990452
+zara1 ett_sr-fixed 42 epoch 20/34: loss=0.112106 source_val_ADE=0.465826 source_val_FDE=0.989841
+zara1 ett_sr-fixed 123 epoch 10/34: loss=0.113755 source_val_ADE=0.468382 source_val_FDE=0.997032
+zara1 ett-fixed 2024 epoch 30/30: loss=0.121249 source_val_ADE=0.479044 source_val_FDE=1.013750
+zara1 ett_sr-fixed 2024 epoch 1/34: loss=0.114604 source_val_ADE=0.471616 source_val_FDE=1.003542
+zara2 ett-fixed 42 epoch 20/27: loss=0.128385 source_val_ADE=0.520215 source_val_FDE=1.093197
+zara1 ett_sr-fixed 42 epoch 30/34: loss=0.111793 source_val_ADE=0.465579 source_val_FDE=0.990649
+zara1 ett_sr-fixed 123 epoch 20/34: loss=0.113480 source_val_ADE=0.466121 source_val_FDE=0.991960
+zara1 ett_sr-fixed 2024 epoch 10/34: loss=0.112832 source_val_ADE=0.465170 source_val_FDE=0.986855
+zara1 ett_sr-fixed 42 epoch 34/34: loss=0.111825 source_val_ADE=0.468449 source_val_FDE=0.993893
+zara1 emt-fixed 42 epoch 1/12: loss=0.164213 source_val_ADE=0.488926 source_val_FDE=1.031861
+zara2 ett-fixed 42 epoch 27/27: loss=0.126694 source_val_ADE=0.518542 source_val_FDE=1.091145
+zara2 ett_sr-fixed 42 epoch 1/30: loss=0.119759 source_val_ADE=0.509611 source_val_FDE=1.080506
+zara1 ett_sr-fixed 123 epoch 30/34: loss=0.113272 source_val_ADE=0.466260 source_val_FDE=0.992668
+zara1 ett_sr-fixed 2024 epoch 20/34: loss=0.112098 source_val_ADE=0.468583 source_val_FDE=0.993670
+zara1 ett_sr-fixed 123 epoch 34/34: loss=0.112745 source_val_ADE=0.465029 source_val_FDE=0.989675
+zara2 ett_sr-fixed 42 epoch 10/30: loss=0.116949 source_val_ADE=0.506174 source_val_FDE=1.070567
+zara1 emt-fixed 123 epoch 1/12: loss=0.163289 source_val_ADE=0.506734 source_val_FDE=1.060713
+zara1 emt-fixed 42 epoch 10/12: loss=0.119023 source_val_ADE=0.478581 source_val_FDE=1.011743
+zara1 emt-fixed 42 epoch 12/12: loss=0.118172 source_val_ADE=0.481048 source_val_FDE=1.018103
+zara1 emt_sr-fixed 42 epoch 1/19: loss=0.109931 source_val_ADE=0.461768 source_val_FDE=0.988049
+zara1 ett_sr-fixed 2024 epoch 30/34: loss=0.111507 source_val_ADE=0.468883 source_val_FDE=0.994240
+zara2 ett_sr-fixed 42 epoch 20/30: loss=0.115957 source_val_ADE=0.507638 source_val_FDE=1.068225
+zara1 ett_sr-fixed 2024 epoch 34/34: loss=0.111443 source_val_ADE=0.470578 source_val_FDE=0.999235
+zara1 emt-fixed 123 epoch 10/12: loss=0.119240 source_val_ADE=0.502201 source_val_FDE=1.050003
+zara1 emt-fixed 2024 epoch 1/12: loss=0.163304 source_val_ADE=0.495079 source_val_FDE=1.039069
+zara1 emt-fixed 123 epoch 12/12: loss=0.118015 source_val_ADE=0.473498 source_val_FDE=1.000108
+zara1 emt_sr-fixed 42 epoch 10/19: loss=0.095602 source_val_ADE=0.452631 source_val_FDE=0.964351
+zara1 emt_sr-fixed 123 epoch 1/19: loss=0.110310 source_val_ADE=0.461870 source_val_FDE=0.987731
+zara2 ett_sr-fixed 42 epoch 30/30: loss=0.115373 source_val_ADE=0.504019 source_val_FDE=1.061761
+zara2 emt-fixed 42 epoch 1/14: loss=0.175005 source_val_ADE=0.536168 source_val_FDE=1.127514
+zara1 emt-fixed 2024 epoch 10/12: loss=0.119353 source_val_ADE=0.476439 source_val_FDE=1.014320
+zara1 emt_sr-fixed 42 epoch 19/19: loss=0.088081 source_val_ADE=0.462385 source_val_FDE=0.984046
+DIAGNOSTIC PAIR COMPLETE ('zara1', 42)
+zara2 ett-fixed 123 epoch 1/27: loss=0.180032 source_val_ADE=0.551347 source_val_FDE=1.139285
+zara1 emt_sr-fixed 123 epoch 10/19: loss=0.098003 source_val_ADE=0.455902 source_val_FDE=0.973119
+zara1 emt-fixed 2024 epoch 12/12: loss=0.117698 source_val_ADE=0.489479 source_val_FDE=1.036181
+zara1 emt_sr-fixed 2024 epoch 1/19: loss=0.110195 source_val_ADE=0.465211 source_val_FDE=0.996913
+zara2 emt-fixed 42 epoch 10/14: loss=0.124503 source_val_ADE=0.532943 source_val_FDE=1.113443
+zara2 emt-fixed 42 epoch 14/14: loss=0.121575 source_val_ADE=0.522867 source_val_FDE=1.100020
+zara2 emt_sr-fixed 42 epoch 1/16: loss=0.112878 source_val_ADE=0.507213 source_val_FDE=1.072994
+zara1 emt_sr-fixed 123 epoch 19/19: loss=0.089818 source_val_ADE=0.456868 source_val_FDE=0.975751
+DIAGNOSTIC PAIR COMPLETE ('zara1', 123)
+zara2 ett-fixed 123 epoch 10/27: loss=0.129436 source_val_ADE=0.556273 source_val_FDE=1.155061
+zara2 ett-fixed 2024 epoch 1/27: loss=0.182946 source_val_ADE=0.575228 source_val_FDE=1.161625
+zara1 emt_sr-fixed 2024 epoch 10/19: loss=0.096347 source_val_ADE=0.459815 source_val_FDE=0.974670
+zara2 emt_sr-fixed 42 epoch 10/16: loss=0.099184 source_val_ADE=0.498109 source_val_FDE=1.048196
+zara1 emt_sr-fixed 2024 epoch 19/19: loss=0.088069 source_val_ADE=0.460998 source_val_FDE=0.980521
+DIAGNOSTIC PAIR COMPLETE ('zara1', 2024)
+zara2 emt_sr-fixed 42 epoch 16/16: loss=0.092947 source_val_ADE=0.498837 source_val_FDE=1.054456
+DIAGNOSTIC PAIR COMPLETE ('zara2', 42)
+zara2 ett-fixed 2024 epoch 10/27: loss=0.130378 source_val_ADE=0.519566 source_val_FDE=1.092860
+zara2 ett-fixed 123 epoch 20/27: loss=0.127740 source_val_ADE=0.542161 source_val_FDE=1.120203
+zara2 ett-fixed 123 epoch 27/27: loss=0.126231 source_val_ADE=0.522949 source_val_FDE=1.104960
+zara2 ett_sr-fixed 123 epoch 1/30: loss=0.119314 source_val_ADE=0.518023 source_val_FDE=1.096720
+zara2 ett-fixed 2024 epoch 20/27: loss=0.127537 source_val_ADE=0.540404 source_val_FDE=1.127430
+zara2 ett_sr-fixed 123 epoch 10/30: loss=0.116630 source_val_ADE=0.510727 source_val_FDE=1.077991
+zara2 ett-fixed 2024 epoch 27/27: loss=0.126859 source_val_ADE=0.526895 source_val_FDE=1.108258
+zara2 ett_sr-fixed 2024 epoch 1/30: loss=0.119771 source_val_ADE=0.512529 source_val_FDE=1.085705
+zara2 ett_sr-fixed 123 epoch 20/30: loss=0.116096 source_val_ADE=0.512395 source_val_FDE=1.080883
+zara2 ett_sr-fixed 2024 epoch 10/30: loss=0.117233 source_val_ADE=0.510947 source_val_FDE=1.078637
+zara2 ett_sr-fixed 123 epoch 30/30: loss=0.115443 source_val_ADE=0.505733 source_val_FDE=1.064253
+zara2 emt-fixed 123 epoch 1/14: loss=0.171669 source_val_ADE=0.541788 source_val_FDE=1.138185
+zara2 ett_sr-fixed 2024 epoch 20/30: loss=0.115771 source_val_ADE=0.510056 source_val_FDE=1.079912
+zara2 ett_sr-fixed 2024 epoch 30/30: loss=0.115409 source_val_ADE=0.511082 source_val_FDE=1.077911
+zara2 emt-fixed 123 epoch 10/14: loss=0.123548 source_val_ADE=0.529797 source_val_FDE=1.110246
+zara2 emt-fixed 2024 epoch 1/14: loss=0.174052 source_val_ADE=0.534548 source_val_FDE=1.121520
+zara2 emt-fixed 123 epoch 14/14: loss=0.120532 source_val_ADE=0.535629 source_val_FDE=1.113429
+zara2 emt_sr-fixed 123 epoch 1/16: loss=0.114119 source_val_ADE=0.505893 source_val_FDE=1.069661
+zara2 emt-fixed 2024 epoch 10/14: loss=0.125270 source_val_ADE=0.516670 source_val_FDE=1.090168
+zara2 emt_sr-fixed 123 epoch 10/16: loss=0.099227 source_val_ADE=0.499742 source_val_FDE=1.051197
+zara2 emt-fixed 2024 epoch 14/14: loss=0.121553 source_val_ADE=0.521530 source_val_FDE=1.101074
+zara2 emt_sr-fixed 123 epoch 16/16: loss=0.093756 source_val_ADE=0.502393 source_val_FDE=1.056949
+DIAGNOSTIC PAIR COMPLETE ('zara2', 123)
+zara2 emt_sr-fixed 2024 epoch 1/16: loss=0.113932 source_val_ADE=0.507158 source_val_FDE=1.072039
+zara2 emt_sr-fixed 2024 epoch 10/16: loss=0.101775 source_val_ADE=0.495815 source_val_FDE=1.045293
+zara2 emt_sr-fixed 2024 epoch 16/16: loss=0.094889 source_val_ADE=0.499166 source_val_FDE=1.048752
+DIAGNOSTIC PAIR COMPLETE ('zara2', 2024)
+SOURCE VALIDATION DIAGNOSTIC ONLY: 60/60 complete
+TRAINING REGIME MISMATCH: PARTIAL
+MAMBA-SOCIAL COMPATIBILITY RISK: UNCLEAR
+CROSS-SCENE GENERALIZATION RISK: SUPPORTED

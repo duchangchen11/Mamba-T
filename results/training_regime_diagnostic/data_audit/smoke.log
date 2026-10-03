@@ -1,0 +1,12 @@
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+eth ett-fixed 42 epoch 1/2: loss=0.168238 source_val_ADE=0.593733 source_val_FDE=1.184119
+eth ett-fixed 42 epoch 2/2: loss=0.135460 source_val_ADE=0.512872 source_val_FDE=1.067595
+eth emt-fixed 42 epoch 1/2: loss=0.161518 source_val_ADE=0.529723 source_val_FDE=1.087858
+eth emt-fixed 42 epoch 2/2: loss=0.127201 source_val_ADE=0.477339 source_val_FDE=1.007052
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+eth ett_sr-fixed 42 epoch 1/2: loss=0.114931 source_val_ADE=0.449419 source_val_FDE=0.953603
+eth ett_sr-fixed 42 epoch 2/2: loss=0.113686 source_val_ADE=0.452416 source_val_FDE=0.962679
+eth emt_sr-fixed 42 epoch 1/2: loss=0.112648 source_val_ADE=0.446007 source_val_FDE=0.951139
+eth emt_sr-fixed 42 epoch 2/2: loss=0.109903 source_val_ADE=0.447151 source_val_FDE=0.955363

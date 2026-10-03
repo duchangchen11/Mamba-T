@@ -1,0 +1,13 @@
+{
+  "pytest_passed": 109,
+  "pytest_failed": 0,
+  "pytest_log": "data_audit/pytest.txt",
+  "py_compile_passed": true,
+  "diff_check_passed": true,
+  "real_heldout_loader_tests_use_synthetic_data": true,
+  "heldout_test_accessed": false,
+  "historical_test_already_accessed": true,
+  "csv_line_endings_normalized_to_LF": true,
+  "csv_parsed_values_unchanged": true,
+  "csv_files_verified": 64
+}

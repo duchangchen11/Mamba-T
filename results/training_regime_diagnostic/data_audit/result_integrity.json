@@ -1,0 +1,15 @@
+{
+  "completed_runs": 60,
+  "verified_at_utc": "2026-10-03T09:40:00.499410+00:00",
+  "checkpoint_sha_state_hash_epoch_finite_passed": true,
+  "sample_sha_metrics_reproduction_and_order_passed": true,
+  "historical_frozen_files": 1103,
+  "heldout_test_accessed": false,
+  "historical_test_already_accessed": true,
+  "protocol_sha256": "fc0bfff7a720e659a873e13e132b50b670cc7f6f81449a428d2f675c6bd152f8",
+  "report_sha256": {
+    "comparison.json": "1c2f844305019f419420fdfcef086e2cd5825fca98f86ae80b30ab5b056caf11",
+    "summary.md": "bc6eeba40cb05ad8be44eb3b3a830f8845ea3468109e600e0e9909f75e2c456a",
+    "brain_report.md": "59e801a8d93042f26c7fd0c1f976a4511ad7febfe77a305f9542bd33829108a1"
+  }
+}

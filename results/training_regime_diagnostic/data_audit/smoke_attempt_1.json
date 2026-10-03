@@ -1,0 +1,7 @@
+{
+  "passed": false,
+  "failure": "checkpoint metadata model string overwrote model state; fixed before 60 diagnostic runs",
+  "training_parameters_changed": false,
+  "heldout_test_accessed": false,
+  "historical_test_already_accessed": true
+}

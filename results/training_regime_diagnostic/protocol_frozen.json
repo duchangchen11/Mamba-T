@@ -1,0 +1,156 @@
+{
+  "scope": "SOURCE VALIDATION DIAGNOSTIC ONLY",
+  "models": [
+    "ett",
+    "emt",
+    "ett_sr",
+    "emt_sr"
+  ],
+  "seeds": [
+    42,
+    123,
+    2024
+  ],
+  "optimizer": "AdamW",
+  "lr": 0.001,
+  "weight_decay": 0.0001,
+  "batch_size": 128,
+  "loss": "SmoothL1Loss",
+  "smooth_l1_beta": 1.0,
+  "gradient_clip": 5.0,
+  "scheduler": null,
+  "early_stopping": false,
+  "checkpoint_selection": "last frozen epoch, never validation best",
+  "epoch_config": "configs/final_training_epochs.json",
+  "split_policy": "unchanged first-stage pedestrian manifest",
+  "neighbor_policy": "unchanged clean social data: train-target-set-only train neighbors; observation-visible validation neighbors; N=8; no radius",
+  "diagnostic_best_rule": "minimum validation ADE after training; FDE at the same epoch; independent minimum FDE also recorded",
+  "correction_ratio_epsilon": 1e-08,
+  "distance_bins": "no-neighbor; <2m; [2m,4m]; >4m",
+  "correction_bins": "[0,0.05]; (0.05,0.10]; (0.10,0.20]; >0.20",
+  "validation_rng_isolation": true,
+  "training_workers": 4,
+  "heldout_test_accessed": false,
+  "historical_test_already_accessed": true,
+  "final_epochs": {
+    "eth": {
+      "ett": 38,
+      "emt": 10,
+      "ett_sr": 10,
+      "emt_sr": 14
+    },
+    "hotel": {
+      "ett": 11,
+      "emt": 14,
+      "ett_sr": 11,
+      "emt_sr": 15
+    },
+    "univ": {
+      "ett": 21,
+      "emt": 12,
+      "ett_sr": 13,
+      "emt_sr": 4
+    },
+    "zara1": {
+      "ett": 30,
+      "emt": 12,
+      "ett_sr": 34,
+      "emt_sr": 19
+    },
+    "zara2": {
+      "ett": 27,
+      "emt": 14,
+      "ett_sr": 30,
+      "emt_sr": 16
+    }
+  },
+  "code_commit": "cc2c95b82427ccb37281adeb33eb39695b17dc74",
+  "frozen_at_utc": "2026-10-03T09:23:27.288732+00:00",
+  "file_sha256": {
+    "configs/training_regime_diagnostic.json": "6d4914def4f918c9fba7467b82e7229e480967704e45099ec4cf8da727c0e6fb",
+    "configs/final_training_epochs.json": "2edf64541dd9855d76b57363628fd0873363a453e2d50b7613313a11a822c613",
+    "configs/eth_ucy_mamba_baseline.json": "edae9d59530e505ce9fe285867f9df9e5f15e9403d5ddfbc6edf297cfda46483",
+    "configs/clean_social_validation.json": "c0e014682edf6e8cfb4b7a86cbfa7482268d19f766b6854afda064ad321dd9a1",
+    "src/data/eth_ucy_training_regime_dataset.py": "7168ebaa6805de8fd63d0ae3c7562f8789ee7c3b6846bbd269c05f2abf18fdcf",
+    "src/data/eth_ucy_social_clean_dataset.py": "55d53b20b3943f3aa6541fbf675ba69c5f46501a7207f014f70a337eb3ab4437",
+    "scripts/training_regime_protocol.py": "4cd5428d481cdd946b1e7610a77dfd038f9c476f618dda4443df2e11e3074fe7",
+    "scripts/training_regime_metrics.py": "6018e2b9eb65fd66e15caa23237c457de4116ae1901582942cdb257095c3626b",
+    "scripts/training_regime_utils.py": "1438c793e918cfae113f1403fe31f516e204667d9886d0a06e03cdd92e2d47ee",
+    "scripts/run_training_regime_diagnostic.py": "3e254b0b1135e329847bb8e1223f9bb058a2a6de9c9e8e23178348b8c5c4129e",
+    "scripts/summarize_training_regime_diagnostic.py": "e25ccc675e878b3b5a4517c9429e568af63ae77407b62d6f4e0edb1d24ea63a9",
+    "scripts/eth_ucy_utils.py": "7203e235a0654a3ebd2efe740c548bb6cca573a897b622ea01510acc2de6f343",
+    "scripts/social_residual_utils.py": "1b6b23ddd08c1c24159b064d0188b948723b5a9c2ec5ca8f441f13a5a2bca887",
+    "src/models/trajectory_transformer.py": "2d43ffb52226da7946d6463dc78f19649a62685727cdf20b66722695fe2e4203",
+    "src/models/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/models/mamba_trajectory.py": "b6be68054b20c440dc3e6f2bcf5fbbc3eef370efec8b6a9ae2fbcab12e7815d7",
+    "src/models/social_residual.py": "51e6624e707039b848b384fa062a06a2c3d4d4c8149d0417872a7d2c6e181a74",
+    "src/models/social_attention.py": "08e1db940719824e84d965b90794df85f34c5c21f4c12c89fcdbccd9e208aabd",
+    "src/models/mamba_sequence_encoder.py": "46c18a72f5bd526fe6a79f74a8fdc0274012cd8995439b5ccbed90381fd6e5d4",
+    "results/eth_ucy_mamba_baseline/data_audit/manifest_eth.json": "449764a60bfbe32b97f56370aea4236681ba15d2e528f4cfd358ef8e915b80af",
+    "results/eth_ucy_mamba_baseline/data_audit/manifest_hotel.json": "21d46922b8a3081aec80db5deab9711109b163aa2786b0648e6b06dbb6843464",
+    "results/eth_ucy_mamba_baseline/data_audit/manifest_univ.json": "44c554d58fc70f64fdf999bf86118fff9473b927d9989195d17fcd035a663035",
+    "results/eth_ucy_mamba_baseline/data_audit/manifest_zara1.json": "ee3facf49a03f298c7b909722d054b20739af628a498f32f51fd7c0d49a8c301",
+    "results/eth_ucy_mamba_baseline/data_audit/manifest_zara2.json": "ed904f93f43ac29a5e08238cf0f708b68a8c5a699ff3bf7338eda94c231920ef"
+  },
+  "data_sha256": {
+    "data/processed/eth_ucy_social_clean/zara1/eth/train.npz": "782d13a2e6257fec55ebf2afd7a089977d5f8376af18928ef19602a7e5b52ab6",
+    "data/processed/eth_ucy_social_clean/zara1/eth/val.npz": "d762ba5a6672e0cc843b9f976be8ec1e8bf7b1ae78d98546c784e1c7432a18bb",
+    "data/processed/eth_ucy_social_clean/zara1/zara2/train.npz": "aa576d2d402c0eed91acc26975142f941eaa39adcd886a7f421fcccb14becf1b",
+    "data/processed/eth_ucy_social_clean/zara1/zara2/val.npz": "0e5029f32c5be5632b4755e7e91e100e2cc9dc6f7c9483d387f39922c60dc77e",
+    "data/processed/eth_ucy_social_clean/zara1/hotel/train.npz": "01d8c63eda76a935d4c5749ca12b03ddeea4677d97119cf17256b47f0b6742c3",
+    "data/processed/eth_ucy_social_clean/zara1/hotel/val.npz": "42e645c3b5329f56ee69ea5231e5bd692c69f78fe1df8d21f4c6c0ebafe3a1fa",
+    "data/processed/eth_ucy_social_clean/zara1/univ/train.npz": "545101d2177d9675f568d7d4703e7706afb6023a3163f5d9721c7d766eacf964",
+    "data/processed/eth_ucy_social_clean/zara1/univ/val.npz": "1bef980516a00cd95ecaca6ed073885d039347d51f784e070268fc47f930e91d",
+    "data/processed/eth_ucy_social_clean/eth/zara1/train.npz": "74b22e76f5541612caf16b08b3074980b1e50e6d3c08fb093b1b6733b210dc0e",
+    "data/processed/eth_ucy_social_clean/eth/zara1/val.npz": "8887cc3f306e8c821d8f3a03be73bb3caeb545cb274ad5c1ae624b4c39b4aca2",
+    "data/processed/eth_ucy_social_clean/eth/zara2/train.npz": "aa576d2d402c0eed91acc26975142f941eaa39adcd886a7f421fcccb14becf1b",
+    "data/processed/eth_ucy_social_clean/eth/zara2/val.npz": "0e5029f32c5be5632b4755e7e91e100e2cc9dc6f7c9483d387f39922c60dc77e",
+    "data/processed/eth_ucy_social_clean/eth/hotel/train.npz": "01d8c63eda76a935d4c5749ca12b03ddeea4677d97119cf17256b47f0b6742c3",
+    "data/processed/eth_ucy_social_clean/eth/hotel/val.npz": "42e645c3b5329f56ee69ea5231e5bd692c69f78fe1df8d21f4c6c0ebafe3a1fa",
+    "data/processed/eth_ucy_social_clean/eth/univ/train.npz": "545101d2177d9675f568d7d4703e7706afb6023a3163f5d9721c7d766eacf964",
+    "data/processed/eth_ucy_social_clean/eth/univ/val.npz": "1bef980516a00cd95ecaca6ed073885d039347d51f784e070268fc47f930e91d",
+    "data/processed/eth_ucy_social_clean/zara2/zara1/train.npz": "74b22e76f5541612caf16b08b3074980b1e50e6d3c08fb093b1b6733b210dc0e",
+    "data/processed/eth_ucy_social_clean/zara2/zara1/val.npz": "8887cc3f306e8c821d8f3a03be73bb3caeb545cb274ad5c1ae624b4c39b4aca2",
+    "data/processed/eth_ucy_social_clean/zara2/eth/train.npz": "782d13a2e6257fec55ebf2afd7a089977d5f8376af18928ef19602a7e5b52ab6",
+    "data/processed/eth_ucy_social_clean/zara2/eth/val.npz": "d762ba5a6672e0cc843b9f976be8ec1e8bf7b1ae78d98546c784e1c7432a18bb",
+    "data/processed/eth_ucy_social_clean/zara2/hotel/train.npz": "01d8c63eda76a935d4c5749ca12b03ddeea4677d97119cf17256b47f0b6742c3",
+    "data/processed/eth_ucy_social_clean/zara2/hotel/val.npz": "42e645c3b5329f56ee69ea5231e5bd692c69f78fe1df8d21f4c6c0ebafe3a1fa",
+    "data/processed/eth_ucy_social_clean/zara2/univ/train.npz": "545101d2177d9675f568d7d4703e7706afb6023a3163f5d9721c7d766eacf964",
+    "data/processed/eth_ucy_social_clean/zara2/univ/val.npz": "1bef980516a00cd95ecaca6ed073885d039347d51f784e070268fc47f930e91d",
+    "data/processed/eth_ucy_social_clean/hotel/zara1/train.npz": "74b22e76f5541612caf16b08b3074980b1e50e6d3c08fb093b1b6733b210dc0e",
+    "data/processed/eth_ucy_social_clean/hotel/zara1/val.npz": "8887cc3f306e8c821d8f3a03be73bb3caeb545cb274ad5c1ae624b4c39b4aca2",
+    "data/processed/eth_ucy_social_clean/hotel/eth/train.npz": "782d13a2e6257fec55ebf2afd7a089977d5f8376af18928ef19602a7e5b52ab6",
+    "data/processed/eth_ucy_social_clean/hotel/eth/val.npz": "d762ba5a6672e0cc843b9f976be8ec1e8bf7b1ae78d98546c784e1c7432a18bb",
+    "data/processed/eth_ucy_social_clean/hotel/zara2/train.npz": "aa576d2d402c0eed91acc26975142f941eaa39adcd886a7f421fcccb14becf1b",
+    "data/processed/eth_ucy_social_clean/hotel/zara2/val.npz": "0e5029f32c5be5632b4755e7e91e100e2cc9dc6f7c9483d387f39922c60dc77e",
+    "data/processed/eth_ucy_social_clean/hotel/univ/train.npz": "545101d2177d9675f568d7d4703e7706afb6023a3163f5d9721c7d766eacf964",
+    "data/processed/eth_ucy_social_clean/hotel/univ/val.npz": "1bef980516a00cd95ecaca6ed073885d039347d51f784e070268fc47f930e91d",
+    "data/processed/eth_ucy_social_clean/univ/zara1/train.npz": "74b22e76f5541612caf16b08b3074980b1e50e6d3c08fb093b1b6733b210dc0e",
+    "data/processed/eth_ucy_social_clean/univ/zara1/val.npz": "8887cc3f306e8c821d8f3a03be73bb3caeb545cb274ad5c1ae624b4c39b4aca2",
+    "data/processed/eth_ucy_social_clean/univ/eth/train.npz": "782d13a2e6257fec55ebf2afd7a089977d5f8376af18928ef19602a7e5b52ab6",
+    "data/processed/eth_ucy_social_clean/univ/eth/val.npz": "d762ba5a6672e0cc843b9f976be8ec1e8bf7b1ae78d98546c784e1c7432a18bb",
+    "data/processed/eth_ucy_social_clean/univ/zara2/train.npz": "aa576d2d402c0eed91acc26975142f941eaa39adcd886a7f421fcccb14becf1b",
+    "data/processed/eth_ucy_social_clean/univ/zara2/val.npz": "0e5029f32c5be5632b4755e7e91e100e2cc9dc6f7c9483d387f39922c60dc77e",
+    "data/processed/eth_ucy_social_clean/univ/hotel/train.npz": "01d8c63eda76a935d4c5749ca12b03ddeea4677d97119cf17256b47f0b6742c3",
+    "data/processed/eth_ucy_social_clean/univ/hotel/val.npz": "42e645c3b5329f56ee69ea5231e5bd692c69f78fe1df8d21f4c6c0ebafe3a1fa"
+  },
+  "historical_formal_context": {
+    "source": "user-supplied aggregate values in stage request; no test artifacts loaded or recomputed",
+    "ett": {
+      "ADE": 0.608966,
+      "FDE": 1.240611
+    },
+    "emt": {
+      "ADE": 0.600249,
+      "FDE": 1.241118
+    },
+    "ett_sr": {
+      "ADE": 0.596162,
+      "FDE": 1.219276
+    },
+    "emt_sr": {
+      "ADE": 0.618485,
+      "FDE": 1.283079
+    }
+  }
+}

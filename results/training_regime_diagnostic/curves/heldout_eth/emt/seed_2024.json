@@ -1,0 +1,92 @@
+[
+  {
+    "epoch": 1,
+    "train_loss": 0.16156822439611693,
+    "gradient_norm": 0.9362317323684692,
+    "mean_gradient_norm": 0.3621413301453631,
+    "lr": 0.001,
+    "validation_ADE": 0.4855437235067128,
+    "validation_FDE": 1.0146288247392308
+  },
+  {
+    "epoch": 2,
+    "train_loss": 0.1256314537635501,
+    "gradient_norm": 0.684319019317627,
+    "mean_gradient_norm": 0.231685281977949,
+    "lr": 0.001,
+    "validation_ADE": 0.48790149017315876,
+    "validation_FDE": 1.0200660283830336
+  },
+  {
+    "epoch": 3,
+    "train_loss": 0.12247014847481325,
+    "gradient_norm": 0.487716406583786,
+    "mean_gradient_norm": 0.20131219901208186,
+    "lr": 0.001,
+    "validation_ADE": 0.46776514522284374,
+    "validation_FDE": 0.9938514956259783
+  },
+  {
+    "epoch": 4,
+    "train_loss": 0.12087235600680352,
+    "gradient_norm": 1.1921367645263672,
+    "mean_gradient_norm": 0.18625530450899377,
+    "lr": 0.001,
+    "validation_ADE": 0.4787006636396266,
+    "validation_FDE": 1.0069272239357943
+  },
+  {
+    "epoch": 5,
+    "train_loss": 0.120304260448499,
+    "gradient_norm": 0.48296627402305603,
+    "mean_gradient_norm": 0.18372414926560515,
+    "lr": 0.001,
+    "validation_ADE": 0.4584579603116036,
+    "validation_FDE": 0.9782831560666804
+  },
+  {
+    "epoch": 6,
+    "train_loss": 0.11844332676601535,
+    "gradient_norm": 0.36828097701072693,
+    "mean_gradient_norm": 0.1740789114473722,
+    "lr": 0.001,
+    "validation_ADE": 0.4664054744838788,
+    "validation_FDE": 0.9847551744691629
+  },
+  {
+    "epoch": 7,
+    "train_loss": 0.11781897451170995,
+    "gradient_norm": 0.4983057975769043,
+    "mean_gradient_norm": 0.16533177600711838,
+    "lr": 0.001,
+    "validation_ADE": 0.4656001585382263,
+    "validation_FDE": 0.9943043787887158
+  },
+  {
+    "epoch": 8,
+    "train_loss": 0.1175293617307918,
+    "gradient_norm": 0.4417284429073334,
+    "mean_gradient_norm": 0.16550277434607857,
+    "lr": 0.001,
+    "validation_ADE": 0.4716521167610254,
+    "validation_FDE": 0.9996639848997021
+  },
+  {
+    "epoch": 9,
+    "train_loss": 0.11611196945034363,
+    "gradient_norm": 0.4086340665817261,
+    "mean_gradient_norm": 0.16046353999493468,
+    "lr": 0.001,
+    "validation_ADE": 0.4708923213426331,
+    "validation_FDE": 0.99616514794385
+  },
+  {
+    "epoch": 10,
+    "train_loss": 0.11672465485707637,
+    "gradient_norm": 0.3780613839626312,
+    "mean_gradient_norm": 0.16550024987285972,
+    "lr": 0.001,
+    "validation_ADE": 0.4580924971707303,
+    "validation_FDE": 0.9800427063012177
+  }
+]

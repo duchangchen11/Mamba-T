@@ -1,0 +1,27 @@
+{
+  "new_modules_initialization_sha256": "d9003ef12c6a12a998c1eea075d0503f4e9643a0167e302c982924ada666df64",
+  "fold": "eth",
+  "model": "ett_sr",
+  "seed": 123,
+  "protocol_sha256": "fc0bfff7a720e659a873e13e132b50b670cc7f6f81449a428d2f675c6bd152f8",
+  "train_scene_list": [
+    "hotel",
+    "univ",
+    "zara1",
+    "zara2"
+  ],
+  "train_sample_count": 29831,
+  "validation_sample_count": 3966,
+  "train_pedestrian_count": 1015,
+  "validation_pedestrian_count": 160,
+  "train_validation_pedestrian_overlap": 0,
+  "train_cross_split_neighbor_violations": 0,
+  "heldout_test_accessed": false,
+  "historical_test_already_accessed": true,
+  "smoke": false,
+  "base_checkpoint_path": "checkpoints/training_regime_diagnostic/heldout_eth/ett/seed_123.pt",
+  "base_checkpoint_sha256": "ff23c2403a4310b003038c268a9d9026db6b2b1c4b8c12920d578110af67e225",
+  "backbone_state_sha256_before": "531a09a26a4879837d54f86a0910051c99dfc435595b2100cdb8d02421bd2857",
+  "context_cache_seconds": 1.377486865996616,
+  "initial_output_base_max_abs_diff": 0.0
+}

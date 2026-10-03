@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "models": [
+    "ett",
+    "emt",
+    "ett_sr",
+    "emt_sr"
+  ],
+  "protocol_sha256": "fc0bfff7a720e659a873e13e132b50b670cc7f6f81449a428d2f675c6bd152f8",
+  "epochs": 2,
+  "scheduler": null,
+  "early_stopping": false,
+  "checkpoint_rule": "last epoch",
+  "validation_controls_training": false,
+  "heldout_test_accessed": false,
+  "historical_test_already_accessed": true
+}

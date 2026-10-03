@@ -1,0 +1,11 @@
+{
+  "allowed_modes": [
+    "train",
+    "val"
+  ],
+  "rejected_mode": "heldout_test",
+  "formal_test_artifacts_loaded_for_analysis": false,
+  "heldout_test_accessed": false,
+  "historical_test_already_accessed": true,
+  "protocol_sha256": "fc0bfff7a720e659a873e13e132b50b670cc7f6f81449a428d2f675c6bd152f8"
+}

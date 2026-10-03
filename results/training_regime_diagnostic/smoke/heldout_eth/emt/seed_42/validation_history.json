@@ -1,0 +1,20 @@
+[
+  {
+    "epoch": 1,
+    "train_loss": 0.16151800526852444,
+    "gradient_norm": 1.1269145011901855,
+    "mean_gradient_norm": 0.34119586353628045,
+    "lr": 0.001,
+    "validation_ADE": 0.5297233303305203,
+    "validation_FDE": 1.087857528358501
+  },
+  {
+    "epoch": 2,
+    "train_loss": 0.12720093687080336,
+    "gradient_norm": 0.7745504975318909,
+    "mean_gradient_norm": 0.2394227683544159,
+    "lr": 0.001,
+    "validation_ADE": 0.4773394194836583,
+    "validation_FDE": 1.0070515652561305
+  }
+]

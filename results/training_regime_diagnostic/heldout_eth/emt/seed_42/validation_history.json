@@ -1,0 +1,92 @@
+[
+  {
+    "epoch": 1,
+    "train_loss": 0.16151800450126275,
+    "gradient_norm": 1.126914620399475,
+    "mean_gradient_norm": 0.34119586111643374,
+    "lr": 0.001,
+    "validation_ADE": 0.5297233360198923,
+    "validation_FDE": 1.087857540029743
+  },
+  {
+    "epoch": 2,
+    "train_loss": 0.1272009368743,
+    "gradient_norm": 0.7745506167411804,
+    "mean_gradient_norm": 0.239422765138567,
+    "lr": 0.001,
+    "validation_ADE": 0.4773394519299449,
+    "validation_FDE": 1.0070516141693346
+  },
+  {
+    "epoch": 3,
+    "train_loss": 0.12298173153376644,
+    "gradient_norm": 0.6112527251243591,
+    "mean_gradient_norm": 0.20129916511284998,
+    "lr": 0.001,
+    "validation_ADE": 0.47737924462805986,
+    "validation_FDE": 1.0044876694513014
+  },
+  {
+    "epoch": 4,
+    "train_loss": 0.12080131571210796,
+    "gradient_norm": 0.5920437574386597,
+    "mean_gradient_norm": 0.17982205748558044,
+    "lr": 0.001,
+    "validation_ADE": 0.5023753903163406,
+    "validation_FDE": 1.0389804198915802
+  },
+  {
+    "epoch": 5,
+    "train_loss": 0.12079202736741973,
+    "gradient_norm": 0.44864651560783386,
+    "mean_gradient_norm": 0.1928381996277051,
+    "lr": 0.001,
+    "validation_ADE": 0.4829317463229777,
+    "validation_FDE": 1.0065394966178012
+  },
+  {
+    "epoch": 6,
+    "train_loss": 0.11841004570895333,
+    "gradient_norm": 0.5750640630722046,
+    "mean_gradient_norm": 0.15998766711379728,
+    "lr": 0.001,
+    "validation_ADE": 0.4732802051313293,
+    "validation_FDE": 1.000200300040892
+  },
+  {
+    "epoch": 7,
+    "train_loss": 0.11817347573188915,
+    "gradient_norm": 0.37810617685317993,
+    "mean_gradient_norm": 0.16940383189636418,
+    "lr": 0.001,
+    "validation_ADE": 0.4668307230490647,
+    "validation_FDE": 0.9905713690544826
+  },
+  {
+    "epoch": 8,
+    "train_loss": 0.11717459814345328,
+    "gradient_norm": 0.5117813944816589,
+    "mean_gradient_norm": 0.15640924552566984,
+    "lr": 0.001,
+    "validation_ADE": 0.4833619283615689,
+    "validation_FDE": 1.0124529730568177
+  },
+  {
+    "epoch": 9,
+    "train_loss": 0.11670701666761805,
+    "gradient_norm": 0.5520774722099304,
+    "mean_gradient_norm": 0.1668811595529063,
+    "lr": 0.001,
+    "validation_ADE": 0.4758296716842219,
+    "validation_FDE": 1.005483032357038
+  },
+  {
+    "epoch": 10,
+    "train_loss": 0.11668329073191049,
+    "gradient_norm": 0.5329582691192627,
+    "mean_gradient_norm": 0.16323027747054386,
+    "lr": 0.001,
+    "validation_ADE": 0.4635703032574606,
+    "validation_FDE": 0.9762331712680081
+  }
+]

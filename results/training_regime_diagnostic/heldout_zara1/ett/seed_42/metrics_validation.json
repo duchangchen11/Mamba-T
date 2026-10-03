@@ -1,0 +1,105 @@
+{
+  "fold": "zara1",
+  "model": "ett",
+  "seed": 42,
+  "protocol_sha256": "fc0bfff7a720e659a873e13e132b50b670cc7f6f81449a428d2f675c6bd152f8",
+  "train_scene_list": [
+    "eth",
+    "hotel",
+    "univ",
+    "zara2"
+  ],
+  "train_sample_count": 28077,
+  "validation_sample_count": 3728,
+  "train_pedestrian_count": 930,
+  "validation_pedestrian_count": 147,
+  "train_validation_pedestrian_overlap": 0,
+  "train_cross_split_neighbor_violations": 0,
+  "heldout_test_accessed": false,
+  "historical_test_already_accessed": true,
+  "smoke": false,
+  "training_seconds": 112.5557034960002,
+  "gpu_peak_memory_bytes": 61078528,
+  "validation_ADE": 0.4738319120423259,
+  "validation_FDE": 1.003403721147232,
+  "neighbor_count": {
+    "0": {
+      "sample_count": 8,
+      "ADE": 1.050777818903236,
+      "FDE": 1.797564583344979
+    },
+    "1-2": {
+      "sample_count": 20,
+      "ADE": 0.8586697231449276,
+      "FDE": 1.822063119219869
+    },
+    "3-4": {
+      "sample_count": 135,
+      "ADE": 0.4930515715916329,
+      "FDE": 0.9741387601643531
+    },
+    "5+": {
+      "sample_count": 3565,
+      "ADE": 0.4696504316731545,
+      "FDE": 0.9981370436924366
+    }
+  },
+  "neighbor_distance": {
+    "no-neighbor": {
+      "sample_count": 8,
+      "ADE": 1.050777818903236,
+      "FDE": 1.797564583344979
+    },
+    "<2m": {
+      "sample_count": 1694,
+      "ADE": 0.44785077076431773,
+      "FDE": 0.939957549420632
+    },
+    "2-4m": {
+      "sample_count": 1628,
+      "ADE": 0.48804004896084624,
+      "FDE": 1.0509399608370198
+    },
+    ">4m": {
+      "sample_count": 398,
+      "ADE": 0.5147003521596806,
+      "FDE": 1.0630407306756335
+    }
+  },
+  "diagnostic_best_validation_epoch": 18,
+  "diagnostic_best_validation_ADE": 0.4734949460889406,
+  "diagnostic_best_validation_FDE": 1.0064077163814542,
+  "diagnostic_minimum_FDE_epoch": 30,
+  "diagnostic_minimum_FDE": 1.003403721147232,
+  "final_best_gap_ADE": 0.000336965953385282,
+  "final_best_gap_FDE": -0.0030039952342222342,
+  "final_minimum_FDE_gap": 0.0,
+  "best_used_for_checkpoint_selection": false,
+  "epochs_run": 30,
+  "final_epoch": 30,
+  "final_epoch_metrics": {
+    "epoch": 30,
+    "train_loss": 0.12194145110946573,
+    "gradient_norm": 0.4589594602584839,
+    "mean_gradient_norm": 0.17814836959269914,
+    "lr": 0.001,
+    "validation_ADE": 0.4738319120423259,
+    "validation_FDE": 1.003403721147232
+  },
+  "checkpoint_path": "checkpoints/training_regime_diagnostic/heldout_zara1/ett/seed_42.pt",
+  "checkpoint_sha256": "89798a0c898b43761ca2afef83ec0b1a2c3e31c42731a9fd2a57d30f5dde7365",
+  "final_model_state_sha256": "4079e5d2c9145ae8a8f5eb441372ddf9cb400be4bf165b28aba48f6df4a81280",
+  "validation_samples_sha256": "eb65de9881da6b0f5c4c8a3fb20991f3a9dde6c74c9285381e288bc43cb88275",
+  "maximum_gradient_norm_before_clipping": 0.8040094375610352,
+  "parameter_count": {
+    "total": 616344,
+    "trainable": 616344,
+    "frozen": 0
+  },
+  "nan_inf": false,
+  "fixed_lr": 0.001,
+  "scheduler": null,
+  "early_stopping": false,
+  "checkpoint_rule": "last epoch",
+  "validation_controls_training": false
+}
