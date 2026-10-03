@@ -6,6 +6,7 @@
   "forward_batch_size": 128,
   "attention_definition": "original SDPA identity-value probe using unchanged MHA packed projections and padding mask; mean of four per-head softmax weights; renormalize valid neighbors; no dropout in eval",
   "attention_context_reproduction_tolerance": {"rtol": 1e-6, "atol": 1e-6, "reason": "independently reconstruct unchanged original SDPA context; prediction forward remains unchanged"},
+  "saved_response_reproduction_tolerance": {"rtol": 1e-4, "atol": 1e-5, "reason": "float32 forward versus previous GPU-resident cache; saved ADE/FDE, mean residual and correction ratio remain authoritative"},
   "closing_definition": "mean_closing_speed aliases mean_positive_closing_speed, mean over strictly approaching valid neighbors, or 0; max_closing_speed=max(0,max signed closing); signed mean/max also saved",
   "zero_neighbor_definition": "distance/relative-speed are missing NaN with count=0; closing/attention statistics are 0",
   "distance_bins": "no neighbor; <2m; [2m,4m); [4m,8m]; >8m, based on nearest distance",

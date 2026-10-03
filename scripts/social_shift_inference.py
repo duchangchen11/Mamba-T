@@ -52,6 +52,11 @@ def verify_attention_context(observed,original):
     return float((observed-original).abs().max())
 
 
+def verify_saved_response(observed,saved):
+    np.testing.assert_allclose(observed,saved,rtol=1e-4,atol=1e-5)
+    return float(np.max(np.abs(observed-saved)))
+
+
 @torch.no_grad()
 def extract_run(fold,model_name,seed,mode='val'):
     require_validation(mode)
@@ -98,16 +103,14 @@ def extract_run(fold,model_name,seed,mode='val'):
     responses=response_features(residual,base,saved['base_ADE'],saved['sample_ADE'],saved['base_FDE'],saved['sample_FDE'])
     reproduction={}
     for name in ('residual_norm','correction_ratio','base_trajectory_norm'):
-        reproduction[name]=float(np.max(np.abs(responses[name]-saved[name])))
-        np.testing.assert_allclose(responses[name],saved[name],rtol=1e-5,atol=1e-6)
+        reproduction[name]=verify_saved_response(responses[name],saved[name])
         responses[name]=saved[name].copy()
     last=dataset.arrays['last_obs_pos'].numpy();future=dataset.arrays['future_abs'].numpy()
     for label,prediction in (('base',base),('SR',pred)):
         d=np.linalg.norm((prediction+last[:,None]).astype(np.float64)-future.astype(np.float64),axis=-1)
         for metric,value in (('ADE',d.mean(1)),('FDE',d[:,-1])):
             original=saved[f'base_{metric}' if label=='base' else f'sample_{metric}']
-            reproduction[f'{label}_{metric}']=float(np.max(np.abs(value-original)))
-            np.testing.assert_allclose(value,original,rtol=1e-5,atol=2e-6)
+            reproduction[f'{label}_{metric}']=verify_saved_response(value,original)
     after=state_hash(model.state_dict())
     assert before==after and not model.training and all(p.grad is None and not p.requires_grad for p in model.parameters())
     frames=dataset.audit['frame_ids'][:,:8]

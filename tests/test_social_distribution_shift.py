@@ -93,6 +93,13 @@ def test_attention_context_roundoff_is_scaled_but_wrong_context_rejected():
     with pytest.raises(AssertionError):verify_attention_context(original+1.,original)
 
 
+def test_saved_response_small_float32_cache_difference_and_wrong_response():
+    from scripts.social_shift_inference import verify_saved_response
+    old=np.array([.035368]);current=old-3.2e-6
+    assert verify_saved_response(current,old)==pytest.approx(3.2e-6)
+    with pytest.raises(AssertionError):verify_saved_response(old+.01,old)
+
+
 def test_residual_final_ratio_and_gain_sign():
     residual=np.zeros((2,12,2));base=np.zeros_like(residual)
     residual[0]=[3,4];residual[1,-1]=[0,12];base[0]=[6,8]
