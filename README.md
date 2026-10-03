@@ -41,3 +41,22 @@ python scripts/summarize_social_residual.py
 Each sample uses at most eight nearest neighbors at the last observed frame, present throughout the eight observed frames in the same recording. No radius or future-based selection is used. Neighbor motion features use each neighbor's own last observed position; relation features are target-relative [dx, dy, distance]. Neighbor candidates may include source tracks assigned to the other target split, using their current observations only. Held-out recordings cannot be opened by the train/validation loader.
 
 Temporal encoder and base decoder weights stay frozen and in eval mode. Frozen contexts are computed once per fold, backbone and seed, reused for training new modules, and checked against the original validation metrics. Full inference latency is measured without caches after all training exits. Social and gate GO/STOP thresholds require the percentage improvement and paired wins in the same metric. Neither decision starts held-out evaluation or further tuning.
+
+Stage 4 (`feat/final_eth_ucy_benchmark`) performs the formal K=1 ETH/UCY benchmark with ETT, EMT, ETT-SR and EMT-SR. All eligible targets in the four source scenes are used; there is no internal validation split. Target-only models are retrained from random initialization, then SR uses the corresponding final fold/seed backbone frozen in eval mode. Train and test neighbors use the same eight-frame observation-only nearest-eight policy. Historical results and datasets remain frozen.
+
+Final epochs are derived automatically from the median of the three validation best epochs: stage one for ETT/EMT, clean validation for ETT-SR/EMT-SR. Full-source training uses the original AdamW, learning rate, weight decay, loss, batch size and clipping. The learning rate stays at 1e-3 because the validation-driven plateau scheduler has no validation metric in this phase. There is no early stopping or metric-based checkpoint selection.
+
+```bash
+python scripts/build_eth_ucy_final_data.py
+python scripts/freeze_final_eth_ucy_protocol.py --epochs-only
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 pytest -q
+# Commit code/config/tests before freezing the protocol.
+python scripts/freeze_final_eth_ucy_protocol.py
+python scripts/run_final_eth_ucy_training.py --smoke-only
+python scripts/run_final_eth_ucy_training.py
+# Review FINAL_TRAINING_COMPLETE.json and commit training evidence before opening test.
+python scripts/evaluate_final_eth_ucy.py --enable-heldout-evaluation
+python scripts/summarize_final_eth_ucy.py
+```
+
+The held-out evaluator refuses to run until all 60 final checkpoints, fixed epochs, training logs and protocol hashes match. Each fold/model/seed is predicted once and logged before inference. Saved NPZ predictions include IDs, frames, ground truth and per-sample metrics; SR also includes neighbors, diagnostic attention, residual and base predictions. Attention diagnostics do not replace the original prediction path. Tables use fold-wise three-seed mean ± sample SD, then equally average the five folds. Validation EMT-ZR is kept separate from the formal test table. Visualization candidate indices are saved; no plots or test-based tuning follow automatically.

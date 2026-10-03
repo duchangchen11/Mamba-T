@@ -1,0 +1,32 @@
+{
+  "eth": {
+    "ett": 38,
+    "emt": 10,
+    "ett_sr": 10,
+    "emt_sr": 14
+  },
+  "hotel": {
+    "ett": 11,
+    "emt": 14,
+    "ett_sr": 11,
+    "emt_sr": 15
+  },
+  "univ": {
+    "ett": 21,
+    "emt": 12,
+    "ett_sr": 13,
+    "emt_sr": 4
+  },
+  "zara1": {
+    "ett": 30,
+    "emt": 12,
+    "ett_sr": 34,
+    "emt_sr": 19
+  },
+  "zara2": {
+    "ett": 27,
+    "emt": 14,
+    "ett_sr": 30,
+    "emt_sr": 16
+  }
+}
