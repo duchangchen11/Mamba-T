@@ -306,28 +306,28 @@ def summarize(protocol, rows=None):
         dump(RESULTS/'per_scene'/f'{scene}.json', {
             'scene': scene,
             'metrics_equal_fold_seed': scene_metrics,
-            'baseline': c['per_scene_social_gain']['baseline']['per_scene_gain_ADE'][scene],
-            'density_aware': c['per_scene_social_gain']['density_aware']['per_scene_gain_ADE'][scene],
+            'baseline': comparison['per_scene_social_gain']['baseline']['per_scene_gain_ADE'][scene],
+            'density_aware': comparison['per_scene_social_gain']['density_aware']['per_scene_gain_ADE'][scene],
             'heldout_test_accessed': False, 'historical_test_already_accessed': True,
         })
     for group in COUNT_GROUPS:
         dump(RESULTS/'per_neighbor_count'/f'{group}.json', {
             'neighbor_count_group': group,
             'scene_equal': {
-                'base': c['neighbor_count_groups']['scene_equal_tables']['base'][group],
-                'baseline_social': c['neighbor_count_groups']['scene_equal_tables']['baseline_social'][group],
-                'density_aware': c['neighbor_count_groups']['scene_equal_tables']['density_aware'][group],
+                'base': comparison['neighbor_count_groups']['scene_equal_tables']['base'][group],
+                'baseline_social': comparison['neighbor_count_groups']['scene_equal_tables']['baseline_social'][group],
+                'density_aware': comparison['neighbor_count_groups']['scene_equal_tables']['density_aware'][group],
             },
             'social_gain_ADE': {
-                'baseline': c['neighbor_count_groups']['scene_equal_gain']['baseline_social'][group],
-                'density_aware': c['neighbor_count_groups']['scene_equal_gain']['density_aware'][group],
+                'baseline': comparison['neighbor_count_groups']['scene_equal_gain']['baseline_social'][group],
+                'density_aware': comparison['neighbor_count_groups']['scene_equal_gain']['density_aware'][group],
             },
-            'per_fold_seed': [{'fold': r['fold'], 'seed': r['seed'], **r['groups'][group]} for r in c['neighbor_count_groups']['per_run']],
+            'per_fold_seed': [{'fold': r['fold'], 'seed': r['seed'], **r['groups'][group]} for r in comparison['neighbor_count_groups']['per_run']],
             'heldout_test_accessed': False, 'historical_test_already_accessed': True,
         })
     for fold in SCENES:
         dump(RESULTS/'per_fold'/f'{fold}.json', {
-            'fold': fold, 'paired_seed_metrics': [r for r in c['paired_runs'] if r['fold'] == fold],
+            'fold': fold, 'paired_seed_metrics': [r for r in comparison['paired_runs'] if r['fold'] == fold],
             'heldout_test_accessed': False, 'historical_test_already_accessed': True,
         })
     write_reports(comparison)
