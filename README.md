@@ -60,3 +60,14 @@ python scripts/summarize_final_eth_ucy.py
 ```
 
 The held-out evaluator refuses to run until all 60 final checkpoints, fixed epochs, training logs and protocol hashes match. Each fold/model/seed is predicted once and logged before inference. Saved NPZ predictions include IDs, frames, ground truth and per-sample metrics; SR also includes neighbors, diagnostic attention, residual and base predictions. Attention diagnostics do not replace the original prediction path. Tables use fold-wise three-seed mean ± sample SD, then equally average the five folds. Validation EMT-ZR is kept separate from the formal test table. Visualization candidate indices are saved; no plots or test-based tuning follow automatically.
+
+Stage 5 (`diag/source_validation_training_regime`) is a **source validation diagnostic only**. Formal test has already been accessed historically and is never reopened in this phase. It restores the frozen source pedestrian splits and clean neighbors, retrains ETT/EMT with the unchanged final epoch file and fixed learning rate, then freezes each corresponding new backbone for SR. Validation metrics are passive logs: they cannot change learning rate, duration or checkpoint choice. CPU/CUDA RNG and model state are checked around validation, and only the last epoch is saved.
+
+```bash
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 pytest -q
+python scripts/run_training_regime_diagnostic.py --smoke-only
+python scripts/run_training_regime_diagnostic.py
+python scripts/summarize_training_regime_diagnostic.py
+```
+
+The source-only entry points reject `heldout_test`. Legacy held-out loader routing tests use synthetic data in memory. Per-epoch JSON/CSV curves, final/best diagnostic gaps, density/distance/correction strata and correction norms are saved without figures. A diagnostic best epoch is computed after training and never used to select a checkpoint or rerun formal test. Old clean comparisons hold the data and architecture fixed while changing the entire backbone/SR training chain; they are not a scheduler-only ablation. Historical formal aggregate numbers are quoted from the stage request, without loading or recomputing formal test artifacts.

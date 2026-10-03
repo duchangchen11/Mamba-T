@@ -26,10 +26,18 @@ def test_final_train_full_sources_and_never_opens_heldout(fold, monkeypatch):
 
 @pytest.mark.parametrize('fold', SCENES)
 def test_test_loader_only_opens_heldout(fold, monkeypatch):
-    original = np.load
+    # Check legacy routing against synthetic data; never reopen a real held-out file.
+    from contextlib import contextmanager
+    n = 2
+    synthetic = {'scene_id': np.full(n, fold), 'ped_id': np.array(['synthetic:1', 'synthetic:2']), 'frame_ids': np.tile(np.arange(20)*10, (n, 1)), 'obs_abs': np.zeros((n, 8, 2), dtype=np.float32), 'obs_input': np.zeros((n, 8, 4), dtype=np.float32), 'future_target': np.zeros((n, 12, 2), dtype=np.float32), 'last_obs_pos': np.zeros((n, 2), dtype=np.float32), 'future_abs': np.zeros((n, 12, 2), dtype=np.float32)}
+    class Archive(dict):
+        @property
+        def files(self):
+            return list(self)
+    @contextmanager
     def guarded(path, *args, **kwargs):
         assert Path(path).parent.name == fold
-        return original(path, *args, **kwargs)
+        yield Archive(synthetic)
     monkeypatch.setattr(np, 'load', guarded)
     dataset = ETHUCYFinalDataset(fold, 'heldout_test')
     assert set(dataset.audit['scene_id']) == {fold}
