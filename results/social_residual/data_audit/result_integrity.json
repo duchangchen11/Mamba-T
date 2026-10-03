@@ -1,0 +1,13 @@
+{
+  "formal_runs": 60,
+  "fold_seed_pairs": 15,
+  "latency_runs_complete": 60,
+  "base_validation_reproductions": 30,
+  "all_best_metrics_match_history": true,
+  "all_initial_outputs_equal_frozen_base": true,
+  "all_backbones_unchanged": true,
+  "all_latency_finite_positive": true,
+  "stage1_frozen_files_verified": 214,
+  "all_stage1_results_checkpoints_manifests_unchanged": true,
+  "heldout_test_accessed": false
+}

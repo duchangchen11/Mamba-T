@@ -1,0 +1,19 @@
+{
+  "stage1_manifest_sha256": "ed904f93f43ac29a5e08238cf0f708b68a8c5a699ff3bf7338eda94c231920ef",
+  "heldout_scene": "zara2",
+  "heldout_test_accessed": false,
+  "data_provenance": "results/social_residual/data_audit/data_provenance.json",
+  "base_checkpoint": "/home/lrj/Mamba-T/checkpoints/eth_ucy_mamba_baseline/heldout_zara2/ett/seed_123.pt",
+  "base_checkpoint_sha256": "dd3e9e3155b1209ae7fa6ce15d693188236eb7661a3a7d9962a7ddb5134afbcd",
+  "base_checkpoint_epoch": 8,
+  "base_state_sha256": "073f16d84177327a2dd65ea2d001e020d197f1bb0219f89d953245ff60425c5b",
+  "backbone_frozen": true,
+  "backbone_eval": true,
+  "context_cache_seconds": 1.1921154330011632,
+  "train_pedestrian_count": 880,
+  "validation_pedestrian_count": 150,
+  "baseline_validation_difference": {
+    "ADE": 3.236345857970946e-09,
+    "FDE": 7.267642043728983e-10
+  }
+}

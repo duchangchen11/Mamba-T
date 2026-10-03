@@ -1,0 +1,106 @@
+{
+  "heldout_scene": "zara2",
+  "model": "emt_sr",
+  "seed": 123,
+  "train_sample_count": 24891,
+  "validation_sample_count": 3360,
+  "best_epoch": 16,
+  "epochs_run": 24,
+  "validation_ADE": 0.4920203279123165,
+  "validation_FDE": 1.0323021410568063,
+  "neighbor_groups": {
+    "0": {
+      "sample_count": 10,
+      "ADE": 0.8698138117790222,
+      "FDE": 1.5862514168024062
+    },
+    "1-2": {
+      "sample_count": 65,
+      "ADE": 0.492379547512302,
+      "FDE": 0.8973385552159295
+    },
+    "3-4": {
+      "sample_count": 201,
+      "ADE": 0.4005389819709371,
+      "FDE": 0.7363604180032934
+    },
+    "5+": {
+      "sample_count": 3084,
+      "ADE": 0.49675005113590637,
+      "FDE": 1.05263853102307
+    }
+  },
+  "maximum_gradient_norm_before_clipping": 0.18993660807609558,
+  "training_seconds": 55.60231362400009,
+  "gpu_peak_memory_bytes": 174816768,
+  "parameter_count": {
+    "total": 477360,
+    "trainable": 106392,
+    "frozen": 370968
+  },
+  "backbone_unchanged": true,
+  "initial_output_base_max_abs_diff": 0.0,
+  "nan_inf": false,
+  "heldout_test_accessed": false,
+  "smoke": false,
+  "latency": {
+    "batch_1_neighbors_0_latency_ms": 1.7296201499993913,
+    "batch_1_neighbors_0_peak_memory_bytes": 11492864,
+    "batch_1_neighbors_8_latency_ms": 3.962128470011521,
+    "batch_1_neighbors_8_peak_memory_bytes": 11544576,
+    "batch_128_neighbors_0_latency_ms": 2.074267619973398,
+    "batch_128_neighbors_0_peak_memory_bytes": 22436864,
+    "batch_128_neighbors_8_latency_ms": 13.6509510399992,
+    "batch_128_neighbors_8_peak_memory_bytes": 106433536,
+    "method": "full uncached model incl shared frozen temporal encoder; exclusive GPU, zeros, eval/no_grad; 20 warmup +100 synchronized forwards; no data transfer"
+  },
+  "protocol": {
+    "obs_len": 8,
+    "pred_len": 12,
+    "input_dim": 4,
+    "max_neighbors": 8,
+    "radius": null,
+    "d_model": 128,
+    "social_heads": 4,
+    "dropout": 0.1,
+    "relation_hidden": 32,
+    "residual_hidden": 128,
+    "gate_hidden": 64,
+    "max_epochs": 50,
+    "batch_size": 128,
+    "optimizer": "AdamW",
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "gradient_clip": 5.0,
+    "smooth_l1_beta": 1.0,
+    "scheduler_factor": 0.5,
+    "scheduler_patience": 4,
+    "early_stopping_patience": 8,
+    "seeds": [
+      42,
+      123,
+      2024
+    ],
+    "backbone_frozen": true,
+    "variants": [
+      "emt_zr",
+      "emt_sr",
+      "emt_gsr",
+      "ett_sr"
+    ]
+  },
+  "training_method": "frozen eval context cache, GPU-resident; seed-fixed shuffled sample batches; gradients only through new modules",
+  "base_checkpoint": "/home/lrj/Mamba-T/checkpoints/eth_ucy_mamba_baseline/heldout_zara2/emt/seed_123.pt",
+  "base_checkpoint_sha256": "8ba9d803d85ce9b800c4f15e89ebec9b0ae427bb69512dd0c20d54af5b9daa6f",
+  "base_checkpoint_epoch": 14,
+  "base_state_sha256": "49a7510c247bf77cb6ff801ed9c5f23a361b5f52a812b3f27cc6d0fbb0fb0967",
+  "backbone_frozen": true,
+  "backbone_eval": true,
+  "context_cache_seconds": 3.790101726001012,
+  "train_pedestrian_count": 880,
+  "validation_pedestrian_count": 150,
+  "baseline_validation_difference": {
+    "ADE": -1.3559612321856207e-09,
+    "FDE": 4.12664591387113e-09
+  }
+}

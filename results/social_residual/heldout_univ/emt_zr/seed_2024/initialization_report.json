@@ -1,0 +1,20 @@
+{
+  "base_checkpoint": "/home/lrj/Mamba-T/checkpoints/eth_ucy_mamba_baseline/heldout_univ/emt/seed_2024.pt",
+  "base_checkpoint_sha256": "32c2a0c4615cd2ead43fc8afc32490b4a4cd85ed4c58046faeacf0071eb61aac",
+  "base_checkpoint_epoch": 34,
+  "base_state_sha256": "b2d91eb3ab11af1a844d394484882ce116798bb88c7c6038e55c0efd57c3b70b",
+  "backbone_frozen": true,
+  "backbone_eval": true,
+  "context_cache_seconds": 1.1267766620003385,
+  "train_pedestrian_count": 428,
+  "validation_pedestrian_count": 69,
+  "baseline_validation_difference": {
+    "ADE": 1.7676440311475972e-09,
+    "FDE": -1.136042226956846e-08
+  },
+  "variant": "emt_zr",
+  "seed": 2024,
+  "residual_initialization_sha256": "a72c802dbcfa9ed816ee1b10d0bda7e963fd8137da6cefc938317be6c1a25919",
+  "trainable_initialization_sha256": "06d82ba0218aa82681ba5dca315d786fbe5eb7bbfbd8ee337ec1197a17279f50",
+  "initial_output_base_max_abs_diff": 0.0
+}

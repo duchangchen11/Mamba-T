@@ -1,0 +1,20 @@
+{
+  "base_checkpoint": "/home/lrj/Mamba-T/checkpoints/eth_ucy_mamba_baseline/heldout_hotel/emt/seed_42.pt",
+  "base_checkpoint_sha256": "a69863a9bcdb8f5bbfd693fc794e2cb9fe48feca652f3655ef3120824d0d974c",
+  "base_checkpoint_epoch": 11,
+  "base_state_sha256": "b33448dc8aaf31c82aa7dc2f88959fe1df1248dc04896958a5c0ba8909ea8aa7",
+  "backbone_frozen": true,
+  "backbone_eval": true,
+  "context_cache_seconds": 18.763511531000404,
+  "train_pedestrian_count": 947,
+  "validation_pedestrian_count": 150,
+  "baseline_validation_difference": {
+    "ADE": -3.158763750565896e-09,
+    "FDE": -1.0980984788133696e-08
+  },
+  "variant": "emt_gsr",
+  "seed": 42,
+  "residual_initialization_sha256": "153adbd0898a222914e04c355db38bcb97a63dfead84bb939a685d6a84af3987",
+  "trainable_initialization_sha256": "9c59c48b482217185aed06a55b4e565c183cd4d69bdd07a6f5eb66b1a0e6fd1e",
+  "initial_output_base_max_abs_diff": 0.0
+}

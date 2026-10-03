@@ -1,0 +1,20 @@
+{
+  "base_checkpoint": "/home/lrj/Mamba-T/checkpoints/eth_ucy_mamba_baseline/heldout_zara1/ett/seed_2024.pt",
+  "base_checkpoint_sha256": "b60b4c1fe7a554dc37647bbb4fa8333475b0e883c084dcb3b0b017828bb43258",
+  "base_checkpoint_epoch": 36,
+  "base_state_sha256": "d85f32ddfcedffc78bd8030f7532993cd6717c745d4af65991415e2b4a4ad4e4",
+  "backbone_frozen": true,
+  "backbone_eval": true,
+  "context_cache_seconds": 1.2350234059995273,
+  "train_pedestrian_count": 930,
+  "validation_pedestrian_count": 147,
+  "baseline_validation_difference": {
+    "ADE": -2.1306377218088812e-09,
+    "FDE": -6.666322938109204e-09
+  },
+  "variant": "ett_sr",
+  "seed": 2024,
+  "residual_initialization_sha256": "a72c802dbcfa9ed816ee1b10d0bda7e963fd8137da6cefc938317be6c1a25919",
+  "trainable_initialization_sha256": "c6d3db83958bde2ffeb853314c360aa18cf76bd8f8d0607c3c00f953134ff9da",
+  "initial_output_base_max_abs_diff": 0.0
+}

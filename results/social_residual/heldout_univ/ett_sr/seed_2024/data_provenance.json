@@ -1,0 +1,19 @@
+{
+  "stage1_manifest_sha256": "44c554d58fc70f64fdf999bf86118fff9473b927d9989195d17fcd035a663035",
+  "heldout_scene": "univ",
+  "heldout_test_accessed": false,
+  "data_provenance": "results/social_residual/data_audit/data_provenance.json",
+  "base_checkpoint": "/home/lrj/Mamba-T/checkpoints/eth_ucy_mamba_baseline/heldout_univ/ett/seed_2024.pt",
+  "base_checkpoint_sha256": "e026de3cd10efac55d6c055d1e8d2761df154a6499d2f89fc02a2c7b03197574",
+  "base_checkpoint_epoch": 21,
+  "base_state_sha256": "08c77c271818a9c4b4b5245a078930e629b4b11bb8e3c9cdaec145a113eb3c72",
+  "backbone_frozen": true,
+  "backbone_eval": true,
+  "context_cache_seconds": 0.3568108180006675,
+  "train_pedestrian_count": 428,
+  "validation_pedestrian_count": 69,
+  "baseline_validation_difference": {
+    "ADE": -8.744776347491268e-09,
+    "FDE": 1.2582199171440323e-08
+  }
+}

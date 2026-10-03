@@ -1,0 +1,20 @@
+{
+  "base_checkpoint": "/home/lrj/Mamba-T/checkpoints/eth_ucy_mamba_baseline/heldout_eth/ett/seed_42.pt",
+  "base_checkpoint_sha256": "a8d78832c35d2ee326e4e4c3a982d69f36f6b747a78045b6dc77bbb5307dca76",
+  "base_checkpoint_epoch": 63,
+  "base_state_sha256": "d58521707f9534e60b834c3ea0a14c0a959d505b31a568d4743c878f3dafdd3a",
+  "backbone_frozen": true,
+  "backbone_eval": true,
+  "context_cache_seconds": 2.0659843139983423,
+  "train_pedestrian_count": 1015,
+  "validation_pedestrian_count": 160,
+  "baseline_validation_difference": {
+    "ADE": 1.4434501927063081e-09,
+    "FDE": -1.3463141379510546e-08
+  },
+  "variant": "ett_sr",
+  "seed": 42,
+  "residual_initialization_sha256": "153adbd0898a222914e04c355db38bcb97a63dfead84bb939a685d6a84af3987",
+  "trainable_initialization_sha256": "469d4b16e97c388b2541e3b3f39fa2742d96bfe0782f032e21e17dc881ffb56d",
+  "initial_output_base_max_abs_diff": 0.0
+}

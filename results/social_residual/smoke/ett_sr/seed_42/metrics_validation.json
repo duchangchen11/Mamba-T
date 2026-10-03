@@ -1,0 +1,96 @@
+{
+  "heldout_scene": "eth",
+  "model": "ett_sr",
+  "seed": 42,
+  "train_sample_count": 29831,
+  "validation_sample_count": 3966,
+  "best_epoch": 3,
+  "epochs_run": 5,
+  "validation_ADE": 0.4495723403477642,
+  "validation_FDE": 0.9560523160807077,
+  "neighbor_groups": {
+    "0": {
+      "sample_count": 2,
+      "ADE": 0.3157564401626587,
+      "FDE": 0.6971742212772369
+    },
+    "1-2": {
+      "sample_count": 57,
+      "ADE": 0.34332173811108396,
+      "FDE": 0.7010517154346433
+    },
+    "3-4": {
+      "sample_count": 210,
+      "ADE": 0.38396969193681363,
+      "FDE": 0.778674666246488
+    },
+    "5+": {
+      "sample_count": 3697,
+      "ADE": 0.45500930878005,
+      "FDE": 0.9701994886237476
+    }
+  },
+  "maximum_gradient_norm_before_clipping": 0.3950490355491638,
+  "training_seconds": 11.96093456699964,
+  "gpu_peak_memory_bytes": 202403840,
+  "parameter_count": {
+    "total": 722736,
+    "trainable": 106392,
+    "frozen": 616344
+  },
+  "backbone_unchanged": true,
+  "initial_output_base_max_abs_diff": 0.0,
+  "nan_inf": false,
+  "heldout_test_accessed": false,
+  "smoke": true,
+  "latency": null,
+  "protocol": {
+    "obs_len": 8,
+    "pred_len": 12,
+    "input_dim": 4,
+    "max_neighbors": 8,
+    "radius": null,
+    "d_model": 128,
+    "social_heads": 4,
+    "dropout": 0.1,
+    "relation_hidden": 32,
+    "residual_hidden": 128,
+    "gate_hidden": 64,
+    "max_epochs": 50,
+    "batch_size": 128,
+    "optimizer": "AdamW",
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "gradient_clip": 5.0,
+    "smooth_l1_beta": 1.0,
+    "scheduler_factor": 0.5,
+    "scheduler_patience": 4,
+    "early_stopping_patience": 8,
+    "seeds": [
+      42,
+      123,
+      2024
+    ],
+    "backbone_frozen": true,
+    "variants": [
+      "emt_zr",
+      "emt_sr",
+      "emt_gsr",
+      "ett_sr"
+    ]
+  },
+  "training_method": "frozen eval context cache, GPU-resident; seed-fixed shuffled sample batches; gradients only through new modules",
+  "base_checkpoint": "/home/lrj/Mamba-T/checkpoints/eth_ucy_mamba_baseline/heldout_eth/ett/seed_42.pt",
+  "base_checkpoint_sha256": "a8d78832c35d2ee326e4e4c3a982d69f36f6b747a78045b6dc77bbb5307dca76",
+  "base_checkpoint_epoch": 63,
+  "base_state_sha256": "d58521707f9534e60b834c3ea0a14c0a959d505b31a568d4743c878f3dafdd3a",
+  "backbone_frozen": true,
+  "backbone_eval": true,
+  "context_cache_seconds": 1.0020014879992232,
+  "train_pedestrian_count": 1015,
+  "validation_pedestrian_count": 160,
+  "baseline_validation_difference": {
+    "ADE": 1.4434501927063081e-09,
+    "FDE": -1.3463141379510546e-08
+  }
+}

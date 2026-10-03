@@ -1,0 +1,308 @@
+{
+  "scenes": {
+    "eth": {
+      "sample_count": 364,
+      "mean_neighbor_count": 3.818681318681319,
+      "median_neighbor_count": 3.0,
+      "p90_neighbor_count": 8.0,
+      "zero_neighbor_ratio": 0.10714285714285714,
+      "count_histogram": {
+        "0": 39,
+        "1": 27,
+        "2": 71,
+        "3": 70,
+        "4": 33,
+        "5": 21,
+        "6": 18,
+        "7": 14,
+        "8": 71
+      }
+    },
+    "hotel": {
+      "sample_count": 1197,
+      "mean_neighbor_count": 5.1988304093567255,
+      "median_neighbor_count": 6.0,
+      "p90_neighbor_count": 8.0,
+      "zero_neighbor_ratio": 0.040100250626566414,
+      "count_histogram": {
+        "0": 48,
+        "1": 61,
+        "2": 64,
+        "3": 143,
+        "4": 205,
+        "5": 54,
+        "6": 159,
+        "7": 143,
+        "8": 320
+      }
+    },
+    "univ": {
+      "sample_count": 24334,
+      "mean_neighbor_count": 8.0,
+      "median_neighbor_count": 8.0,
+      "p90_neighbor_count": 8.0,
+      "zero_neighbor_ratio": 0.0,
+      "count_histogram": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 24334
+      }
+    },
+    "zara1": {
+      "sample_count": 2356,
+      "mean_neighbor_count": 4.9787775891341255,
+      "median_neighbor_count": 5.0,
+      "p90_neighbor_count": 8.0,
+      "zero_neighbor_ratio": 0.006366723259762309,
+      "count_histogram": {
+        "0": 15,
+        "1": 170,
+        "2": 179,
+        "3": 319,
+        "4": 397,
+        "5": 356,
+        "6": 127,
+        "7": 229,
+        "8": 564
+      }
+    },
+    "zara2": {
+      "sample_count": 5910,
+      "mean_neighbor_count": 7.037055837563452,
+      "median_neighbor_count": 8.0,
+      "p90_neighbor_count": 8.0,
+      "zero_neighbor_ratio": 0.002876480541455161,
+      "count_histogram": {
+        "0": 17,
+        "1": 80,
+        "2": 79,
+        "3": 189,
+        "4": 220,
+        "5": 389,
+        "6": 409,
+        "7": 711,
+        "8": 3816
+      }
+    }
+  },
+  "folds": {
+    "eth": {
+      "train": {
+        "sample_count": 29831,
+        "mean_neighbor_count": 7.524018638329255,
+        "median_neighbor_count": 8.0,
+        "p90_neighbor_count": 8.0,
+        "zero_neighbor_ratio": 0.0026147296436592805,
+        "count_histogram": {
+          "0": 78,
+          "1": 282,
+          "2": 294,
+          "3": 552,
+          "4": 711,
+          "5": 682,
+          "6": 614,
+          "7": 959,
+          "8": 25659
+        },
+        "pedestrian_count": 1015
+      },
+      "val": {
+        "sample_count": 3966,
+        "mean_neighbor_count": 7.505042864346949,
+        "median_neighbor_count": 8.0,
+        "p90_neighbor_count": 8.0,
+        "zero_neighbor_ratio": 0.0005042864346949068,
+        "count_histogram": {
+          "0": 2,
+          "1": 29,
+          "2": 28,
+          "3": 99,
+          "4": 111,
+          "5": 117,
+          "6": 81,
+          "7": 124,
+          "8": 3375
+        },
+        "pedestrian_count": 160
+      },
+      "stage1_manifest_sha256": "449764a60bfbe32b97f56370aea4236681ba15d2e528f4cfd358ef8e915b80af"
+    },
+    "hotel": {
+      "train": {
+        "sample_count": 29086,
+        "mean_neighbor_count": 7.5631575328336655,
+        "median_neighbor_count": 8.0,
+        "p90_neighbor_count": 8.0,
+        "zero_neighbor_ratio": 0.00209722890737812,
+        "count_histogram": {
+          "0": 61,
+          "1": 257,
+          "2": 296,
+          "3": 503,
+          "4": 596,
+          "5": 648,
+          "6": 483,
+          "7": 834,
+          "8": 25408
+        },
+        "pedestrian_count": 947
+      },
+      "val": {
+        "sample_count": 3878,
+        "mean_neighbor_count": 7.580969571944301,
+        "median_neighbor_count": 8.0,
+        "p90_neighbor_count": 8.0,
+        "zero_neighbor_ratio": 0.0025786487880350697,
+        "count_histogram": {
+          "0": 10,
+          "1": 20,
+          "2": 33,
+          "3": 75,
+          "4": 54,
+          "5": 118,
+          "6": 71,
+          "7": 120,
+          "8": 3377
+        },
+        "pedestrian_count": 150
+      },
+      "stage1_manifest_sha256": "21d46922b8a3081aec80db5deab9711109b163aa2786b0648e6b06dbb6843464"
+    },
+    "univ": {
+      "train": {
+        "sample_count": 8631,
+        "mean_neighbor_count": 6.2046112849032555,
+        "median_neighbor_count": 7.0,
+        "p90_neighbor_count": 8.0,
+        "zero_neighbor_ratio": 0.012628895840574673,
+        "count_histogram": {
+          "0": 109,
+          "1": 308,
+          "2": 358,
+          "3": 611,
+          "4": 740,
+          "5": 694,
+          "6": 629,
+          "7": 965,
+          "8": 4217
+        },
+        "pedestrian_count": 428
+      },
+      "val": {
+        "sample_count": 1196,
+        "mean_neighbor_count": 6.170568561872909,
+        "median_neighbor_count": 7.0,
+        "p90_neighbor_count": 8.0,
+        "zero_neighbor_ratio": 0.008361204013377926,
+        "count_histogram": {
+          "0": 10,
+          "1": 30,
+          "2": 35,
+          "3": 110,
+          "4": 115,
+          "5": 126,
+          "6": 84,
+          "7": 132,
+          "8": 554
+        },
+        "pedestrian_count": 69
+      },
+      "stage1_manifest_sha256": "44c554d58fc70f64fdf999bf86118fff9473b927d9989195d17fcd035a663035"
+    },
+    "zara1": {
+      "train": {
+        "sample_count": 28077,
+        "mean_neighbor_count": 7.669444741247284,
+        "median_neighbor_count": 8.0,
+        "p90_neighbor_count": 8.0,
+        "zero_neighbor_ratio": 0.0034191687146062615,
+        "count_histogram": {
+          "0": 96,
+          "1": 157,
+          "2": 205,
+          "3": 343,
+          "4": 382,
+          "5": 385,
+          "6": 515,
+          "7": 756,
+          "8": 25238
+        },
+        "pedestrian_count": 930
+      },
+      "val": {
+        "sample_count": 3728,
+        "mean_neighbor_count": 7.655311158798283,
+        "median_neighbor_count": 8.0,
+        "p90_neighbor_count": 8.0,
+        "zero_neighbor_ratio": 0.002145922746781116,
+        "count_histogram": {
+          "0": 8,
+          "1": 11,
+          "2": 9,
+          "3": 59,
+          "4": 76,
+          "5": 79,
+          "6": 71,
+          "7": 112,
+          "8": 3303
+        },
+        "pedestrian_count": 147
+      },
+      "stage1_manifest_sha256": "ee3facf49a03f298c7b909722d054b20739af628a498f32f51fd7c0d49a8c301"
+    },
+    "zara2": {
+      "train": {
+        "sample_count": 24891,
+        "mean_neighbor_count": 7.586115463420513,
+        "median_neighbor_count": 8.0,
+        "p90_neighbor_count": 8.0,
+        "zero_neighbor_ratio": 0.0036961150616688764,
+        "count_histogram": {
+          "0": 92,
+          "1": 228,
+          "2": 279,
+          "3": 435,
+          "4": 531,
+          "5": 367,
+          "6": 275,
+          "7": 346,
+          "8": 22338
+        },
+        "pedestrian_count": 880
+      },
+      "val": {
+        "sample_count": 3360,
+        "mean_neighbor_count": 7.49672619047619,
+        "median_neighbor_count": 8.0,
+        "p90_neighbor_count": 8.0,
+        "zero_neighbor_ratio": 0.002976190476190476,
+        "count_histogram": {
+          "0": 10,
+          "1": 30,
+          "2": 35,
+          "3": 97,
+          "4": 104,
+          "5": 64,
+          "6": 29,
+          "7": 40,
+          "8": 2951
+        },
+        "pedestrian_count": 150
+      },
+      "stage1_manifest_sha256": "ed904f93f43ac29a5e08238cf0f708b68a8c5a699ff3bf7338eda94c231920ef"
+    }
+  },
+  "total_social_samples": 34161,
+  "N": 8,
+  "radius": null,
+  "selection": "nearest at last observation; present at all eight observed frames; same recording; no future access",
+  "split": "unchanged stage-one manifest; target pedestrian split",
+  "neighbor_split_policy": "Candidates may be any observed pedestrian in the same source recording, including tracks assigned to the other target split; only their eight current observation coordinates are used, never their future labels.",
+  "heldout_test_accessed": false
+}

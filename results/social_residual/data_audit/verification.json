@@ -1,0 +1,33 @@
+{
+  "pytest_passed": 45,
+  "pytest_returncode": 0,
+  "py_compile_returncode": 0,
+  "compiled_files": [
+    "src/__init__.py",
+    "src/data/eth_ucy_dataset.py",
+    "src/data/eth_ucy_social_dataset.py",
+    "src/data/__init__.py",
+    "src/models/trajectory_transformer.py",
+    "src/models/__init__.py",
+    "src/models/mamba_trajectory.py",
+    "src/models/social_residual.py",
+    "src/models/social_attention.py",
+    "src/models/mamba_sequence_encoder.py",
+    "scripts/train_eth_ucy_mamba.py",
+    "scripts/social_residual_utils.py",
+    "scripts/__init__.py",
+    "scripts/build_eth_ucy_social_sequences.py",
+    "scripts/eth_ucy_utils.py",
+    "scripts/summarize_eth_ucy_baselines.py",
+    "scripts/acquire_eth_ucy.py",
+    "scripts/run_social_residual.py",
+    "scripts/build_eth_ucy_sequences.py",
+    "scripts/run_eth_ucy_baselines.py",
+    "scripts/train_eth_ucy_transformer.py",
+    "scripts/summarize_social_residual.py"
+  ],
+  "heldout_test_accessed": false,
+  "stage1_frozen_files_verified": 214,
+  "checkpoint_regression_exact": true,
+  "cache_forward_regression_max_abs_diff_bound": 1e-07
+}

@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "all_four_models": true,
+  "loss_decreased": true,
+  "backbone_frozen": true,
+  "checkpoint_hash_verified": true,
+  "initial_output_equals_base": true,
+  "heldout_test_accessed": false
+}

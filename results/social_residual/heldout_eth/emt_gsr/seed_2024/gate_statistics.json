@@ -1,0 +1,10 @@
+{
+  "gate_mean": 0.3137301011787767,
+  "gate_std": 0.15674564072506375,
+  "gate_p10": 0.09217851608991623,
+  "gate_p50": 0.31287315487861633,
+  "gate_p90": 0.5167215168476105,
+  "zero_neighbor_gate_mean": 0.29334990680217743,
+  "has_neighbor_gate_mean": 0.3137403838197336,
+  "std_definition": "population SD across validation samples"
+}

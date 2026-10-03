@@ -1,0 +1,14 @@
+.............................................                            [100%]
+=============================== warnings summary ===============================
+tests/test_models.py::test_decoder_matching[42]
+tests/test_models.py::test_decoder_matching[123]
+tests/test_models.py::test_decoder_matching[2024]
+tests/test_models.py::test_cuda_backward[ett]
+tests/test_social_residual.py::test_encode_exact_legacy_predictions[ett]
+tests/test_social_residual.py::test_frozen_zero_initialization_and_gradients[ett_sr]
+tests/test_social_residual.py::test_cached_context_matches_full_model[ett]
+  /home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+45 passed, 7 warnings in 22.23s

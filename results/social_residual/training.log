@@ -1,0 +1,291 @@
+eth emt_zr 42 epoch 1: loss=0.105366 ADE=0.451087 FDE=0.961072
+eth emt_sr 42 epoch 1: loss=0.104283 ADE=0.449610 FDE=0.957609
+eth emt_gsr 42 epoch 1: loss=0.104560 ADE=0.448614 FDE=0.956821
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+eth ett_sr 42 epoch 1: loss=0.106317 ADE=0.450680 FDE=0.956997
+SMOKE PASSED
+univ emt_zr 42 epoch 1: loss=0.070830 ADE=0.327851 FDE=0.676026
+hotel emt_zr 123 epoch 1: loss=0.108493 ADE=0.466139 FDE=0.994165
+hotel emt_zr 2024 epoch 1: loss=0.105559 ADE=0.462858 FDE=0.989506
+eth emt_zr 2024 epoch 1: loss=0.109851 ADE=0.452069 FDE=0.964452
+hotel emt_zr 42 epoch 1: loss=0.111380 ADE=0.460537 FDE=0.984852
+eth emt_zr 42 epoch 1: loss=0.105366 ADE=0.451087 FDE=0.961072
+univ emt_zr 42 epoch 10: loss=0.069551 ADE=0.321763 FDE=0.669633
+univ emt_sr 42 epoch 1: loss=0.069526 ADE=0.324862 FDE=0.665978
+hotel emt_zr 123 epoch 10: loss=0.107977 ADE=0.460283 FDE=0.986395
+hotel emt_zr 2024 epoch 10: loss=0.104536 ADE=0.460671 FDE=0.986061
+hotel emt_zr 42 epoch 10: loss=0.110684 ADE=0.461426 FDE=0.993484
+eth emt_zr 42 epoch 10: loss=0.104491 ADE=0.446491 FDE=0.959244
+eth emt_zr 2024 epoch 10: loss=0.108550 ADE=0.450060 FDE=0.967266
+univ emt_sr 42 epoch 10: loss=0.051099 ADE=0.318064 FDE=0.648645
+hotel emt_zr 42 epoch 20: loss=0.110038 ADE=0.459622 FDE=0.988339
+hotel emt_zr 2024 epoch 20: loss=0.103848 ADE=0.459619 FDE=0.985755
+hotel emt_zr 123 epoch 20: loss=0.107428 ADE=0.460309 FDE=0.986851
+eth emt_zr 42 epoch 20: loss=0.103865 ADE=0.446149 FDE=0.961083
+eth emt_zr 2024 epoch 20: loss=0.108089 ADE=0.450732 FDE=0.968528
+univ emt_sr 42 epoch 20: loss=0.043299 ADE=0.318484 FDE=0.642237
+eth emt_sr 42 epoch 1: loss=0.104283 ADE=0.449610 FDE=0.957609
+hotel emt_zr 2024 epoch 30: loss=0.103330 ADE=0.460682 FDE=0.989546
+eth emt_sr 2024 epoch 1: loss=0.108789 ADE=0.450714 FDE=0.958773
+hotel emt_zr 42 epoch 30: loss=0.109499 ADE=0.456481 FDE=0.983586
+hotel emt_zr 123 epoch 30: loss=0.107149 ADE=0.459865 FDE=0.986985
+univ emt_gsr 42 epoch 1: loss=0.069589 ADE=0.325648 FDE=0.669386
+hotel emt_sr 123 epoch 1: loss=0.107739 ADE=0.464696 FDE=0.992551
+univ emt_gsr 42 epoch 10: loss=0.052769 ADE=0.312441 FDE=0.624807
+hotel emt_sr 2024 epoch 1: loss=0.104672 ADE=0.470248 FDE=1.003068
+hotel emt_sr 42 epoch 1: loss=0.110305 ADE=0.462529 FDE=0.988497
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+univ ett_sr 42 epoch 1: loss=0.069315 ADE=0.332765 FDE=0.686142
+univ ett_sr 42 epoch 10: loss=0.063478 ADE=0.329294 FDE=0.670861
+eth emt_sr 2024 epoch 10: loss=0.093732 ADE=0.438252 FDE=0.931541
+eth emt_sr 42 epoch 10: loss=0.091019 ADE=0.443854 FDE=0.942932
+hotel emt_sr 123 epoch 10: loss=0.095752 ADE=0.458733 FDE=0.977676
+univ ett_sr 42 epoch 20: loss=0.062132 ADE=0.321213 FDE=0.649995
+hotel emt_sr 2024 epoch 10: loss=0.090719 ADE=0.458729 FDE=0.971184
+hotel emt_sr 42 epoch 10: loss=0.095872 ADE=0.456069 FDE=0.972535
+eth emt_gsr 2024 epoch 1: loss=0.108964 ADE=0.455344 FDE=0.972461
+univ ett_sr 42 epoch 30: loss=0.055631 ADE=0.316836 FDE=0.640460
+univ emt_zr 123 epoch 1: loss=0.069796 ADE=0.329968 FDE=0.681957
+univ emt_zr 123 epoch 10: loss=0.068863 ADE=0.327488 FDE=0.679555
+univ emt_sr 123 epoch 1: loss=0.068906 ADE=0.331628 FDE=0.676295
+univ emt_sr 123 epoch 10: loss=0.054255 ADE=0.316952 FDE=0.649004
+eth emt_sr 42 epoch 20: loss=0.080518 ADE=0.435575 FDE=0.924083
+hotel emt_sr 123 epoch 20: loss=0.084717 ADE=0.454427 FDE=0.966093
+univ emt_sr 123 epoch 20: loss=0.043590 ADE=0.313571 FDE=0.636749
+univ emt_gsr 123 epoch 1: loss=0.069204 ADE=0.329969 FDE=0.679438
+hotel emt_sr 2024 epoch 20: loss=0.079219 ADE=0.453534 FDE=0.957559
+hotel emt_gsr 123 epoch 1: loss=0.107839 ADE=0.463310 FDE=0.987433
+hotel emt_sr 42 epoch 20: loss=0.084782 ADE=0.449473 FDE=0.952660
+eth emt_gsr 2024 epoch 10: loss=0.093561 ADE=0.442541 FDE=0.943089
+univ emt_gsr 123 epoch 10: loss=0.054844 ADE=0.320735 FDE=0.652569
+hotel emt_gsr 42 epoch 1: loss=0.110289 ADE=0.461310 FDE=0.984392
+hotel emt_gsr 2024 epoch 1: loss=0.104870 ADE=0.464830 FDE=0.991103
+univ ett_sr 123 epoch 1: loss=0.066426 ADE=0.334857 FDE=0.684462
+eth emt_gsr 42 epoch 1: loss=0.104560 ADE=0.448614 FDE=0.956821
+univ ett_sr 123 epoch 10: loss=0.062337 ADE=0.327574 FDE=0.658823
+hotel emt_gsr 123 epoch 10: loss=0.095245 ADE=0.454518 FDE=0.969004
+univ ett_sr 123 epoch 20: loss=0.058687 ADE=0.318248 FDE=0.638318
+eth emt_gsr 2024 epoch 20: loss=0.085351 ADE=0.443534 FDE=0.942163
+hotel emt_gsr 42 epoch 10: loss=0.096993 ADE=0.457221 FDE=0.977146
+univ ett_sr 123 epoch 30: loss=0.054830 ADE=0.317772 FDE=0.638036
+hotel emt_gsr 2024 epoch 10: loss=0.091305 ADE=0.471246 FDE=0.998970
+univ emt_zr 2024 epoch 1: loss=0.055493 ADE=0.332159 FDE=0.683684
+eth emt_gsr 42 epoch 10: loss=0.091386 ADE=0.438529 FDE=0.929192
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+univ emt_zr 2024 epoch 10: loss=0.054510 ADE=0.327353 FDE=0.680124
+univ emt_zr 2024 epoch 20: loss=0.054133 ADE=0.326620 FDE=0.681465
+eth ett_sr 2024 epoch 1: loss=0.108383 ADE=0.450258 FDE=0.957841
+univ emt_zr 2024 epoch 30: loss=0.053963 ADE=0.326970 FDE=0.680351
+univ emt_sr 2024 epoch 1: loss=0.054955 ADE=0.329653 FDE=0.674615
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+hotel ett_sr 2024 epoch 1: loss=0.115762 ADE=0.459335 FDE=0.976626
+univ emt_sr 2024 epoch 10: loss=0.041891 ADE=0.318093 FDE=0.649282
+hotel emt_gsr 123 epoch 20: loss=0.086197 ADE=0.459366 FDE=0.971537
+univ emt_sr 2024 epoch 20: loss=0.032131 ADE=0.316549 FDE=0.640699
+univ emt_gsr 2024 epoch 1: loss=0.055051 ADE=0.325758 FDE=0.673468
+hotel emt_gsr 42 epoch 20: loss=0.085380 ADE=0.459268 FDE=0.976677
+eth ett_sr 2024 epoch 10: loss=0.106870 ADE=0.447659 FDE=0.952315
+eth emt_gsr 42 epoch 20: loss=0.078532 ADE=0.439980 FDE=0.930808
+univ emt_gsr 2024 epoch 10: loss=0.043640 ADE=0.321524 FDE=0.651230
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+eth ett_sr 42 epoch 1: loss=0.106317 ADE=0.450680 FDE=0.956997
+hotel ett_sr 123 epoch 1: loss=0.113238 ADE=0.463222 FDE=0.985594
+hotel ett_sr 2024 epoch 10: loss=0.111233 ADE=0.458832 FDE=0.977985
+univ emt_gsr 2024 epoch 20: loss=0.034809 ADE=0.327884 FDE=0.663759
+zara1 emt_zr 42 epoch 1: loss=0.114460 ADE=0.461284 FDE=0.989978
+univ ett_sr 2024 epoch 1: loss=0.069841 ADE=0.330141 FDE=0.674966
+hotel emt_gsr 42 epoch 30: loss=0.077915 ADE=0.449921 FDE=0.956534
+zara1 emt_zr 42 epoch 10: loss=0.113793 ADE=0.461080 FDE=0.993186
+univ ett_sr 2024 epoch 10: loss=0.064422 ADE=0.324927 FDE=0.659137
+eth ett_sr 2024 epoch 20: loss=0.106407 ADE=0.447038 FDE=0.949347
+hotel ett_sr 123 epoch 10: loss=0.112279 ADE=0.458369 FDE=0.976210
+eth ett_sr 42 epoch 10: loss=0.105539 ADE=0.452825 FDE=0.961611
+univ ett_sr 2024 epoch 20: loss=0.061613 ADE=0.325853 FDE=0.665983
+zara1 emt_zr 42 epoch 20: loss=0.113385 ADE=0.460259 FDE=0.992276
+zara1 emt_zr 123 epoch 1: loss=0.110840 ADE=0.461424 FDE=0.993034
+zara1 emt_zr 2024 epoch 1: loss=0.107936 ADE=0.467819 FDE=1.003981
+zara1 emt_sr 42 epoch 1: loss=0.113081 ADE=0.462670 FDE=0.992139
+zara2 emt_zr 42 epoch 1: loss=0.111970 ADE=0.504806 FDE=1.072733
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+zara1 emt_sr 123 epoch 1: loss=0.109763 ADE=0.463203 FDE=0.990853
+hotel ett_sr 42 epoch 1: loss=0.114072 ADE=0.460567 FDE=0.981765
+zara1 emt_zr 2024 epoch 10: loss=0.107470 ADE=0.464275 FDE=0.995526
+zara2 emt_zr 42 epoch 10: loss=0.111013 ADE=0.504544 FDE=1.076546
+hotel ett_sr 123 epoch 20: loss=0.112074 ADE=0.458538 FDE=0.976144
+zara1 emt_sr 2024 epoch 1: loss=0.106945 ADE=0.465279 FDE=0.995221
+zara2 emt_zr 42 epoch 20: loss=0.110563 ADE=0.504424 FDE=1.076619
+zara2 emt_sr 42 epoch 1: loss=0.110871 ADE=0.501736 FDE=1.061019
+zara1 emt_sr 42 epoch 10: loss=0.100201 ADE=0.449153 FDE=0.962126
+zara2 emt_zr 123 epoch 1: loss=0.112810 ADE=0.506414 FDE=1.075811
+zara1 emt_sr 123 epoch 10: loss=0.098341 ADE=0.460338 FDE=0.979116
+hotel ett_sr 42 epoch 10: loss=0.109804 ADE=0.458066 FDE=0.972915
+zara2 emt_zr 123 epoch 10: loss=0.112006 ADE=0.504239 FDE=1.072564
+zara1 emt_sr 2024 epoch 10: loss=0.093957 ADE=0.454829 FDE=0.966010
+zara2 emt_zr 123 epoch 20: loss=0.111384 ADE=0.503974 FDE=1.073976
+zara2 emt_sr 42 epoch 10: loss=0.096679 ADE=0.496606 FDE=1.048657
+zara2 emt_sr 123 epoch 1: loss=0.111994 ADE=0.504135 FDE=1.066192
+zara1 emt_sr 42 epoch 20: loss=0.089319 ADE=0.447801 FDE=0.955038
+zara2 emt_zr 2024 epoch 1: loss=0.116802 ADE=0.508946 FDE=1.086807
+zara1 emt_sr 123 epoch 20: loss=0.086072 ADE=0.458984 FDE=0.978141
+zara2 emt_zr 2024 epoch 10: loss=0.116021 ADE=0.505508 FDE=1.079647
+zara1 emt_gsr 123 epoch 1: loss=0.109862 ADE=0.462302 FDE=0.990768
+zara1 emt_sr 2024 epoch 20: loss=0.082528 ADE=0.450078 FDE=0.958149
+zara2 emt_sr 42 epoch 20: loss=0.085488 ADE=0.487277 FDE=1.029655
+zara2 emt_sr 2024 epoch 1: loss=0.115929 ADE=0.509390 FDE=1.081463
+zara2 emt_sr 123 epoch 10: loss=0.095038 ADE=0.493786 FDE=1.036332
+zara1 emt_gsr 42 epoch 1: loss=0.113208 ADE=0.462014 FDE=0.989566
+zara1 emt_gsr 2024 epoch 1: loss=0.107202 ADE=0.464607 FDE=0.993675
+zara1 emt_gsr 123 epoch 10: loss=0.098687 ADE=0.454196 FDE=0.965160
+zara2 emt_sr 42 epoch 30: loss=0.078800 ADE=0.490035 FDE=1.033377
+zara2 emt_sr 2024 epoch 10: loss=0.099838 ADE=0.500057 FDE=1.053551
+zara2 emt_sr 123 epoch 20: loss=0.086973 ADE=0.504163 FDE=1.061365
+zara2 emt_gsr 42 epoch 1: loss=0.110995 ADE=0.503658 FDE=1.064064
+zara1 emt_gsr 42 epoch 10: loss=0.100561 ADE=0.449129 FDE=0.957734
+zara2 emt_gsr 123 epoch 1: loss=0.112055 ADE=0.507420 FDE=1.074213
+zara1 emt_gsr 2024 epoch 10: loss=0.095078 ADE=0.458514 FDE=0.976687
+zara1 ett_sr 123 epoch 1: loss=0.113913 ADE=0.467301 FDE=0.998642
+zara2 emt_sr 2024 epoch 20: loss=0.089741 ADE=0.498103 FDE=1.048804
+zara2 emt_gsr 42 epoch 10: loss=0.096472 ADE=0.498796 FDE=1.054279
+zara2 emt_gsr 2024 epoch 1: loss=0.116208 ADE=0.506828 FDE=1.072492
+zara1 emt_gsr 42 epoch 20: loss=0.088421 ADE=0.447495 FDE=0.950233
+zara2 emt_gsr 123 epoch 10: loss=0.097101 ADE=0.496213 FDE=1.042583
+zara1 ett_sr 123 epoch 10: loss=0.111800 ADE=0.465166 FDE=0.987128
+zara1 emt_gsr 2024 epoch 20: loss=0.085197 ADE=0.458567 FDE=0.976097
+zara2 emt_gsr 42 epoch 20: loss=0.083934 ADE=0.500443 FDE=1.055052
+zara2 emt_gsr 2024 epoch 10: loss=0.103671 ADE=0.499367 FDE=1.056459
+zara1 ett_sr 42 epoch 1: loss=0.113233 ADE=0.465725 FDE=0.994726
+zara2 emt_gsr 123 epoch 20: loss=0.083683 ADE=0.494998 FDE=1.034997
+zara1 ett_sr 123 epoch 20: loss=0.108941 ADE=0.465085 FDE=0.988798
+zara2 emt_gsr 42 epoch 30: loss=0.076991 ADE=0.497747 FDE=1.049128
+zara2 ett_sr 123 epoch 1: loss=0.121311 ADE=0.511789 FDE=1.085454
+zara1 emt_gsr 2024 epoch 30: loss=0.075113 ADE=0.450965 FDE=0.957911
+zara2 ett_sr 42 epoch 1: loss=0.118545 ADE=0.510943 FDE=1.083517
+zara2 emt_gsr 2024 epoch 20: loss=0.088295 ADE=0.495312 FDE=1.047223
+zara1 ett_sr 42 epoch 10: loss=0.112065 ADE=0.464333 FDE=0.990922
+zara2 ett_sr 123 epoch 10: loss=0.118079 ADE=0.512701 FDE=1.084808
+zara1 ett_sr 2024 epoch 1: loss=0.112160 ADE=0.470639 FDE=1.003914
+zara2 ett_sr 42 epoch 10: loss=0.116531 ADE=0.508768 FDE=1.074997
+zara2 ett_sr 2024 epoch 1: loss=0.114909 ADE=0.510274 FDE=1.080707
+zara1 ett_sr 42 epoch 20: loss=0.109232 ADE=0.459609 FDE=0.976655
+zara2 ett_sr 123 epoch 20: loss=0.114212 ADE=0.500093 FDE=1.051942
+zara2 ett_sr 2024 epoch 10: loss=0.114558 ADE=0.510412 FDE=1.081929
+zara1 ett_sr 2024 epoch 10: loss=0.110533 ADE=0.461750 FDE=0.986406
+zara2 ett_sr 42 epoch 20: loss=0.114907 ADE=0.507024 FDE=1.073156
+zara2 ett_sr 123 epoch 30: loss=0.111722 ADE=0.495045 FDE=1.040799
+zara1 ett_sr 2024 epoch 20: loss=0.107647 ADE=0.460468 FDE=0.979415
+zara2 ett_sr 123 epoch 40: loss=0.110053 ADE=0.498479 FDE=1.049349
+concurrent.futures.process._RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/concurrent/futures/process.py", line 246, in _process_worker
+    r = call_item.fn(*call_item.args, **call_item.kwargs)
+  File "/home/lrj/Mamba-T/scripts/run_social_residual.py", line 25, in worker
+    b,meta,tr,va=prepare_pair(kind,fold,seed)
+  File "/home/lrj/Mamba-T/scripts/social_residual_utils.py", line 144, in prepare_pair
+    start=time.perf_counter();tr=cache_contexts(backbone,train);va=cache_contexts(backbone,val)
+  File "/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/lrj/Mamba-T/scripts/social_residual_utils.py", line 45, in cache_contexts
+    if encoded:n[mask]=torch.cat(encoded)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 110.00 MiB. GPU 0 has a total capacity of 9.65 GiB of which 107.50 MiB is free. Process 21816 has 290.00 MiB memory in use. Process 21950 has 1.53 GiB memory in use. Process 21949 has 1.53 GiB memory in use. Process 21951 has 1.51 GiB memory in use. Process 21947 has 1.51 GiB memory in use. Including non-PyTorch memory, this process has 1.38 GiB memory in use. Process 21948 has 1.51 GiB memory in use. Of the allocated memory 1.11 GiB is allocated by PyTorch, and 18.39 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lrj/Mamba-T/scripts/run_social_residual.py", line 46, in <module>
+    ckpt=ROOT/'checkpoints/social_residual'/f'heldout_{fold}'/name/f'seed_{seed}.pt'
+  File "/home/lrj/Mamba-T/scripts/run_social_residual.py", line 35, in main
+    failures=[]
+  File "/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 110.00 MiB. GPU 0 has a total capacity of 9.65 GiB of which 107.50 MiB is free. Process 21816 has 290.00 MiB memory in use. Process 21950 has 1.53 GiB memory in use. Process 21949 has 1.53 GiB memory in use. Process 21951 has 1.51 GiB memory in use. Process 21947 has 1.51 GiB memory in use. Including non-PyTorch memory, this process has 1.38 GiB memory in use. Process 21948 has 1.51 GiB memory in use. Of the allocated memory 1.11 GiB is allocated by PyTorch, and 18.39 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+PAIR COMPLETE ('hotel', 42)
+PAIR COMPLETE ('eth', 42)
+PAIR COMPLETE ('eth', 2024)
+PAIR COMPLETE ('hotel', 123)
+PAIR COMPLETE ('hotel', 2024)
+PAIR COMPLETE ('univ', 123)
+PAIR COMPLETE ('univ', 2024)
+PAIR COMPLETE ('univ', 42)
+PAIR COMPLETE ('zara1', 42)
+PAIR COMPLETE ('zara1', 123)
+PAIR COMPLETE ('zara2', 42)
+PAIR COMPLETE ('zara1', 2024)
+PAIR COMPLETE ('zara2', 123)
+PAIR COMPLETE ('zara2', 2024)
+eth emt_zr 123 epoch 1: loss=0.111309 ADE=0.448058 FDE=0.965057
+eth emt_zr 123 epoch 10: loss=0.110594 ADE=0.446987 FDE=0.962509
+eth emt_zr 123 epoch 20: loss=0.109986 ADE=0.446202 FDE=0.962638
+eth emt_sr 123 epoch 1: loss=0.110130 ADE=0.446122 FDE=0.953647
+eth emt_sr 123 epoch 10: loss=0.096308 ADE=0.436351 FDE=0.929655
+eth emt_sr 123 epoch 20: loss=0.085803 ADE=0.436273 FDE=0.926749
+eth emt_gsr 123 epoch 1: loss=0.109877 ADE=0.445119 FDE=0.955414
+eth emt_gsr 123 epoch 10: loss=0.096552 ADE=0.438885 FDE=0.938993
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+eth ett_sr 123 epoch 1: loss=0.107705 ADE=0.453010 FDE=0.963974
+eth ett_sr 123 epoch 10: loss=0.107326 ADE=0.453685 FDE=0.961548
+PAIR COMPLETE ('eth', 123)
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+{
+  "average": {
+    "ett": {
+      "ADE": 0.4458979237895739,
+      "FDE": 0.9428878352005315
+    },
+    "emt": {
+      "ADE": 0.4463066267546324,
+      "FDE": 0.9447404408752152
+    },
+    "emt_zr": {
+      "ADE": 0.438699424497418,
+      "FDE": 0.9372261658537158
+    },
+    "emt_sr": {
+      "ADE": 0.42704090693509816,
+      "FDE": 0.9001241179792959
+    },
+    "emt_gsr": {
+      "ADE": 0.4279375535538729,
+      "FDE": 0.9011251550427052
+    },
+    "ett_sr": {
+      "ADE": 0.43674435220116725,
+      "FDE": 0.9204763706105391
+    }
+  },
+  "social": {
+    "relative_change_percent": {
+      "ADE": -2.657518316937857,
+      "FDE": -3.9587080713462286
+    },
+    "paired_wins": {
+      "ADE": 15,
+      "FDE": 15
+    },
+    "decision": "GO"
+  },
+  "gate": {
+    "relative_change_percent": {
+      "ADE": 0.20996738350198552,
+      "FDE": 0.11121100339546164
+    },
+    "paired_wins": {
+      "ADE": 7,
+      "FDE": 8
+    },
+    "decision": "STOP"
+  }
+}

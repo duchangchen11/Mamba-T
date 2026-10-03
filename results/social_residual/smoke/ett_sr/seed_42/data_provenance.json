@@ -1,0 +1,19 @@
+{
+  "stage1_manifest_sha256": "449764a60bfbe32b97f56370aea4236681ba15d2e528f4cfd358ef8e915b80af",
+  "heldout_scene": "eth",
+  "heldout_test_accessed": false,
+  "data_provenance": "results/social_residual/data_audit/data_provenance.json",
+  "base_checkpoint": "/home/lrj/Mamba-T/checkpoints/eth_ucy_mamba_baseline/heldout_eth/ett/seed_42.pt",
+  "base_checkpoint_sha256": "a8d78832c35d2ee326e4e4c3a982d69f36f6b747a78045b6dc77bbb5307dca76",
+  "base_checkpoint_epoch": 63,
+  "base_state_sha256": "d58521707f9534e60b834c3ea0a14c0a959d505b31a568d4743c878f3dafdd3a",
+  "backbone_frozen": true,
+  "backbone_eval": true,
+  "context_cache_seconds": 1.0020014879992232,
+  "train_pedestrian_count": 1015,
+  "validation_pedestrian_count": 160,
+  "baseline_validation_difference": {
+    "ADE": 1.4434501927063081e-09,
+    "FDE": -1.3463141379510546e-08
+  }
+}

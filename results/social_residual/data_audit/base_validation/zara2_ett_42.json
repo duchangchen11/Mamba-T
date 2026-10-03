@@ -1,0 +1,47 @@
+{
+  "stage1_metrics": {
+    "ADE": 0.5127783159414927,
+    "FDE": 1.0869081468809219
+  },
+  "reproduced_validation": {
+    "ADE": 0.51277831916592,
+    "FDE": 1.0869081452619174,
+    "sample_count": 3360,
+    "neighbor_groups": {
+      "0": {
+        "sample_count": 10,
+        "ADE": 1.001323139667511,
+        "FDE": 1.8366284936666488
+      },
+      "1-2": {
+        "sample_count": 65,
+        "ADE": 0.525090986261001,
+        "FDE": 1.1067831139724988
+      },
+      "3-4": {
+        "sample_count": 201,
+        "ADE": 0.49379553575420854,
+        "FDE": 0.9989357835506621
+      },
+      "5+": {
+        "sample_count": 3084,
+        "ADE": 0.5121718885237532,
+        "FDE": 1.0897918574064462
+      }
+    }
+  },
+  "base_checkpoint": "/home/lrj/Mamba-T/checkpoints/eth_ucy_mamba_baseline/heldout_zara2/ett/seed_42.pt",
+  "base_checkpoint_sha256": "d5589e45af8179a09983d6d006e5bb4d86131fe28f8b9546e1738446b179b106",
+  "base_checkpoint_epoch": 27,
+  "base_state_sha256": "8b3d507d218f21eb2bd84df34dbf204ea7f19a16b04a87d65a1eee32c3f10874",
+  "backbone_frozen": true,
+  "backbone_eval": true,
+  "context_cache_seconds": 1.1787738210005045,
+  "train_pedestrian_count": 880,
+  "validation_pedestrian_count": 150,
+  "baseline_validation_difference": {
+    "ADE": 3.2244272807346874e-09,
+    "FDE": -1.6190044860309172e-09
+  },
+  "heldout_test_accessed": false
+}

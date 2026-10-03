@@ -1,0 +1,16 @@
+{
+  "initial_parallel_pairs": 6,
+  "failed_pair": {
+    "fold": "eth",
+    "seed": 123
+  },
+  "failure": "CUDA OutOfMemoryError during frozen neighbor-context precomputation, before new-module training",
+  "completed_runs_preserved": 56,
+  "fix": "stream neighbor contexts into preallocated storage; reduce independent worker processes to 4",
+  "training_protocol_changed": false,
+  "split_changed": false,
+  "retry_policy": "recompute failed pair and train its four variants from the specified initial seeds; completed runs are reused",
+  "resolved": true,
+  "completed_formal_runs": 60,
+  "all_inference_benchmarks_completed": true
+}
