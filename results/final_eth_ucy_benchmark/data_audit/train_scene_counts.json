@@ -1,0 +1,77 @@
+{
+  "eth": {
+    "scene_list": [
+      "hotel",
+      "univ",
+      "zara1",
+      "zara2"
+    ],
+    "scene_counts": {
+      "hotel": 1197,
+      "univ": 24334,
+      "zara1": 2356,
+      "zara2": 5910
+    },
+    "total": 33797
+  },
+  "hotel": {
+    "scene_list": [
+      "eth",
+      "univ",
+      "zara1",
+      "zara2"
+    ],
+    "scene_counts": {
+      "eth": 364,
+      "univ": 24334,
+      "zara1": 2356,
+      "zara2": 5910
+    },
+    "total": 32964
+  },
+  "univ": {
+    "scene_list": [
+      "eth",
+      "hotel",
+      "zara1",
+      "zara2"
+    ],
+    "scene_counts": {
+      "eth": 364,
+      "hotel": 1197,
+      "zara1": 2356,
+      "zara2": 5910
+    },
+    "total": 9827
+  },
+  "zara1": {
+    "scene_list": [
+      "eth",
+      "hotel",
+      "univ",
+      "zara2"
+    ],
+    "scene_counts": {
+      "eth": 364,
+      "hotel": 1197,
+      "univ": 24334,
+      "zara2": 5910
+    },
+    "total": 31805
+  },
+  "zara2": {
+    "scene_list": [
+      "eth",
+      "hotel",
+      "univ",
+      "zara1"
+    ],
+    "scene_counts": {
+      "eth": 364,
+      "hotel": 1197,
+      "univ": 24334,
+      "zara1": 2356
+    },
+    "total": 28251
+  }
+}

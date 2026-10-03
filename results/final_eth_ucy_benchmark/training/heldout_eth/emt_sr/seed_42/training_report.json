@@ -1,0 +1,42 @@
+{
+  "fold": "eth",
+  "heldout_scene": "eth",
+  "model": "emt_sr",
+  "seed": 42,
+  "train_scene_list": [
+    "hotel",
+    "univ",
+    "zara1",
+    "zara2"
+  ],
+  "train_sample_count": 33797,
+  "epochs_run": 14,
+  "training_epoch": 14,
+  "epoch_rule": "frozen median of prior validation best_epoch",
+  "started_at_utc": "2026-10-03T08:34:41.081899+00:00",
+  "completed_at_utc": "2026-10-03T08:35:29.013438+00:00",
+  "protocol_sha256": "e9240c2f042282e370f007ff9310c39a21fcf747e3b93a0f96317960f9f28914",
+  "checkpoint_path": "checkpoints/final_eth_ucy_benchmark/heldout_eth/emt_sr/seed_42.pt",
+  "checkpoint_sha256": "61ed4272a0b57b85bc4b2dfbaacb606063588b9a3185ee1c182d21ec4dee240d",
+  "parameter_count": {
+    "total": 477360,
+    "trainable": 106392,
+    "frozen": 370968
+  },
+  "maximum_gradient_norm_before_clipping": 0.6736461520195007,
+  "training_seconds": 38.31188512699737,
+  "gpu_peak_memory_bytes": 202936320,
+  "nan_inf": false,
+  "heldout_test_evaluated": false,
+  "test_metrics_accessed_before_freeze": false,
+  "smoke": false,
+  "base_checkpoint_path": "checkpoints/final_eth_ucy_benchmark/heldout_eth/emt/seed_42.pt",
+  "base_checkpoint_sha256": "07fc4f12eac877ae21027c09a3f39bba8dc8c6f41fbb3855e5b7eff6fed2bab8",
+  "backbone_state_sha256_before": "dcf926823bede308d5c9ad8652b8a9ec5974315115d7867b5545c471b1aac940",
+  "context_cache_seconds": 9.056602191998536,
+  "initial_output_base_max_abs_diff": 0.0,
+  "backbone_state_sha256_after": "dcf926823bede308d5c9ad8652b8a9ec5974315115d7867b5545c471b1aac940",
+  "backbone_unchanged": true,
+  "backbone_frozen": true,
+  "backbone_eval": true
+}

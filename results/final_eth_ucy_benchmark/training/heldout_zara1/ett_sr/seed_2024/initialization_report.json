@@ -1,0 +1,12 @@
+{
+  "seed": 2024,
+  "model": "ett_sr",
+  "protocol_sha256": "e9240c2f042282e370f007ff9310c39a21fcf747e3b93a0f96317960f9f28914",
+  "new_module_initialization_sha256": "c6d3db83958bde2ffeb853314c360aa18cf76bd8f8d0607c3c00f953134ff9da",
+  "residual_initialization_sha256": "a72c802dbcfa9ed816ee1b10d0bda7e963fd8137da6cefc938317be6c1a25919",
+  "base_checkpoint_path": "checkpoints/final_eth_ucy_benchmark/heldout_zara1/ett/seed_2024.pt",
+  "base_checkpoint_sha256": "f8dc17ca4d185748062b3f2c865981120390f4ad36b01a0b184dff21ad49b3d9",
+  "backbone_state_sha256_before": "cdc17fb587b8a3ebf1b591b3222c8fbc5bd1bd344bf4a3b41eaaf139f7e87232",
+  "context_cache_seconds": 1.2601317680018838,
+  "initial_output_base_max_abs_diff": 0.0
+}

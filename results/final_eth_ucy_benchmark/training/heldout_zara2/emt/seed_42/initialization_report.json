@@ -1,0 +1,7 @@
+{
+  "seed": 42,
+  "model": "emt",
+  "protocol_sha256": "e9240c2f042282e370f007ff9310c39a21fcf747e3b93a0f96317960f9f28914",
+  "model_initialization_sha256": "dc865e2a83d38ce139a01fe6d8753f36f5fea1f9af5c314461b6732458b671e6",
+  "decoder_initialization_sha256": "7ca870b2727233f5b55115a92a8ceaec7b6ecb7688ceaefba48ed605ec0140d0"
+}

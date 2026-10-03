@@ -1,0 +1,12 @@
+{
+  "seed": 123,
+  "model": "emt_sr",
+  "protocol_sha256": "e9240c2f042282e370f007ff9310c39a21fcf747e3b93a0f96317960f9f28914",
+  "new_module_initialization_sha256": "d9003ef12c6a12a998c1eea075d0503f4e9643a0167e302c982924ada666df64",
+  "residual_initialization_sha256": "9091602b3a7c887d933adf8e4d83a530cce545bf4eca8ed1c60ca6bcb2b06204",
+  "base_checkpoint_path": "checkpoints/final_eth_ucy_benchmark/heldout_univ/emt/seed_123.pt",
+  "base_checkpoint_sha256": "eb0ed41d7df15707799b6ef91918a5f60fc97cca6b69b3bf6b113fe05cd25995",
+  "backbone_state_sha256_before": "6df715cba7cca88a6f10d72a66799a28c0619e6ee0d79eb0333b7531e537c835",
+  "context_cache_seconds": 1.3128707980031322,
+  "initial_output_base_max_abs_diff": 0.0
+}

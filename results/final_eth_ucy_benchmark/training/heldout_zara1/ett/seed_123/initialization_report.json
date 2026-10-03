@@ -1,0 +1,7 @@
+{
+  "seed": 123,
+  "model": "ett",
+  "protocol_sha256": "e9240c2f042282e370f007ff9310c39a21fcf747e3b93a0f96317960f9f28914",
+  "model_initialization_sha256": "127a299ff9500f8ecb7e9d8ac333f1860fc6b98d35c4cf339ac938e58d73a3e9",
+  "decoder_initialization_sha256": "0cfe7f1ce4320823035a12fbfc65a68b0b6cc3f00c7fc2ea231b897582e41674"
+}

@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "protocol_sha256": "e9240c2f042282e370f007ff9310c39a21fcf747e3b93a0f96317960f9f28914",
+  "models": [
+    "ett",
+    "emt",
+    "ett_sr",
+    "emt_sr"
+  ],
+  "epochs": 3,
+  "source_only_prediction_export": true,
+  "heldout_test_evaluated": false,
+  "test_metrics_accessed_before_freeze": false,
+  "completed_at_utc": "2026-10-03T08:30:11.466197+00:00"
+}

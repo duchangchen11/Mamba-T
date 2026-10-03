@@ -1,0 +1,235 @@
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+eth ett 2024 epoch 1/38: train_loss=0.166025
+hotel ett 42 epoch 1/11: train_loss=0.167592
+eth ett 123 epoch 1/38: train_loss=0.160394
+eth ett 42 epoch 1/38: train_loss=0.165706
+hotel ett 42 epoch 10/11: train_loss=0.124536
+eth ett 2024 epoch 10/38: train_loss=0.120416
+eth ett 123 epoch 10/38: train_loss=0.120406
+eth ett 42 epoch 10/38: train_loss=0.120237
+hotel ett 42 epoch 11/11: train_loss=0.123759
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+hotel ett_sr 42 epoch 1/11: train_loss=0.115449
+hotel ett_sr 42 epoch 10/11: train_loss=0.113024
+hotel ett_sr 42 epoch 11/11: train_loss=0.113054
+hotel emt 42 epoch 1/14: train_loss=0.159885
+eth ett 2024 epoch 20/38: train_loss=0.117974
+eth ett 42 epoch 20/38: train_loss=0.119251
+eth ett 123 epoch 20/38: train_loss=0.119013
+hotel emt 42 epoch 10/14: train_loss=0.119170
+eth ett 2024 epoch 30/38: train_loss=0.117234
+eth ett 42 epoch 30/38: train_loss=0.117269
+eth ett 123 epoch 30/38: train_loss=0.117717
+hotel emt 42 epoch 14/14: train_loss=0.116198
+hotel emt_sr 42 epoch 1/15: train_loss=0.108844
+hotel emt_sr 42 epoch 10/15: train_loss=0.095580
+eth ett 2024 epoch 38/38: train_loss=0.117363
+eth ett 42 epoch 38/38: train_loss=0.117375
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+eth ett 123 epoch 38/38: train_loss=0.117109
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+eth ett_sr 2024 epoch 1/10: train_loss=0.111001
+eth ett_sr 42 epoch 1/10: train_loss=0.111389
+eth ett_sr 123 epoch 1/10: train_loss=0.111863
+hotel emt_sr 42 epoch 15/15: train_loss=0.090882
+FINAL PAIR COMPLETE ('hotel', 42)
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+hotel ett 123 epoch 1/11: train_loss=0.163348
+eth ett_sr 2024 epoch 10/10: train_loss=0.109786
+eth ett_sr 42 epoch 10/10: train_loss=0.109244
+eth ett_sr 123 epoch 10/10: train_loss=0.110034
+eth emt 2024 epoch 1/10: train_loss=0.154956
+eth emt 42 epoch 1/10: train_loss=0.158324
+eth emt 123 epoch 1/10: train_loss=0.154486
+hotel ett 123 epoch 10/11: train_loss=0.122653
+hotel ett 123 epoch 11/11: train_loss=0.122649
+hotel ett_sr 123 epoch 1/11: train_loss=0.114983
+eth emt 2024 epoch 10/10: train_loss=0.115668
+eth emt 42 epoch 10/10: train_loss=0.115278
+eth emt 123 epoch 10/10: train_loss=0.115529
+eth emt_sr 2024 epoch 1/14: train_loss=0.108256
+eth emt_sr 42 epoch 1/14: train_loss=0.108426
+eth emt_sr 123 epoch 1/14: train_loss=0.109309
+hotel ett_sr 123 epoch 10/11: train_loss=0.112437
+hotel ett_sr 123 epoch 11/11: train_loss=0.112599
+hotel emt 123 epoch 1/14: train_loss=0.157368
+eth emt_sr 2024 epoch 10/14: train_loss=0.094735
+eth emt_sr 42 epoch 10/14: train_loss=0.096229
+eth emt_sr 123 epoch 10/14: train_loss=0.096867
+eth emt_sr 2024 epoch 14/14: train_loss=0.091906
+FINAL PAIR COMPLETE ('eth', 2024)
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+eth emt_sr 42 epoch 14/14: train_loss=0.092813
+FINAL PAIR COMPLETE ('eth', 42)
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+eth emt_sr 123 epoch 14/14: train_loss=0.093457
+FINAL PAIR COMPLETE ('eth', 123)
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+univ ett 42 epoch 1/21: train_loss=0.212068
+univ ett 123 epoch 1/21: train_loss=0.198045
+hotel ett 2024 epoch 1/11: train_loss=0.169199
+univ ett 42 epoch 10/21: train_loss=0.085814
+univ ett 123 epoch 10/21: train_loss=0.086066
+hotel emt 123 epoch 10/14: train_loss=0.117996
+univ ett 42 epoch 20/21: train_loss=0.083638
+univ ett 123 epoch 20/21: train_loss=0.082652
+univ ett 42 epoch 21/21: train_loss=0.081226
+univ ett 123 epoch 21/21: train_loss=0.082065
+univ ett_sr 42 epoch 1/13: train_loss=0.071123
+univ ett_sr 123 epoch 1/13: train_loss=0.071382
+univ ett_sr 42 epoch 10/13: train_loss=0.066794
+univ ett_sr 123 epoch 10/13: train_loss=0.066482
+univ ett_sr 42 epoch 13/13: train_loss=0.065954
+univ ett_sr 123 epoch 13/13: train_loss=0.066184
+hotel emt 123 epoch 14/14: train_loss=0.116530
+univ emt 42 epoch 1/12: train_loss=0.227342
+univ emt 123 epoch 1/12: train_loss=0.216011
+hotel ett 2024 epoch 10/11: train_loss=0.122702
+hotel ett 2024 epoch 11/11: train_loss=0.122944
+hotel emt_sr 123 epoch 1/15: train_loss=0.110096
+univ emt 42 epoch 10/12: train_loss=0.082330
+univ emt 123 epoch 10/12: train_loss=0.083696
+hotel ett_sr 2024 epoch 1/11: train_loss=0.115339
+univ emt 42 epoch 12/12: train_loss=0.080538
+univ emt 123 epoch 12/12: train_loss=0.079967
+univ emt_sr 42 epoch 1/4: train_loss=0.069867
+univ emt_sr 123 epoch 1/4: train_loss=0.069169
+univ emt_sr 42 epoch 4/4: train_loss=0.063198
+FINAL PAIR COMPLETE ('univ', 42)
+univ emt_sr 123 epoch 4/4: train_loss=0.061968
+FINAL PAIR COMPLETE ('univ', 123)
+univ ett 2024 epoch 1/21: train_loss=0.212240
+zara1 ett 42 epoch 1/30: train_loss=0.168632
+univ ett 2024 epoch 10/21: train_loss=0.087716
+hotel emt_sr 123 epoch 10/15: train_loss=0.096066
+hotel ett_sr 2024 epoch 10/11: train_loss=0.112164
+hotel ett_sr 2024 epoch 11/11: train_loss=0.111922
+hotel emt 2024 epoch 1/14: train_loss=0.157483
+univ ett 2024 epoch 20/21: train_loss=0.084598
+univ ett 2024 epoch 21/21: train_loss=0.081766
+hotel emt_sr 123 epoch 15/15: train_loss=0.091927
+FINAL PAIR COMPLETE ('hotel', 123)
+univ ett_sr 2024 epoch 1/13: train_loss=0.071151
+zara1 ett 123 epoch 1/30: train_loss=0.164672
+univ ett_sr 2024 epoch 10/13: train_loss=0.065763
+univ ett_sr 2024 epoch 13/13: train_loss=0.063061
+univ emt 2024 epoch 1/12: train_loss=0.218375
+zara1 ett 42 epoch 10/30: train_loss=0.125118
+univ emt 2024 epoch 10/12: train_loss=0.083315
+univ emt 2024 epoch 12/12: train_loss=0.081176
+univ emt_sr 2024 epoch 1/4: train_loss=0.071102
+univ emt_sr 2024 epoch 4/4: train_loss=0.064039
+FINAL PAIR COMPLETE ('univ', 2024)
+hotel emt 2024 epoch 10/14: train_loss=0.118354
+zara1 ett 2024 epoch 1/30: train_loss=0.169132
+zara1 ett 123 epoch 10/30: train_loss=0.123730
+hotel emt 2024 epoch 14/14: train_loss=0.116363
+hotel emt_sr 2024 epoch 1/15: train_loss=0.110276
+zara1 ett 42 epoch 20/30: train_loss=0.122992
+zara1 ett 2024 epoch 10/30: train_loss=0.124109
+hotel emt_sr 2024 epoch 10/15: train_loss=0.096637
+zara1 ett 123 epoch 20/30: train_loss=0.121895
+hotel emt_sr 2024 epoch 15/15: train_loss=0.091459
+FINAL PAIR COMPLETE ('hotel', 2024)
+zara2 ett 42 epoch 1/27: train_loss=0.180077
+zara1 ett 42 epoch 30/30: train_loss=0.121326
+zara1 ett_sr 42 epoch 1/34: train_loss=0.115329
+zara1 ett 2024 epoch 20/30: train_loss=0.123153
+zara1 ett_sr 42 epoch 10/34: train_loss=0.113447
+zara1 ett 123 epoch 30/30: train_loss=0.121166
+zara2 ett 42 epoch 10/27: train_loss=0.130572
+zara1 ett_sr 123 epoch 1/34: train_loss=0.115402
+zara1 ett_sr 42 epoch 20/34: train_loss=0.112655
+zara1 ett_sr 123 epoch 10/34: train_loss=0.112810
+zara1 ett 2024 epoch 30/30: train_loss=0.120826
+zara1 ett_sr 2024 epoch 1/34: train_loss=0.115260
+zara2 ett 42 epoch 20/27: train_loss=0.128652
+zara1 ett_sr 42 epoch 30/34: train_loss=0.112446
+zara1 ett_sr 123 epoch 20/34: train_loss=0.112304
+zara1 ett_sr 2024 epoch 10/34: train_loss=0.113461
+zara1 ett_sr 42 epoch 34/34: train_loss=0.112060
+zara1 emt 42 epoch 1/12: train_loss=0.161390
+zara2 ett 42 epoch 27/27: train_loss=0.127029
+zara2 ett_sr 42 epoch 1/30: train_loss=0.120849
+zara1 ett_sr 123 epoch 30/34: train_loss=0.111571
+zara1 ett_sr 2024 epoch 20/34: train_loss=0.112773
+zara1 ett_sr 123 epoch 34/34: train_loss=0.111719
+zara1 emt 123 epoch 1/12: train_loss=0.158500
+zara2 ett_sr 42 epoch 10/30: train_loss=0.117749
+zara1 emt 42 epoch 10/12: train_loss=0.119693
+zara1 emt 42 epoch 12/12: train_loss=0.118247
+zara1 emt_sr 42 epoch 1/19: train_loss=0.109943
+zara1 ett_sr 2024 epoch 30/34: train_loss=0.112267
+zara2 ett_sr 42 epoch 20/30: train_loss=0.117042
+zara1 ett_sr 2024 epoch 34/34: train_loss=0.112514
+zara1 emt 123 epoch 10/12: train_loss=0.118945
+zara1 emt 2024 epoch 1/12: train_loss=0.160478
+zara1 emt 123 epoch 12/12: train_loss=0.117336
+zara1 emt_sr 42 epoch 10/19: train_loss=0.097912
+zara1 emt_sr 123 epoch 1/19: train_loss=0.110297
+zara2 ett_sr 42 epoch 30/30: train_loss=0.115986
+zara2 emt 42 epoch 1/14: train_loss=0.173009
+zara1 emt 2024 epoch 10/12: train_loss=0.119446
+zara1 emt_sr 42 epoch 19/19: train_loss=0.090357
+FINAL PAIR COMPLETE ('zara1', 42)
+zara2 ett 123 epoch 1/27: train_loss=0.176368
+zara1 emt_sr 123 epoch 10/19: train_loss=0.095985
+zara1 emt 2024 epoch 12/12: train_loss=0.118602
+zara1 emt_sr 2024 epoch 1/19: train_loss=0.110954
+zara2 emt 42 epoch 10/14: train_loss=0.125728
+zara2 emt 42 epoch 14/14: train_loss=0.122589
+zara1 emt_sr 123 epoch 19/19: train_loss=0.088239
+FINAL PAIR COMPLETE ('zara1', 123)
+zara2 emt_sr 42 epoch 1/16: train_loss=0.114552
+zara2 ett 2024 epoch 1/27: train_loss=0.180432
+zara2 ett 123 epoch 10/27: train_loss=0.130552
+zara1 emt_sr 2024 epoch 10/19: train_loss=0.097536
+zara2 emt_sr 42 epoch 10/16: train_loss=0.099585
+zara1 emt_sr 2024 epoch 19/19: train_loss=0.090339
+FINAL PAIR COMPLETE ('zara1', 2024)
+zara2 emt_sr 42 epoch 16/16: train_loss=0.094022
+FINAL PAIR COMPLETE ('zara2', 42)
+zara2 ett 2024 epoch 10/27: train_loss=0.129995
+zara2 ett 123 epoch 20/27: train_loss=0.128691
+zara2 ett 123 epoch 27/27: train_loss=0.127747
+zara2 ett_sr 123 epoch 1/30: train_loss=0.121764
+zara2 ett 2024 epoch 20/27: train_loss=0.128120
+zara2 ett_sr 123 epoch 10/30: train_loss=0.119453
+zara2 ett 2024 epoch 27/27: train_loss=0.127594
+zara2 ett_sr 2024 epoch 1/30: train_loss=0.121070
+zara2 ett_sr 123 epoch 20/30: train_loss=0.118053
+zara2 ett_sr 2024 epoch 10/30: train_loss=0.118775
+zara2 ett_sr 123 epoch 30/30: train_loss=0.117351
+zara2 emt 123 epoch 1/14: train_loss=0.168923
+zara2 ett_sr 2024 epoch 20/30: train_loss=0.117491
+zara2 ett_sr 2024 epoch 30/30: train_loss=0.116949
+zara2 emt 123 epoch 10/14: train_loss=0.124815
+zara2 emt 2024 epoch 1/14: train_loss=0.170123
+zara2 emt 123 epoch 14/14: train_loss=0.122373
+zara2 emt_sr 123 epoch 1/16: train_loss=0.114413
+zara2 emt 2024 epoch 10/14: train_loss=0.125077
+zara2 emt_sr 123 epoch 10/16: train_loss=0.099237
+zara2 emt_sr 123 epoch 16/16: train_loss=0.093118
+FINAL PAIR COMPLETE ('zara2', 123)
+zara2 emt 2024 epoch 14/14: train_loss=0.123415
+zara2 emt_sr 2024 epoch 1/16: train_loss=0.115667
+zara2 emt_sr 2024 epoch 10/16: train_loss=0.099134
+zara2 emt_sr 2024 epoch 16/16: train_loss=0.092949
+FINAL PAIR COMPLETE ('zara2', 2024)
+FINAL TRAINING COMPLETE: 60/60; held-out evaluation still unopened

@@ -1,0 +1,12 @@
+{
+  "seed": 123,
+  "model": "ett_sr",
+  "protocol_sha256": "e9240c2f042282e370f007ff9310c39a21fcf747e3b93a0f96317960f9f28914",
+  "new_module_initialization_sha256": "d9003ef12c6a12a998c1eea075d0503f4e9643a0167e302c982924ada666df64",
+  "residual_initialization_sha256": "9091602b3a7c887d933adf8e4d83a530cce545bf4eca8ed1c60ca6bcb2b06204",
+  "base_checkpoint_path": "checkpoints/final_eth_ucy_benchmark/heldout_hotel/ett/seed_123.pt",
+  "base_checkpoint_sha256": "3985ae8da170610b97ab4314e5ae9477f728aee87086805581327ba617f591d2",
+  "backbone_state_sha256_before": "74b1602f0f0672624fbc13f25b0df41cb490ebaf5d52a3c6b45b5fd9f0fb4afd",
+  "context_cache_seconds": 2.488659203001589,
+  "initial_output_base_max_abs_diff": 0.0
+}

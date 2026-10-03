@@ -1,0 +1,12 @@
+{
+  "seed": 42,
+  "model": "ett_sr",
+  "protocol_sha256": "e9240c2f042282e370f007ff9310c39a21fcf747e3b93a0f96317960f9f28914",
+  "new_module_initialization_sha256": "469d4b16e97c388b2541e3b3f39fa2742d96bfe0782f032e21e17dc881ffb56d",
+  "residual_initialization_sha256": "153adbd0898a222914e04c355db38bcb97a63dfead84bb939a685d6a84af3987",
+  "base_checkpoint_path": "checkpoints/final_eth_ucy_benchmark/smoke/heldout_eth/ett/seed_42.pt",
+  "base_checkpoint_sha256": "c2852c2ffe9a60938b67d9449986269f544a099a7d1f738b32e05cf94d87f55a",
+  "backbone_state_sha256_before": "df0ad40ba10fb5a94c91c1ee22715db0443f24df79a5b0c903d7539cd0b87a71",
+  "context_cache_seconds": 1.0010252300016873,
+  "initial_output_base_max_abs_diff": 0.0
+}

@@ -1,0 +1,409 @@
+{
+  "method": "per fold/model median of validation best_epoch over seeds 42,123,2024; nearest integer if needed",
+  "epochs": {
+    "eth": {
+      "ett": 38,
+      "emt": 10,
+      "ett_sr": 10,
+      "emt_sr": 14
+    },
+    "hotel": {
+      "ett": 11,
+      "emt": 14,
+      "ett_sr": 11,
+      "emt_sr": 15
+    },
+    "univ": {
+      "ett": 21,
+      "emt": 12,
+      "ett_sr": 13,
+      "emt_sr": 4
+    },
+    "zara1": {
+      "ett": 30,
+      "emt": 12,
+      "ett_sr": 34,
+      "emt_sr": 19
+    },
+    "zara2": {
+      "ett": 27,
+      "emt": 14,
+      "ett_sr": 30,
+      "emt_sr": 16
+    }
+  },
+  "source_validation": {
+    "eth": {
+      "ett": {
+        "seeds": [
+          42,
+          123,
+          2024
+        ],
+        "validation_best_epochs": [
+          63,
+          38,
+          31
+        ],
+        "final_epoch": 38,
+        "sources": {
+          "results/eth_ucy_mamba_baseline/heldout_eth/ett/seed_42/metrics_validation.json": "74e0809bf1b4c0d4715117c1419a471b6d3ae00ba391067273dca762618595a2",
+          "results/eth_ucy_mamba_baseline/heldout_eth/ett/seed_123/metrics_validation.json": "357cb8874745a592925a72fbb726cef283e5c4ae8c500a462e5ae4263bbef4ae",
+          "results/eth_ucy_mamba_baseline/heldout_eth/ett/seed_2024/metrics_validation.json": "40e0609b7000eb2dbbce6b7f93c7b011baedc21049013a6e3b741810d514cc22"
+        }
+      },
+      "emt": {
+        "seeds": [
+          42,
+          123,
+          2024
+        ],
+        "validation_best_epochs": [
+          19,
+          6,
+          10
+        ],
+        "final_epoch": 10,
+        "sources": {
+          "results/eth_ucy_mamba_baseline/heldout_eth/emt/seed_42/metrics_validation.json": "ccc888b3ef664637836cbddd3e4f05ecf8b89bea34163e3c50c59ce8f772f0e9",
+          "results/eth_ucy_mamba_baseline/heldout_eth/emt/seed_123/metrics_validation.json": "f8e579b249ff6db2dc982065961a02b9f076c5f525754ffbdcf0f3fc1245c18d",
+          "results/eth_ucy_mamba_baseline/heldout_eth/emt/seed_2024/metrics_validation.json": "6bba8d38ac911663d63c68b0eabe28ef72493962fee02686a9f3249a9b9730b2"
+        }
+      },
+      "ett_sr": {
+        "seeds": [
+          42,
+          123,
+          2024
+        ],
+        "validation_best_epochs": [
+          1,
+          10,
+          19
+        ],
+        "final_epoch": 10,
+        "sources": {
+          "results/clean_social_validation/heldout_eth/ett_sr/seed_42/metrics_validation.json": "7cefe67515310c937679854a7fe4d24d6ff0865c93dbdadc162317ab84013dd7",
+          "results/clean_social_validation/heldout_eth/ett_sr/seed_123/metrics_validation.json": "133cbc256994c757bed3b0845deef20a6aab887f09baf04fdf76ce2a95aace35",
+          "results/clean_social_validation/heldout_eth/ett_sr/seed_2024/metrics_validation.json": "de08972ab6c294b26cbd112cda050fc1d5c34afc1865d9321da4dd4af8447f01"
+        }
+      },
+      "emt_sr": {
+        "seeds": [
+          42,
+          123,
+          2024
+        ],
+        "validation_best_epochs": [
+          9,
+          14,
+          18
+        ],
+        "final_epoch": 14,
+        "sources": {
+          "results/clean_social_validation/heldout_eth/emt_sr/seed_42/metrics_validation.json": "9251f8c5ebdf10924d336ea0b12cf879636fa568aa281654162bdd735b42fb10",
+          "results/clean_social_validation/heldout_eth/emt_sr/seed_123/metrics_validation.json": "9e5530a0c5ab418aac9462ebf723bac15721b9315fac4583aed3fe39df09b08e",
+          "results/clean_social_validation/heldout_eth/emt_sr/seed_2024/metrics_validation.json": "d09aac43630f771135d2af2821898937e9817d8ff99d413a8ce5223bddd54f65"
+        }
+      }
+    },
+    "hotel": {
+      "ett": {
+        "seeds": [
+          42,
+          123,
+          2024
+        ],
+        "validation_best_epochs": [
+          11,
+          19,
+          7
+        ],
+        "final_epoch": 11,
+        "sources": {
+          "results/eth_ucy_mamba_baseline/heldout_hotel/ett/seed_42/metrics_validation.json": "c745e3f9a86edf087aca8fd8d743054181c9259f93f1e16e2ee71c4c3e64411f",
+          "results/eth_ucy_mamba_baseline/heldout_hotel/ett/seed_123/metrics_validation.json": "d811809a4b37ec02fa9cb699d6079392144cd0b5955fcfd0b397700132213967",
+          "results/eth_ucy_mamba_baseline/heldout_hotel/ett/seed_2024/metrics_validation.json": "f04cb12ab6c1faa4512604427efb9223da2ed0ec506c0412e4aee7e366dba674"
+        }
+      },
+      "emt": {
+        "seeds": [
+          42,
+          123,
+          2024
+        ],
+        "validation_best_epochs": [
+          11,
+          14,
+          20
+        ],
+        "final_epoch": 14,
+        "sources": {
+          "results/eth_ucy_mamba_baseline/heldout_hotel/emt/seed_42/metrics_validation.json": "5d898f1c492b0d8788ba81685dc705c4aab670fc2df330b0c447727037f7257a",
+          "results/eth_ucy_mamba_baseline/heldout_hotel/emt/seed_123/metrics_validation.json": "bce753c4aee01769e0d6116685ecedb621c7444c12a4d404ac2beccb0de49d5a",
+          "results/eth_ucy_mamba_baseline/heldout_hotel/emt/seed_2024/metrics_validation.json": "f3e0568adbae9b6a6e429d9e06453f0d74d4b3c3906d603036b987f08b980ec6"
+        }
+      },
+      "ett_sr": {
+        "seeds": [
+          42,
+          123,
+          2024
+        ],
+        "validation_best_epochs": [
+          20,
+          11,
+          9
+        ],
+        "final_epoch": 11,
+        "sources": {
+          "results/clean_social_validation/heldout_hotel/ett_sr/seed_42/metrics_validation.json": "d5c45a1df616478b1b3ab7efca34247ae8194dd4f0cecc57d564fae25bf22551",
+          "results/clean_social_validation/heldout_hotel/ett_sr/seed_123/metrics_validation.json": "1bd22b0ba120be5d485330b821e53321487a5180f905f9f27866e586c214f583",
+          "results/clean_social_validation/heldout_hotel/ett_sr/seed_2024/metrics_validation.json": "8f4ee43a5bf47e2506572f72bacac7732b5574962988b4a8f3c26210d8e99b30"
+        }
+      },
+      "emt_sr": {
+        "seeds": [
+          42,
+          123,
+          2024
+        ],
+        "validation_best_epochs": [
+          15,
+          23,
+          12
+        ],
+        "final_epoch": 15,
+        "sources": {
+          "results/clean_social_validation/heldout_hotel/emt_sr/seed_42/metrics_validation.json": "618d010bbf1c47fb7827f0abd7e87d3e0f22ee87c3582eea5f58cd93d8e48611",
+          "results/clean_social_validation/heldout_hotel/emt_sr/seed_123/metrics_validation.json": "75306a0b628e90186aeb399e84b05ec5aa59be3d26f3224ee26c6060fbcda278",
+          "results/clean_social_validation/heldout_hotel/emt_sr/seed_2024/metrics_validation.json": "c24973205a862a293f348068bc6f7b0f62d12f72daa107798dfc8bbbf80848a8"
+        }
+      }
+    },
+    "univ": {
+      "ett": {
+        "seeds": [
+          42,
+          123,
+          2024
+        ],
+        "validation_best_epochs": [
+          21,
+          36,
+          21
+        ],
+        "final_epoch": 21,
+        "sources": {
+          "results/eth_ucy_mamba_baseline/heldout_univ/ett/seed_42/metrics_validation.json": "b00a4d45cee43f20030e48a2eada59145912e3192df183bdd4167db9469b5694",
+          "results/eth_ucy_mamba_baseline/heldout_univ/ett/seed_123/metrics_validation.json": "bb43817680b53a3de902edcbb1a7565b2436f410c7b7c81f35bf84e3e52b467f",
+          "results/eth_ucy_mamba_baseline/heldout_univ/ett/seed_2024/metrics_validation.json": "a494dc93ae4d9d1bde2aa02138fcc4695a93ed2e3e2ade26d75be263ff2b71d5"
+        }
+      },
+      "emt": {
+        "seeds": [
+          42,
+          123,
+          2024
+        ],
+        "validation_best_epochs": [
+          12,
+          12,
+          34
+        ],
+        "final_epoch": 12,
+        "sources": {
+          "results/eth_ucy_mamba_baseline/heldout_univ/emt/seed_42/metrics_validation.json": "f2b766366f9e3703bc66aa072d7b070d78235ebf43806da2294a93d308c95125",
+          "results/eth_ucy_mamba_baseline/heldout_univ/emt/seed_123/metrics_validation.json": "088934eca2a4b4b36fb8859dedfeece6350b66f0b0de71b10ac1468ba0c404b3",
+          "results/eth_ucy_mamba_baseline/heldout_univ/emt/seed_2024/metrics_validation.json": "baf0d9716ef75687a0defb9112e1689110359c2cb23813fd059e57ab4d168e00"
+        }
+      },
+      "ett_sr": {
+        "seeds": [
+          42,
+          123,
+          2024
+        ],
+        "validation_best_epochs": [
+          21,
+          9,
+          13
+        ],
+        "final_epoch": 13,
+        "sources": {
+          "results/clean_social_validation/heldout_univ/ett_sr/seed_42/metrics_validation.json": "17e73e0fb5f5c7ecb02b4dd19694fbf85954c3c3e7df4d38872cfab33748d833",
+          "results/clean_social_validation/heldout_univ/ett_sr/seed_123/metrics_validation.json": "f50c9379dca3d252630ebcd1b7c9ba9ad34ccec3f9009995e72744e1cbf50dad",
+          "results/clean_social_validation/heldout_univ/ett_sr/seed_2024/metrics_validation.json": "b47ef8828534148f1ac5a5aad0d3707bc1074ea27fcc4e43176a83b7bc17fe8d"
+        }
+      },
+      "emt_sr": {
+        "seeds": [
+          42,
+          123,
+          2024
+        ],
+        "validation_best_epochs": [
+          2,
+          15,
+          4
+        ],
+        "final_epoch": 4,
+        "sources": {
+          "results/clean_social_validation/heldout_univ/emt_sr/seed_42/metrics_validation.json": "095f79da1da42ab54b1846b002f40deb27fc9a093d474d2d27f21e1f054c5feb",
+          "results/clean_social_validation/heldout_univ/emt_sr/seed_123/metrics_validation.json": "6edfdf64156cd6b5750fe8cc9ef94329d7a42a2ae1d88fc681c685c8eee30fa0",
+          "results/clean_social_validation/heldout_univ/emt_sr/seed_2024/metrics_validation.json": "d36e0467de41ef44d47c806daaae202a8f8b4cc377de7a3d6748c5fb72ae2e00"
+        }
+      }
+    },
+    "zara1": {
+      "ett": {
+        "seeds": [
+          42,
+          123,
+          2024
+        ],
+        "validation_best_epochs": [
+          30,
+          22,
+          36
+        ],
+        "final_epoch": 30,
+        "sources": {
+          "results/eth_ucy_mamba_baseline/heldout_zara1/ett/seed_42/metrics_validation.json": "a3d15cdd37749a9bd871c03688ab2d05aac397f7df4db163962bf997693b14b3",
+          "results/eth_ucy_mamba_baseline/heldout_zara1/ett/seed_123/metrics_validation.json": "d91c78da11a0bd1f4fcd684daef72dd8ec2b5283b3c6f8b66895ee5499a0c33b",
+          "results/eth_ucy_mamba_baseline/heldout_zara1/ett/seed_2024/metrics_validation.json": "4727a04f3298c95dbd0160f0dded79a08ea0ba2a3481565e029447960eb6302a"
+        }
+      },
+      "emt": {
+        "seeds": [
+          42,
+          123,
+          2024
+        ],
+        "validation_best_epochs": [
+          7,
+          12,
+          15
+        ],
+        "final_epoch": 12,
+        "sources": {
+          "results/eth_ucy_mamba_baseline/heldout_zara1/emt/seed_42/metrics_validation.json": "553542dce9e0772048ee4d37039396d7f01b280a6dceba29f59041939286adeb",
+          "results/eth_ucy_mamba_baseline/heldout_zara1/emt/seed_123/metrics_validation.json": "1793aeee6e8ab7e2dbc15633917cddad93529b8f1dbc352e34617f08300f69e0",
+          "results/eth_ucy_mamba_baseline/heldout_zara1/emt/seed_2024/metrics_validation.json": "fc1dc35bec0c9fbdfc32d754bc3d51a18f6411b10592b80f52c42d5d4ac2f2b1"
+        }
+      },
+      "ett_sr": {
+        "seeds": [
+          42,
+          123,
+          2024
+        ],
+        "validation_best_epochs": [
+          36,
+          34,
+          6
+        ],
+        "final_epoch": 34,
+        "sources": {
+          "results/clean_social_validation/heldout_zara1/ett_sr/seed_42/metrics_validation.json": "ae7f1f29a39d8a3fc3ad253e84ad0d5e04da26813a2364dfaa3e4cb0bd84886c",
+          "results/clean_social_validation/heldout_zara1/ett_sr/seed_123/metrics_validation.json": "fe475653f16718a7c2e9f8f186530ec6e343a09ec8a131da86432e6848e72f2e",
+          "results/clean_social_validation/heldout_zara1/ett_sr/seed_2024/metrics_validation.json": "2d7ddf159b3addedcb1211cbccb24d260080c25545c738c8343482dc5549e622"
+        }
+      },
+      "emt_sr": {
+        "seeds": [
+          42,
+          123,
+          2024
+        ],
+        "validation_best_epochs": [
+          20,
+          13,
+          19
+        ],
+        "final_epoch": 19,
+        "sources": {
+          "results/clean_social_validation/heldout_zara1/emt_sr/seed_42/metrics_validation.json": "d480b8af566b5cf4cf4805370c61469540f40d3112dd89168861179040687721",
+          "results/clean_social_validation/heldout_zara1/emt_sr/seed_123/metrics_validation.json": "c331c814e927983585ef350eb3dd360205cbb29b2fca5ca37515b91a3745ed79",
+          "results/clean_social_validation/heldout_zara1/emt_sr/seed_2024/metrics_validation.json": "e3d49f8725c146e04c36aa037242edb14008208b9a0ca036a07e2b44e190ce00"
+        }
+      }
+    },
+    "zara2": {
+      "ett": {
+        "seeds": [
+          42,
+          123,
+          2024
+        ],
+        "validation_best_epochs": [
+          27,
+          8,
+          53
+        ],
+        "final_epoch": 27,
+        "sources": {
+          "results/eth_ucy_mamba_baseline/heldout_zara2/ett/seed_42/metrics_validation.json": "9268db912c112a53dcce04bb2b1714b74b6ba50e2d5b0a0326454a1beb0dead3",
+          "results/eth_ucy_mamba_baseline/heldout_zara2/ett/seed_123/metrics_validation.json": "fc23d81304aeaab61e65a4e69b1a6647f5fff190ceec60d5367af8f3bad4e696",
+          "results/eth_ucy_mamba_baseline/heldout_zara2/ett/seed_2024/metrics_validation.json": "9f3cc38e78f6180f93668f559a4a5302b8ad9f968ea190e18b5c8a95e2e59267"
+        }
+      },
+      "emt": {
+        "seeds": [
+          42,
+          123,
+          2024
+        ],
+        "validation_best_epochs": [
+          15,
+          14,
+          10
+        ],
+        "final_epoch": 14,
+        "sources": {
+          "results/eth_ucy_mamba_baseline/heldout_zara2/emt/seed_42/metrics_validation.json": "693f851aa863587f07455004a7cb00a38ccb9a3343e9f35f2fd9979a610edb30",
+          "results/eth_ucy_mamba_baseline/heldout_zara2/emt/seed_123/metrics_validation.json": "a78f1699b3afd0e66ae2a7dcc8cbd2135c24c5cfbd26e2c1a8b928928351b4b7",
+          "results/eth_ucy_mamba_baseline/heldout_zara2/emt/seed_2024/metrics_validation.json": "2371e4cd7a07de8385ec7520cc6fe5807274df0634690f6bce48248e642b4cf8"
+        }
+      },
+      "ett_sr": {
+        "seeds": [
+          42,
+          123,
+          2024
+        ],
+        "validation_best_epochs": [
+          30,
+          31,
+          8
+        ],
+        "final_epoch": 30,
+        "sources": {
+          "results/clean_social_validation/heldout_zara2/ett_sr/seed_42/metrics_validation.json": "6bed3e3f1a3a696faf716341784abb18652b18175d3ec078640833086f361317",
+          "results/clean_social_validation/heldout_zara2/ett_sr/seed_123/metrics_validation.json": "73f0b443f21b6a7d4151073223dd075f4e25e1106698ece1e2f697c386d9324d",
+          "results/clean_social_validation/heldout_zara2/ett_sr/seed_2024/metrics_validation.json": "2d93da87f32d38697c1a0e355dc6305243d4755fb39dcbdb392db25d353887e0"
+        }
+      },
+      "emt_sr": {
+        "seeds": [
+          42,
+          123,
+          2024
+        ],
+        "validation_best_epochs": [
+          18,
+          16,
+          11
+        ],
+        "final_epoch": 16,
+        "sources": {
+          "results/clean_social_validation/heldout_zara2/emt_sr/seed_42/metrics_validation.json": "3bf44b336b0f315a58a395ff56be8f40ba37fb2f8e944c9b77cec543e4effaa1",
+          "results/clean_social_validation/heldout_zara2/emt_sr/seed_123/metrics_validation.json": "584ca4ecf128710d5f26bd385adec42b284fb273d5e2ef1b633aefa5cea95289",
+          "results/clean_social_validation/heldout_zara2/emt_sr/seed_2024/metrics_validation.json": "054c6d81d04bc09f6c89d267f5793b924b35ea2b3cc1bb53075c8a6faac0c8ae"
+        }
+      }
+    }
+  },
+  "final_epoch_config_sha256": "2edf64541dd9855d76b57363628fd0873363a453e2d50b7613313a11a822c613",
+  "test_metrics_accessed_before_freeze": false
+}

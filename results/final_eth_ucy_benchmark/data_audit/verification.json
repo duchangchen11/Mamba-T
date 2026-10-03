@@ -1,0 +1,11 @@
+{
+  "pytest_passed": 90,
+  "pytest_returncode": 0,
+  "pytest_log": "data_audit/pytest.txt",
+  "py_compile_returncode": 0,
+  "compiled_file_count": 37,
+  "heldout_metrics_computed_during_tests": false,
+  "attention_export_prediction_max_abs_diff_threshold": 1e-07,
+  "model_architecture_changed": false,
+  "test_metrics_accessed_before_freeze": false
+}

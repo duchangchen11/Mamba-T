@@ -1,0 +1,360 @@
+{
+  "per_scene": {
+    "eth": {
+      "sample_count": 364,
+      "mean_neighbor_count": 3.818681318681319,
+      "median_neighbor_count": 3.0,
+      "p90_neighbor_count": 8.0,
+      "zero_neighbor_ratio": 0.10714285714285714,
+      "count_histogram": {
+        "0": 39,
+        "1": 27,
+        "2": 71,
+        "3": 70,
+        "4": 33,
+        "5": 21,
+        "6": 18,
+        "7": 14,
+        "8": 71
+      },
+      "group_proportions": {
+        "0": 0.10714285714285714,
+        "1-2": 0.2692307692307692,
+        "3-4": 0.28296703296703296,
+        "5+": 0.34065934065934067
+      },
+      "pedestrian_count": 44
+    },
+    "hotel": {
+      "sample_count": 1197,
+      "mean_neighbor_count": 5.1988304093567255,
+      "median_neighbor_count": 6.0,
+      "p90_neighbor_count": 8.0,
+      "zero_neighbor_ratio": 0.040100250626566414,
+      "count_histogram": {
+        "0": 48,
+        "1": 61,
+        "2": 64,
+        "3": 143,
+        "4": 205,
+        "5": 54,
+        "6": 159,
+        "7": 143,
+        "8": 320
+      },
+      "group_proportions": {
+        "0": 0.040100250626566414,
+        "1-2": 0.10442773600668337,
+        "3-4": 0.2907268170426065,
+        "5+": 0.5647451963241437
+      },
+      "pedestrian_count": 122
+    },
+    "univ": {
+      "sample_count": 24334,
+      "mean_neighbor_count": 8.0,
+      "median_neighbor_count": 8.0,
+      "p90_neighbor_count": 8.0,
+      "zero_neighbor_ratio": 0.0,
+      "count_histogram": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 24334
+      },
+      "group_proportions": {
+        "0": 0.0,
+        "1-2": 0.0,
+        "3-4": 0.0,
+        "5+": 1.0
+      },
+      "pedestrian_count": 722
+    },
+    "zara1": {
+      "sample_count": 2356,
+      "mean_neighbor_count": 4.9787775891341255,
+      "median_neighbor_count": 5.0,
+      "p90_neighbor_count": 8.0,
+      "zero_neighbor_ratio": 0.006366723259762309,
+      "count_histogram": {
+        "0": 15,
+        "1": 170,
+        "2": 179,
+        "3": 319,
+        "4": 397,
+        "5": 356,
+        "6": 127,
+        "7": 229,
+        "8": 564
+      },
+      "group_proportions": {
+        "0": 0.006366723259762309,
+        "1-2": 0.14813242784380307,
+        "3-4": 0.30390492359932086,
+        "5+": 0.5415959252971138
+      },
+      "pedestrian_count": 142
+    },
+    "zara2": {
+      "sample_count": 5910,
+      "mean_neighbor_count": 7.037055837563452,
+      "median_neighbor_count": 8.0,
+      "p90_neighbor_count": 8.0,
+      "zero_neighbor_ratio": 0.002876480541455161,
+      "count_histogram": {
+        "0": 17,
+        "1": 80,
+        "2": 79,
+        "3": 189,
+        "4": 220,
+        "5": 389,
+        "6": 409,
+        "7": 711,
+        "8": 3816
+      },
+      "group_proportions": {
+        "0": 0.002876480541455161,
+        "1-2": 0.026903553299492386,
+        "3-4": 0.06920473773265652,
+        "5+": 0.9010152284263959
+      },
+      "pedestrian_count": 189
+    }
+  },
+  "folds": {
+    "eth": {
+      "train": {
+        "sample_count": 33797,
+        "mean_neighbor_count": 7.521791875018493,
+        "median_neighbor_count": 8.0,
+        "p90_neighbor_count": 8.0,
+        "zero_neighbor_ratio": 0.0023670740006509453,
+        "count_histogram": {
+          "0": 80,
+          "1": 311,
+          "2": 322,
+          "3": 651,
+          "4": 822,
+          "5": 799,
+          "6": 695,
+          "7": 1083,
+          "8": 29034
+        }
+      },
+      "test": {
+        "sample_count": 364,
+        "mean_neighbor_count": 3.818681318681319,
+        "median_neighbor_count": 3.0,
+        "p90_neighbor_count": 8.0,
+        "zero_neighbor_ratio": 0.10714285714285714,
+        "count_histogram": {
+          "0": 39,
+          "1": 27,
+          "2": 71,
+          "3": 70,
+          "4": 33,
+          "5": 21,
+          "6": 18,
+          "7": 14,
+          "8": 71
+        },
+        "group_proportions": {
+          "0": 0.10714285714285714,
+          "1-2": 0.2692307692307692,
+          "3-4": 0.28296703296703296,
+          "5+": 0.34065934065934067
+        },
+        "pedestrian_count": 44
+      }
+    },
+    "hotel": {
+      "train": {
+        "sample_count": 32964,
+        "mean_neighbor_count": 7.565253003276301,
+        "median_neighbor_count": 8.0,
+        "p90_neighbor_count": 8.0,
+        "zero_neighbor_ratio": 0.0021538648222303117,
+        "count_histogram": {
+          "0": 71,
+          "1": 277,
+          "2": 329,
+          "3": 578,
+          "4": 650,
+          "5": 766,
+          "6": 554,
+          "7": 954,
+          "8": 28785
+        }
+      },
+      "test": {
+        "sample_count": 1197,
+        "mean_neighbor_count": 5.1988304093567255,
+        "median_neighbor_count": 6.0,
+        "p90_neighbor_count": 8.0,
+        "zero_neighbor_ratio": 0.040100250626566414,
+        "count_histogram": {
+          "0": 48,
+          "1": 61,
+          "2": 64,
+          "3": 143,
+          "4": 205,
+          "5": 54,
+          "6": 159,
+          "7": 143,
+          "8": 320
+        },
+        "group_proportions": {
+          "0": 0.040100250626566414,
+          "1-2": 0.10442773600668337,
+          "3-4": 0.2907268170426065,
+          "5+": 0.5647451963241437
+        },
+        "pedestrian_count": 122
+      }
+    },
+    "univ": {
+      "train": {
+        "sample_count": 9827,
+        "mean_neighbor_count": 6.20046809809708,
+        "median_neighbor_count": 7.0,
+        "p90_neighbor_count": 8.0,
+        "zero_neighbor_ratio": 0.012109494250534243,
+        "count_histogram": {
+          "0": 119,
+          "1": 338,
+          "2": 393,
+          "3": 721,
+          "4": 855,
+          "5": 820,
+          "6": 713,
+          "7": 1097,
+          "8": 4771
+        }
+      },
+      "test": {
+        "sample_count": 24334,
+        "mean_neighbor_count": 8.0,
+        "median_neighbor_count": 8.0,
+        "p90_neighbor_count": 8.0,
+        "zero_neighbor_ratio": 0.0,
+        "count_histogram": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 24334
+        },
+        "group_proportions": {
+          "0": 0.0,
+          "1-2": 0.0,
+          "3-4": 0.0,
+          "5+": 1.0
+        },
+        "pedestrian_count": 722
+      }
+    },
+    "zara1": {
+      "train": {
+        "sample_count": 31805,
+        "mean_neighbor_count": 7.667788083634648,
+        "median_neighbor_count": 8.0,
+        "p90_neighbor_count": 8.0,
+        "zero_neighbor_ratio": 0.0032699261122465023,
+        "count_histogram": {
+          "0": 104,
+          "1": 168,
+          "2": 214,
+          "3": 402,
+          "4": 458,
+          "5": 464,
+          "6": 586,
+          "7": 868,
+          "8": 28541
+        }
+      },
+      "test": {
+        "sample_count": 2356,
+        "mean_neighbor_count": 4.9787775891341255,
+        "median_neighbor_count": 5.0,
+        "p90_neighbor_count": 8.0,
+        "zero_neighbor_ratio": 0.006366723259762309,
+        "count_histogram": {
+          "0": 15,
+          "1": 170,
+          "2": 179,
+          "3": 319,
+          "4": 397,
+          "5": 356,
+          "6": 127,
+          "7": 229,
+          "8": 564
+        },
+        "group_proportions": {
+          "0": 0.006366723259762309,
+          "1-2": 0.14813242784380307,
+          "3-4": 0.30390492359932086,
+          "5+": 0.5415959252971138
+        },
+        "pedestrian_count": 142
+      }
+    },
+    "zara2": {
+      "train": {
+        "sample_count": 28251,
+        "mean_neighbor_count": 7.5754840536618175,
+        "median_neighbor_count": 8.0,
+        "p90_neighbor_count": 8.0,
+        "zero_neighbor_ratio": 0.003610491664011893,
+        "count_histogram": {
+          "0": 102,
+          "1": 258,
+          "2": 314,
+          "3": 532,
+          "4": 635,
+          "5": 431,
+          "6": 304,
+          "7": 386,
+          "8": 25289
+        }
+      },
+      "test": {
+        "sample_count": 5910,
+        "mean_neighbor_count": 7.037055837563452,
+        "median_neighbor_count": 8.0,
+        "p90_neighbor_count": 8.0,
+        "zero_neighbor_ratio": 0.002876480541455161,
+        "count_histogram": {
+          "0": 17,
+          "1": 80,
+          "2": 79,
+          "3": 189,
+          "4": 220,
+          "5": 389,
+          "6": 409,
+          "7": 711,
+          "8": 3816
+        },
+        "group_proportions": {
+          "0": 0.002876480541455161,
+          "1-2": 0.026903553299492386,
+          "3-4": 0.06920473773265652,
+          "5+": 0.9010152284263959
+        },
+        "pedestrian_count": 189
+      }
+    }
+  },
+  "N": 8,
+  "radius": null,
+  "policy": "same recording, present in all 8 observed frames, exclude target, nearest 8; no future filtering",
+  "test_metrics_accessed": false
+}

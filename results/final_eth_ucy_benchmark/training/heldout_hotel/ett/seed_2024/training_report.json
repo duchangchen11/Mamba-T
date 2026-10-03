@@ -1,0 +1,33 @@
+{
+  "fold": "hotel",
+  "heldout_scene": "hotel",
+  "model": "ett",
+  "seed": 2024,
+  "train_scene_list": [
+    "eth",
+    "univ",
+    "zara1",
+    "zara2"
+  ],
+  "train_sample_count": 32964,
+  "epochs_run": 11,
+  "training_epoch": 11,
+  "epoch_rule": "frozen median of prior validation best_epoch",
+  "started_at_utc": "2026-10-03T08:35:28.865292+00:00",
+  "completed_at_utc": "2026-10-03T08:36:20.890217+00:00",
+  "protocol_sha256": "e9240c2f042282e370f007ff9310c39a21fcf747e3b93a0f96317960f9f28914",
+  "checkpoint_path": "checkpoints/final_eth_ucy_benchmark/heldout_hotel/ett/seed_2024.pt",
+  "checkpoint_sha256": "01cb8534eb9c473accd0a3f0a456fbcc641ae175145a781328bc52ece4c6ed23",
+  "parameter_count": {
+    "total": 616344,
+    "trainable": 616344,
+    "frozen": 0
+  },
+  "maximum_gradient_norm_before_clipping": 1.0127402544021606,
+  "training_seconds": 51.89369612300288,
+  "gpu_peak_memory_bytes": 61078528,
+  "nan_inf": false,
+  "heldout_test_evaluated": false,
+  "test_metrics_accessed_before_freeze": false,
+  "smoke": false
+}

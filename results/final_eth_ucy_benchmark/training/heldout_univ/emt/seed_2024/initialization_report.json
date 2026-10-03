@@ -1,0 +1,7 @@
+{
+  "seed": 2024,
+  "model": "emt",
+  "protocol_sha256": "e9240c2f042282e370f007ff9310c39a21fcf747e3b93a0f96317960f9f28914",
+  "model_initialization_sha256": "20e448c59c2d3ed1bc700b370a7b56f7541242ca5dce512d71ceaf72bb3d763f",
+  "decoder_initialization_sha256": "52ec37a3848fa9b4397f9a36885444fe6cb4b6c62c63c9b6e7e729cb4399697e"
+}

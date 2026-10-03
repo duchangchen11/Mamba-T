@@ -1,0 +1,32 @@
+{
+  "eth": {
+    "scene_list": [
+      "eth"
+    ],
+    "total": 364
+  },
+  "hotel": {
+    "scene_list": [
+      "hotel"
+    ],
+    "total": 1197
+  },
+  "univ": {
+    "scene_list": [
+      "univ"
+    ],
+    "total": 24334
+  },
+  "zara1": {
+    "scene_list": [
+      "zara1"
+    ],
+    "total": 2356
+  },
+  "zara2": {
+    "scene_list": [
+      "zara2"
+    ],
+    "total": 5910
+  }
+}
