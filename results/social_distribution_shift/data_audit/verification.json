@@ -1,0 +1,17 @@
+{
+  "pytest_passed": 128,
+  "pytest_failed": 0,
+  "pytest_log": "data_audit/pytest.txt",
+  "py_compile_passed": true,
+  "code_diff_check_passed": true,
+  "no_formal_test_loaded": true,
+  "heldout_test_accessed": false,
+  "historical_test_already_accessed": true,
+  "SciPy": "1.14.1",
+  "scikit_learn": "1.5.2",
+  "attention_roundoff_scaled_tolerance_regression_passed": true,
+  "Torch": "2.5.1+cu124",
+  "CUDA": "12.4",
+  "original_SDPA_probe_tests_passed": true,
+  "saved_response_cache_tolerance_test_passed": true
+}

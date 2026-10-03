@@ -1,0 +1,11 @@
+{
+  "observed_mean_residual_difference_meters": 3.19507768e-06,
+  "rtol": 0.0001,
+  "atol": 1e-05,
+  "saved_ADE_FDE_residual_norm_correction_ratio_reused_unchanged": true,
+  "passing_first_19_forwards_reused": "same algorithm/input hashes, passed stricter previous checks",
+  "model_or_classifier_hyperparameters_changed": false,
+  "trajectory_training": false,
+  "heldout_test_accessed": false,
+  "historical_test_already_accessed": true
+}

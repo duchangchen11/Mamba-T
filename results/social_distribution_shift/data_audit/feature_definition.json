@@ -1,0 +1,43 @@
+{
+  "observation_features": [
+    "neighbor_count",
+    "nearest_neighbor_distance",
+    "mean_neighbor_distance",
+    "median_neighbor_distance",
+    "max_neighbor_distance",
+    "mean_relative_speed",
+    "max_relative_speed",
+    "mean_closing_speed",
+    "max_closing_speed"
+  ],
+  "attention_features": [
+    "attention_entropy",
+    "attention_max",
+    "attention_top2_sum"
+  ],
+  "prediction_response_features": [
+    "residual_norm",
+    "residual_final_norm",
+    "correction_ratio"
+  ],
+  "outcomes_only_not_classifier_features": [
+    "base_ADE",
+    "SR_ADE",
+    "ADE_gain",
+    "base_FDE",
+    "SR_FDE",
+    "FDE_gain"
+  ],
+  "observation_time": "only 8 observation positions; relative motion uses last 2 observation frames",
+  "relative_speed_unit": "meter / sampling step",
+  "distance_unit": "meter",
+  "closing": "mean_closing_speed aliases mean_positive_closing_speed, mean over strictly approaching valid neighbors, or 0; max_closing_speed=max(0,max signed closing); signed mean/max also saved",
+  "attention": "original SDPA identity-value probe using unchanged MHA packed projections and padding mask; mean of four per-head softmax weights; renormalize valid neighbors; no dropout in eval",
+  "missing": "distance/relative-speed are missing NaN with count=0; closing/attention statistics are 0",
+  "aggregation": "unique observation-window mean response over available fold/seed checkpoints, then scene equal weight",
+  "epsilon": 1e-08,
+  "distance_bins": "no neighbor; <2m; [2m,4m); [4m,8m]; >8m, based on nearest distance",
+  "motion_quartiles": "pooled unique observation windows; <=q25, (q25,q50], (q50,q75], >q75; tied cutoffs may yield empty groups",
+  "heldout_test_accessed": false,
+  "historical_test_already_accessed": true
+}

@@ -1,0 +1,13 @@
+........................................................................ [ 56%]
+........................................................                 [100%]
+=============================== warnings summary ===============================
+tests/test_clean_social_split.py: 1 warning
+tests/test_models.py: 4 warnings
+tests/test_prediction_export.py: 2 warnings
+tests/test_social_residual.py: 3 warnings
+tests/test_training_regime_diagnostic.py: 1 warning
+  /home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+128 passed, 11 warnings in 38.71s

@@ -1,0 +1,11 @@
+{
+  "reason": "attention need_weights=True and original SDPA contexts differ by float32 roundoff; use rtol=1e-5 plus atol=1e-5, never use alternate context for prediction",
+  "scientific_features_changed": false,
+  "source_checkpoints_updated": false,
+  "trajectory_training": false,
+  "heldout_test_accessed": false,
+  "historical_test_already_accessed": true,
+  "status": "superseded exploratory attempt; not used in final analysis",
+  "superseded_by": "data_audit/attention_kernel_verification.json",
+  "final_method": "original SDPA identity-value probe; reconstructed context difference exactly zero in all 30 final runs"
+}

@@ -1,0 +1,642 @@
+{
+  "pooled": {
+    "gain": {
+      "neighbor_count": {
+        "sample_count": 4032,
+        "present_scenes": 5,
+        "Pearson": -0.08546052836609118,
+        "Spearman": -0.012357628621903953
+      },
+      "mean_neighbor_distance": {
+        "sample_count": 4022,
+        "present_scenes": 5,
+        "Pearson": 0.13875920393470176,
+        "Spearman": 0.08324764221739922
+      },
+      "nearest_neighbor_distance": {
+        "sample_count": 4022,
+        "present_scenes": 5,
+        "Pearson": 0.08151517525874402,
+        "Spearman": 0.05335317373572936
+      },
+      "mean_relative_speed": {
+        "sample_count": 4022,
+        "present_scenes": 5,
+        "Pearson": 0.08357185910602012,
+        "Spearman": 0.040628390910936285
+      },
+      "mean_closing_speed": {
+        "sample_count": 4032,
+        "present_scenes": 5,
+        "Pearson": 0.008186566443520052,
+        "Spearman": 0.016130787543484716
+      },
+      "max_closing_speed": {
+        "sample_count": 4032,
+        "present_scenes": 5,
+        "Pearson": 0.012169834275205835,
+        "Spearman": 0.02791336282232511
+      },
+      "attention_entropy": {
+        "sample_count": 4032,
+        "present_scenes": 5,
+        "Pearson": 0.013772654365387205,
+        "Spearman": -0.008064443939557778
+      },
+      "attention_max": {
+        "sample_count": 4032,
+        "present_scenes": 5,
+        "Pearson": 0.014088421392216777,
+        "Spearman": 0.011948581565639323
+      },
+      "residual_norm": {
+        "sample_count": 4032,
+        "present_scenes": 5,
+        "Pearson": 0.28666045279078084,
+        "Spearman": 0.14579800720879948
+      },
+      "correction_ratio": {
+        "sample_count": 4032,
+        "present_scenes": 5,
+        "Pearson": -0.0787641823176422,
+        "Spearman": -0.04161078404172066
+      }
+    },
+    "attention": {
+      "neighbor_count vs attention_entropy": {
+        "sample_count": 4032,
+        "present_scenes": 5,
+        "Pearson": -0.2579578743140123,
+        "Spearman": -0.3192560367725338
+      },
+      "neighbor_count vs attention_max": {
+        "sample_count": 4032,
+        "present_scenes": 5,
+        "Pearson": -0.3601120281219253,
+        "Spearman": -0.3356532440568576
+      },
+      "max_closing_speed vs attention_max": {
+        "sample_count": 4032,
+        "present_scenes": 5,
+        "Pearson": -0.060032826641668355,
+        "Spearman": -0.10867530785805016
+      },
+      "nearest_neighbor_distance vs attention_max": {
+        "sample_count": 4022,
+        "present_scenes": 5,
+        "Pearson": 0.28421902885855665,
+        "Spearman": 0.0890184350486954
+      },
+      "mean_neighbor_distance vs attention_max": {
+        "sample_count": 4022,
+        "present_scenes": 5,
+        "Pearson": 0.1827422739681783,
+        "Spearman": 0.13617027081395283
+      }
+    },
+    "residual": {
+      "neighbor_count": {
+        "sample_count": 4032,
+        "present_scenes": 5,
+        "Pearson": -0.2652489446842641,
+        "Spearman": -0.17604837374837193
+      },
+      "mean_neighbor_distance": {
+        "sample_count": 4022,
+        "present_scenes": 5,
+        "Pearson": 0.33564946820382513,
+        "Spearman": 0.2781795322807878
+      },
+      "nearest_neighbor_distance": {
+        "sample_count": 4022,
+        "present_scenes": 5,
+        "Pearson": 0.26611800816189796,
+        "Spearman": 0.2541836694706677
+      },
+      "mean_relative_speed": {
+        "sample_count": 4022,
+        "present_scenes": 5,
+        "Pearson": 0.5624702987911201,
+        "Spearman": 0.6613737394407729
+      },
+      "mean_closing_speed": {
+        "sample_count": 4032,
+        "present_scenes": 5,
+        "Pearson": 0.2426014596951082,
+        "Spearman": 0.3544427489285018
+      },
+      "max_closing_speed": {
+        "sample_count": 4032,
+        "present_scenes": 5,
+        "Pearson": 0.2095705307406234,
+        "Spearman": 0.2975755178028092
+      },
+      "attention_entropy": {
+        "sample_count": 4032,
+        "present_scenes": 5,
+        "Pearson": 0.062256306001251184,
+        "Spearman": 0.16427764984808393
+      },
+      "attention_max": {
+        "sample_count": 4032,
+        "present_scenes": 5,
+        "Pearson": -0.02566465256499746,
+        "Spearman": -0.09708640256203528
+      }
+    },
+    "attention_n_ge_2": {
+      "neighbor_count vs attention_entropy": {
+        "sample_count": 3992,
+        "present_scenes": 5,
+        "Pearson": -0.6534544892189966,
+        "Spearman": -0.3852974593892241
+      },
+      "neighbor_count vs attention_max": {
+        "sample_count": 3992,
+        "present_scenes": 5,
+        "Pearson": -0.3649984771952996,
+        "Spearman": -0.32960221618394825
+      },
+      "max_closing_speed vs attention_max": {
+        "sample_count": 3992,
+        "present_scenes": 5,
+        "Pearson": -0.09901888659405601,
+        "Spearman": -0.11203742030568677
+      },
+      "nearest_neighbor_distance vs attention_max": {
+        "sample_count": 3992,
+        "present_scenes": 5,
+        "Pearson": 0.0650465810512778,
+        "Spearman": 0.07089734157857146
+      },
+      "mean_neighbor_distance vs attention_max": {
+        "sample_count": 3992,
+        "present_scenes": 5,
+        "Pearson": 0.13738328679360579,
+        "Spearman": 0.12774035486329302
+      }
+    },
+    "within_neighbor_count": {
+      "2": {
+        "max_closing_speed vs attention_max": {
+          "sample_count": 35,
+          "present_scenes": 3,
+          "Pearson": -0.4197102104180247,
+          "Spearman": -0.5551765206575204
+        },
+        "nearest_neighbor_distance vs attention_max": {
+          "sample_count": 35,
+          "present_scenes": 3,
+          "Pearson": -0.5167633578216988,
+          "Spearman": -0.22108095249733326
+        },
+        "mean_neighbor_distance vs attention_max": {
+          "sample_count": 35,
+          "present_scenes": 3,
+          "Pearson": -0.23902486383970564,
+          "Spearman": -0.12234576982862135
+        }
+      },
+      "3": {
+        "max_closing_speed vs attention_max": {
+          "sample_count": 110,
+          "present_scenes": 4,
+          "Pearson": -0.16900345305857864,
+          "Spearman": -0.04820402154371684
+        },
+        "nearest_neighbor_distance vs attention_max": {
+          "sample_count": 110,
+          "present_scenes": 4,
+          "Pearson": -0.09791389031867948,
+          "Spearman": -0.027552147938001034
+        },
+        "mean_neighbor_distance vs attention_max": {
+          "sample_count": 110,
+          "present_scenes": 4,
+          "Pearson": 0.025710986131156046,
+          "Spearman": -0.031041519419695546
+        }
+      },
+      "4": {
+        "max_closing_speed vs attention_max": {
+          "sample_count": 115,
+          "present_scenes": 4,
+          "Pearson": 0.08517322535970004,
+          "Spearman": 0.09749359194976961
+        },
+        "nearest_neighbor_distance vs attention_max": {
+          "sample_count": 115,
+          "present_scenes": 4,
+          "Pearson": 0.21250089282814996,
+          "Spearman": 0.13722573599340704
+        },
+        "mean_neighbor_distance vs attention_max": {
+          "sample_count": 115,
+          "present_scenes": 4,
+          "Pearson": -0.04698112767394037,
+          "Spearman": 0.007989457861096892
+        }
+      },
+      "5": {
+        "max_closing_speed vs attention_max": {
+          "sample_count": 126,
+          "present_scenes": 4,
+          "Pearson": -0.051166978493466436,
+          "Spearman": 0.01534765200995066
+        },
+        "nearest_neighbor_distance vs attention_max": {
+          "sample_count": 126,
+          "present_scenes": 4,
+          "Pearson": 0.16686279904824108,
+          "Spearman": 0.14480907101261378
+        },
+        "mean_neighbor_distance vs attention_max": {
+          "sample_count": 126,
+          "present_scenes": 4,
+          "Pearson": 0.053596817886599556,
+          "Spearman": 0.062356298997144
+        }
+      },
+      "6": {
+        "max_closing_speed vs attention_max": {
+          "sample_count": 84,
+          "present_scenes": 4,
+          "Pearson": -0.06552822528765277,
+          "Spearman": 0.0035060354694353146
+        },
+        "nearest_neighbor_distance vs attention_max": {
+          "sample_count": 84,
+          "present_scenes": 4,
+          "Pearson": 0.15646426681538403,
+          "Spearman": 0.19527777505540514
+        },
+        "mean_neighbor_distance vs attention_max": {
+          "sample_count": 84,
+          "present_scenes": 4,
+          "Pearson": 0.06640196877625208,
+          "Spearman": -0.05066315682899666
+        }
+      },
+      "7": {
+        "max_closing_speed vs attention_max": {
+          "sample_count": 132,
+          "present_scenes": 4,
+          "Pearson": -0.5738667728023669,
+          "Spearman": -0.5190256171635603
+        },
+        "nearest_neighbor_distance vs attention_max": {
+          "sample_count": 132,
+          "present_scenes": 4,
+          "Pearson": -0.20818354351147064,
+          "Spearman": -0.19776547244841927
+        },
+        "mean_neighbor_distance vs attention_max": {
+          "sample_count": 132,
+          "present_scenes": 4,
+          "Pearson": -0.24267309536258658,
+          "Spearman": -0.3064653305713973
+        }
+      },
+      "8": {
+        "max_closing_speed vs attention_max": {
+          "sample_count": 3390,
+          "present_scenes": 5,
+          "Pearson": -0.03731977908285276,
+          "Spearman": -0.02913564721878769
+        },
+        "nearest_neighbor_distance vs attention_max": {
+          "sample_count": 3390,
+          "present_scenes": 5,
+          "Pearson": -0.024719573292639307,
+          "Spearman": 0.00891868844335985
+        },
+        "mean_neighbor_distance vs attention_max": {
+          "sample_count": 3390,
+          "present_scenes": 5,
+          "Pearson": 0.023622651322311373,
+          "Spearman": 0.03352112329682787
+        }
+      }
+    }
+  },
+  "scene_equal": {
+    "gain": {
+      "neighbor_count": {
+        "sample_count": 4032,
+        "present_scenes": 5,
+        "Pearson": -0.17784106377353975,
+        "Spearman": -0.0540649892637509
+      },
+      "mean_neighbor_distance": {
+        "sample_count": 4022,
+        "present_scenes": 5,
+        "Pearson": 0.2571133285082603,
+        "Spearman": 0.07076265072994939
+      },
+      "nearest_neighbor_distance": {
+        "sample_count": 4022,
+        "present_scenes": 5,
+        "Pearson": 0.015327307541056646,
+        "Spearman": -0.1124625905802802
+      },
+      "mean_relative_speed": {
+        "sample_count": 4022,
+        "present_scenes": 5,
+        "Pearson": 0.13346096849171385,
+        "Spearman": -0.04701170341846208
+      },
+      "mean_closing_speed": {
+        "sample_count": 4032,
+        "present_scenes": 5,
+        "Pearson": -0.07851973120629444,
+        "Spearman": -0.06931192615994237
+      },
+      "max_closing_speed": {
+        "sample_count": 4032,
+        "present_scenes": 5,
+        "Pearson": -0.08909562761561475,
+        "Spearman": -0.05724583392019705
+      },
+      "attention_entropy": {
+        "sample_count": 4032,
+        "present_scenes": 5,
+        "Pearson": -0.009787272436389209,
+        "Spearman": -0.0515724989443224
+      },
+      "attention_max": {
+        "sample_count": 4032,
+        "present_scenes": 5,
+        "Pearson": -0.025995971064435384,
+        "Spearman": -0.016247256628147078
+      },
+      "residual_norm": {
+        "sample_count": 4032,
+        "present_scenes": 5,
+        "Pearson": 0.3074804132874655,
+        "Spearman": 0.10143083732273844
+      },
+      "correction_ratio": {
+        "sample_count": 4032,
+        "present_scenes": 5,
+        "Pearson": -0.20944136685266024,
+        "Spearman": -0.11811583065868998
+      }
+    },
+    "attention": {
+      "neighbor_count vs attention_entropy": {
+        "sample_count": 4032,
+        "present_scenes": 5,
+        "Pearson": -0.08891533458307066,
+        "Spearman": -0.47954441173561274
+      },
+      "neighbor_count vs attention_max": {
+        "sample_count": 4032,
+        "present_scenes": 5,
+        "Pearson": -0.139551558914205,
+        "Spearman": -0.4201801115663976
+      },
+      "max_closing_speed vs attention_max": {
+        "sample_count": 4032,
+        "present_scenes": 5,
+        "Pearson": -0.05825779097833526,
+        "Spearman": -0.2778913860267517
+      },
+      "nearest_neighbor_distance vs attention_max": {
+        "sample_count": 4022,
+        "present_scenes": 5,
+        "Pearson": 0.37943222488411216,
+        "Spearman": 0.19214669383449928
+      },
+      "mean_neighbor_distance vs attention_max": {
+        "sample_count": 4022,
+        "present_scenes": 5,
+        "Pearson": 0.07762231777788776,
+        "Spearman": 0.03504537166920899
+      }
+    },
+    "residual": {
+      "neighbor_count": {
+        "sample_count": 4032,
+        "present_scenes": 5,
+        "Pearson": -0.21545132017973476,
+        "Spearman": -0.222438558865522
+      },
+      "mean_neighbor_distance": {
+        "sample_count": 4022,
+        "present_scenes": 5,
+        "Pearson": 0.4311239803254732,
+        "Spearman": 0.3245439111806131
+      },
+      "nearest_neighbor_distance": {
+        "sample_count": 4022,
+        "present_scenes": 5,
+        "Pearson": 0.15927944656008283,
+        "Spearman": 0.33840768816206473
+      },
+      "mean_relative_speed": {
+        "sample_count": 4022,
+        "present_scenes": 5,
+        "Pearson": 0.5796547710785712,
+        "Spearman": 0.6643426599811646
+      },
+      "mean_closing_speed": {
+        "sample_count": 4032,
+        "present_scenes": 5,
+        "Pearson": 0.06610162686026987,
+        "Spearman": 0.13155729519160694
+      },
+      "max_closing_speed": {
+        "sample_count": 4032,
+        "present_scenes": 5,
+        "Pearson": 0.058337070517181885,
+        "Spearman": 0.10712978833937836
+      },
+      "attention_entropy": {
+        "sample_count": 4032,
+        "present_scenes": 5,
+        "Pearson": -0.02750979572533901,
+        "Spearman": 0.06839722181601207
+      },
+      "attention_max": {
+        "sample_count": 4032,
+        "present_scenes": 5,
+        "Pearson": -0.1025317354648977,
+        "Spearman": -0.06917843020884278
+      }
+    },
+    "attention_n_ge_2": {
+      "neighbor_count vs attention_entropy": {
+        "sample_count": 3992,
+        "present_scenes": 5,
+        "Pearson": -0.8005695276055017,
+        "Spearman": -0.7705399080431249
+      },
+      "neighbor_count vs attention_max": {
+        "sample_count": 3992,
+        "present_scenes": 5,
+        "Pearson": -0.5241958917090445,
+        "Spearman": -0.5102109399126111
+      },
+      "max_closing_speed vs attention_max": {
+        "sample_count": 3992,
+        "present_scenes": 5,
+        "Pearson": -0.33390823150228377,
+        "Spearman": -0.3827804262877744
+      },
+      "nearest_neighbor_distance vs attention_max": {
+        "sample_count": 3992,
+        "present_scenes": 5,
+        "Pearson": 0.06286451954252746,
+        "Spearman": 0.1395583414452842
+      },
+      "mean_neighbor_distance vs attention_max": {
+        "sample_count": 3992,
+        "present_scenes": 5,
+        "Pearson": 0.06185244118498238,
+        "Spearman": 0.028038456251219014
+      }
+    },
+    "within_neighbor_count": {
+      "2": {
+        "max_closing_speed vs attention_max": {
+          "sample_count": 35,
+          "present_scenes": 3,
+          "Pearson": -0.3097968913341122,
+          "Spearman": -0.2581779524842401
+        },
+        "nearest_neighbor_distance vs attention_max": {
+          "sample_count": 35,
+          "present_scenes": 3,
+          "Pearson": -0.2668550165070604,
+          "Spearman": 0.07678993296938662
+        },
+        "mean_neighbor_distance vs attention_max": {
+          "sample_count": 35,
+          "present_scenes": 3,
+          "Pearson": -0.023135678995087786,
+          "Spearman": -0.013424931479680819
+        }
+      },
+      "3": {
+        "max_closing_speed vs attention_max": {
+          "sample_count": 110,
+          "present_scenes": 4,
+          "Pearson": -0.19943169633506747,
+          "Spearman": -0.099249664650736
+        },
+        "nearest_neighbor_distance vs attention_max": {
+          "sample_count": 110,
+          "present_scenes": 4,
+          "Pearson": -0.04403708654085747,
+          "Spearman": 0.08039266540553014
+        },
+        "mean_neighbor_distance vs attention_max": {
+          "sample_count": 110,
+          "present_scenes": 4,
+          "Pearson": 0.12585315154106744,
+          "Spearman": 0.11294372844316797
+        }
+      },
+      "4": {
+        "max_closing_speed vs attention_max": {
+          "sample_count": 115,
+          "present_scenes": 4,
+          "Pearson": 0.17063899189392598,
+          "Spearman": 0.1817841278758559
+        },
+        "nearest_neighbor_distance vs attention_max": {
+          "sample_count": 115,
+          "present_scenes": 4,
+          "Pearson": 0.09240362472513573,
+          "Spearman": 0.13982671263609386
+        },
+        "mean_neighbor_distance vs attention_max": {
+          "sample_count": 115,
+          "present_scenes": 4,
+          "Pearson": -0.15642984784783823,
+          "Spearman": -0.28949046970832504
+        }
+      },
+      "5": {
+        "max_closing_speed vs attention_max": {
+          "sample_count": 126,
+          "present_scenes": 4,
+          "Pearson": -0.13017221456341527,
+          "Spearman": -0.07890268619027449
+        },
+        "nearest_neighbor_distance vs attention_max": {
+          "sample_count": 126,
+          "present_scenes": 4,
+          "Pearson": 0.0823591669590708,
+          "Spearman": 0.09601586848956493
+        },
+        "mean_neighbor_distance vs attention_max": {
+          "sample_count": 126,
+          "present_scenes": 4,
+          "Pearson": 0.027349158648075033,
+          "Spearman": -0.035501234091747165
+        }
+      },
+      "6": {
+        "max_closing_speed vs attention_max": {
+          "sample_count": 84,
+          "present_scenes": 4,
+          "Pearson": -0.08120202398807326,
+          "Spearman": -0.021156755742257127
+        },
+        "nearest_neighbor_distance vs attention_max": {
+          "sample_count": 84,
+          "present_scenes": 4,
+          "Pearson": 0.09896003236069935,
+          "Spearman": 0.21480958455319898
+        },
+        "mean_neighbor_distance vs attention_max": {
+          "sample_count": 84,
+          "present_scenes": 4,
+          "Pearson": 0.002073767870282693,
+          "Spearman": -0.22408271962422252
+        }
+      },
+      "7": {
+        "max_closing_speed vs attention_max": {
+          "sample_count": 132,
+          "present_scenes": 4,
+          "Pearson": -0.6688932327823226,
+          "Spearman": -0.6480664120884095
+        },
+        "nearest_neighbor_distance vs attention_max": {
+          "sample_count": 132,
+          "present_scenes": 4,
+          "Pearson": -0.12771969342034759,
+          "Spearman": -0.11614152232328938
+        },
+        "mean_neighbor_distance vs attention_max": {
+          "sample_count": 132,
+          "present_scenes": 4,
+          "Pearson": -0.1739941776789959,
+          "Spearman": -0.16921241419006985
+        }
+      },
+      "8": {
+        "max_closing_speed vs attention_max": {
+          "sample_count": 3390,
+          "present_scenes": 5,
+          "Pearson": -0.09829323843428522,
+          "Spearman": -0.04891492572517298
+        },
+        "nearest_neighbor_distance vs attention_max": {
+          "sample_count": 3390,
+          "present_scenes": 5,
+          "Pearson": -0.045243732322388416,
+          "Spearman": 0.10901901631287461
+        },
+        "mean_neighbor_distance vs attention_max": {
+          "sample_count": 3390,
+          "present_scenes": 5,
+          "Pearson": -0.121852181187229,
+          "Spearman": -0.11928133670366967
+        }
+      }
+    }
+  }
+}

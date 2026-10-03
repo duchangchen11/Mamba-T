@@ -1,0 +1,91 @@
+{
+  "prediction_records_per_model": 48384,
+  "prediction_records_both_models": 96768,
+  "unique_windows": 4032,
+  "unique_pedestrians": 169,
+  "scenes": 5,
+  "source_folds": 5,
+  "seeds": 3,
+  "per_scene": {
+    "eth": {
+      "unique_windows": 66,
+      "unique_pedestrians": 9,
+      "prediction_records_per_model": 792,
+      "neighbor_count_histogram": {
+        "0": 8,
+        "1": 1,
+        "2": 7,
+        "3": 11,
+        "4": 4,
+        "5": 9,
+        "6": 3,
+        "7": 8,
+        "8": 15
+      }
+    },
+    "hotel": {
+      "unique_windows": 154,
+      "unique_pedestrians": 19,
+      "prediction_records_per_model": 1848,
+      "neighbor_count_histogram": {
+        "0": 0,
+        "1": 10,
+        "2": 2,
+        "3": 35,
+        "4": 61,
+        "5": 8,
+        "6": 13,
+        "7": 12,
+        "8": 13
+      }
+    },
+    "univ": {
+      "unique_windows": 2836,
+      "unique_pedestrians": 100,
+      "prediction_records_per_model": 34032,
+      "neighbor_count_histogram": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 2836
+      }
+    },
+    "zara1": {
+      "unique_windows": 304,
+      "unique_pedestrians": 22,
+      "prediction_records_per_model": 3648,
+      "neighbor_count_histogram": {
+        "0": 2,
+        "1": 19,
+        "2": 26,
+        "3": 51,
+        "4": 39,
+        "5": 47,
+        "6": 13,
+        "7": 20,
+        "8": 87
+      }
+    },
+    "zara2": {
+      "unique_windows": 672,
+      "unique_pedestrians": 19,
+      "prediction_records_per_model": 8064,
+      "neighbor_count_histogram": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 13,
+        "4": 11,
+        "5": 62,
+        "6": 55,
+        "7": 92,
+        "8": 439
+      }
+    }
+  }
+}

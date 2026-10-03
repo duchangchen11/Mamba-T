@@ -1,0 +1,113 @@
+{
+  "executed": true,
+  "feature_names": [
+    "neighbor_count",
+    "mean_neighbor_distance",
+    "nearest_neighbor_distance",
+    "mean_relative_speed",
+    "mean_closing_speed"
+  ],
+  "unique_window_samples": 4032,
+  "groups": "scene,ped_id; repeated windows/folds/seeds deduplicated; all pedestrian windows remain together",
+  "cv": "5-fold StratifiedGroupKFold; standardization fitted inside each training fold; no tuning",
+  "metrics": {
+    "logistic": {
+      "pooled": {
+        "Accuracy": 0.6619543650793651,
+        "Macro_F1": 0.36031526020978977
+      },
+      "scene_equal": {
+        "Accuracy": 0.4043666131767424,
+        "Macro_F1": 0.3747655615837617
+      }
+    },
+    "majority": {
+      "pooled": {
+        "Accuracy": 0.7033730158730159,
+        "Macro_F1": 0.16517181129877695
+      },
+      "scene_equal": {
+        "Accuracy": 0.2,
+        "Macro_F1": 0.06666666666666785
+      }
+    },
+    "random_frequency": {
+      "pooled": {
+        "Accuracy": 0.5062003968253969,
+        "Macro_F1": 0.17723684033561188
+      },
+      "scene_equal": {
+        "Accuracy": 0.17751949152596838,
+        "Macro_F1": 0.11211060491093798
+      }
+    }
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "train_samples": 3385,
+      "validation_samples": 647,
+      "train_groups": 135,
+      "validation_groups": 34,
+      "pedestrian_overlap": 0,
+      "train_scene_count": 5,
+      "validation_scene_count": 5,
+      "logistic_iterations": [
+        46
+      ]
+    },
+    {
+      "fold": 1,
+      "train_samples": 3172,
+      "validation_samples": 860,
+      "train_groups": 137,
+      "validation_groups": 32,
+      "pedestrian_overlap": 0,
+      "train_scene_count": 5,
+      "validation_scene_count": 5,
+      "logistic_iterations": [
+        44
+      ]
+    },
+    {
+      "fold": 2,
+      "train_samples": 3180,
+      "validation_samples": 852,
+      "train_groups": 134,
+      "validation_groups": 35,
+      "pedestrian_overlap": 0,
+      "train_scene_count": 5,
+      "validation_scene_count": 4,
+      "logistic_iterations": [
+        38
+      ]
+    },
+    {
+      "fold": 3,
+      "train_samples": 3275,
+      "validation_samples": 757,
+      "train_groups": 136,
+      "validation_groups": 33,
+      "pedestrian_overlap": 0,
+      "train_scene_count": 5,
+      "validation_scene_count": 5,
+      "logistic_iterations": [
+        52
+      ]
+    },
+    {
+      "fold": 4,
+      "train_samples": 3116,
+      "validation_samples": 916,
+      "train_groups": 134,
+      "validation_groups": 35,
+      "pedestrian_overlap": 0,
+      "train_scene_count": 5,
+      "validation_scene_count": 5,
+      "logistic_iterations": [
+        43
+      ]
+    }
+  ],
+  "no_significance_tests": true
+}

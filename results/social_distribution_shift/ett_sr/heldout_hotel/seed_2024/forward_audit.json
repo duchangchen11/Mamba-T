@@ -1,0 +1,33 @@
+{
+  "fold": "hotel",
+  "model": "ett_sr",
+  "seed": 2024,
+  "sample_count": 3878,
+  "source_scenes": [
+    "eth",
+    "univ",
+    "zara1",
+    "zara2"
+  ],
+  "model_state_sha256_before": "5fee63fed3ab3bda052829d819781d77fe2940f1c11623a04a35e985ecdca250",
+  "model_state_sha256_after": "5fee63fed3ab3bda052829d819781d77fe2940f1c11623a04a35e985ecdca250",
+  "weights_unchanged": true,
+  "eval_no_grad": true,
+  "optimizer_created": false,
+  "trajectory_training": false,
+  "attention_context_max_abs_diff": 0.0,
+  "source_validation_reproduction_max_abs_diff": {
+    "residual_norm": 1.4847621651603582e-07,
+    "correction_ratio": 1.2474811861284962e-06,
+    "base_trajectory_norm": 0.0,
+    "base_ADE": 0.0,
+    "base_FDE": 0.0,
+    "SR_ADE": 1.2562098973545321e-07,
+    "SR_FDE": 3.5432039460769893e-07
+  },
+  "sample_sha256": "748ae1ea8f174665db6d369da2f8d97e97d8d4545b7f2211181b3339f177fd90",
+  "base_checkpoint_sha256": "e4fb7b029846929920e26eece7cf85d09240d45428875b5d01263c73eee4a6a6",
+  "SR_checkpoint_sha256": "84487a96739623340a1cd8b2392886aa80953438caae768ee7716a25838b23aa",
+  "heldout_test_accessed": false,
+  "historical_test_already_accessed": true
+}

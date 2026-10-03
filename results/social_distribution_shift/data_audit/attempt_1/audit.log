@@ -1,0 +1,12 @@
+/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/nn/modules/transformer.py:379: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/lrj/Mamba-T/scripts/run_social_distribution_shift.py", line 95, in <module>
+    args=parser.parse_args();main(args.mode,args.one_run)
+  File "/home/lrj/Mamba-T/scripts/run_social_distribution_shift.py", line 72, in main
+    samples,audit=extract_run(fold,model,seed)
+  File "/home/lrj/anaconda3/envs/ped_intent/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/lrj/Mamba-T/scripts/social_shift_inference.py", line 74, in extract_run
+    assert context_difference<1e-5
+AssertionError

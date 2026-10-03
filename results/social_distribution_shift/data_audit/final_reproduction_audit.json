@@ -1,0 +1,27 @@
+{
+  "prediction_reproduction_definition": "numeric forward comparison within rtol=1e-4, atol=1e-5, not a bitwise prediction claim",
+  "saved_ADE_FDE_residual_norm_correction_ratio_reused_unchanged": true,
+  "missing_statistics_only": [
+    "attention_entropy",
+    "attention_max",
+    "attention_top2_sum",
+    "residual_final_norm",
+    "observation social features"
+  ],
+  "reproduction_max_abs_diff_all_runs": {
+    "residual_norm": 3.1950776807759818e-06,
+    "correction_ratio": 2.700305207581355e-05,
+    "base_trajectory_norm": 0.0,
+    "base_ADE": 0.0,
+    "base_FDE": 0.0,
+    "SR_ADE": 9.081819083121834e-06,
+    "SR_FDE": 1.802508740686437e-05
+  },
+  "attention_context_max_abs_diff_all_runs": 0.0,
+  "protocol_sha256": "221471b2a63c029cefef751d2e7cc82c7a2806c61f5c2fff5e2e25816e5bda96",
+  "earlier_attempts": "data_audit/attempt_1, attempt_2, attempt_3 are superseded forensic records; none used as final analysis samples",
+  "historical_frozen_files": 1504,
+  "heldout_test_accessed": false,
+  "historical_test_already_accessed": true,
+  "trajectory_training": false
+}

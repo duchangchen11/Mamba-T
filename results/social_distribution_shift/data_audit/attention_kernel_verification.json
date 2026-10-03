@@ -1,0 +1,13 @@
+{
+  "source": "ETH source validation ETT-SR-fixed seed 42; eval/no_grad; no updates",
+  "need_weights_true_context_max_abs_diff": 0.01268768310546875,
+  "original_SDPA_reconstruction_max_abs_diff": 0.0,
+  "SDPA_probe_vs_need_weights_true_weights_max_abs_diff": 0.0004363059997558594,
+  "SDPA_probe_row_sum_max_error": 1.1920928955078125e-07,
+  "TF32_allowed": false,
+  "float32_matmul_precision": "highest",
+  "final_method": "same SDPA kernel identity-value probe; previous need_weights=True observer superseded",
+  "trajectory_predictor_changed": false,
+  "heldout_test_accessed": false,
+  "historical_test_already_accessed": true
+}
